@@ -2,22 +2,39 @@
 // @name         Variety eggs
 // @namespace    TarashiaPFQ
 // @description  Keep track of eggs during the hatch variety eggs tournament. Tracks lab & shelter eggs automatically - must manually add daycare, supplier, etc.
-// @version      1.6
+// @version      1.7
 // @license      MIT
 // @match        https://pokefarm.com/shelter
 // @match        https://pokefarm.com/lab
 // @icon         https://pokefarm.com/favicon.ico
-// @grant        GM.getValue
-// @grant        GM.setValue
+// @grant        none
 // ==/UserScript==
+
+// TODO: Consider using notepad API to persist across devices?
 
 (function() {
 
-  // Change these to change how new/used/excluded eggs appear
-  // Due to current style limitations, the used and exclude styles must also undo any of the above changes
+  // Change these to change how new/used eggs appear
   const newStyle = 'border: 3px solid blue;';
   const usedStyle = 'opacity: 0.3;';
   const wikiPage = 'https://pokefarm.wiki/List_of_Pok%C3%A9mon';
+
+  
+  let userID = null;
+  // You should always call this instead of accessing userID directly
+  const getUserID = () => {
+    // Detect the current user to set cookie for
+    if(!userID) {
+      if(document.getElementById('core')) {
+        userID = document.getElementById('core').attributes['data-user'].value;
+        console.log('Variety eggs detected user: '+userID);
+      }
+      else {
+        console.error('Variety eggs failed to detect user');
+      }
+    }
+    return userID;
+  }
 
   // Initialize styles
   const isLab = window.location == 'https://pokefarm.com/lab';
@@ -60,11 +77,11 @@
   var usedEggs = [];
   var excludedEggs = [];
   const storeData = () => {
-    GM.setValue('usedEggs', JSON.stringify(usedEggs));
-    GM.setValue('excludedEggs', JSON.stringify(excludedEggs));
+    localStorage.setItem(getUserID()+'.VarietyUsedEggs', JSON.stringify(usedEggs));
+    localStorage.setItem(getUserID()+'.VarietyExcludedEggs', JSON.stringify(excludedEggs));
   }
-  const fetchData = async () => {
-    const storedUsedData = await GM.getValue('usedEggs');
+  const fetchData = () => {
+    const storedUsedData = localStorage.getItem(getUserID()+'.VarietyUsedEggs');
     if(storedUsedData) {
       try {
         usedEggs = JSON.parse(storedUsedData);
@@ -74,7 +91,7 @@
         console.warn(storedUsedData);
       }
     }
-    const storedExcludeData = await GM.getValue('excludedEggs');
+    const storedExcludeData = localStorage.getItem(getUserID()+'.VarietyExcludedEggs');
     if(storedExcludeData) {
       try {
         excludedEggs = JSON.parse(storedExcludeData);

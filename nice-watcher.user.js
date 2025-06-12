@@ -2,7 +2,7 @@
 // @name         Nice watcher
 // @namespace    TarashiaPFQ
 // @description  Track nices recieved so they can be viewed later.
-// @version      1.0
+// @version      1.1
 // @license      MIT
 // @match        https://pokefarm.com/*
 // @icon         https://pokefarm.com/favicon.ico
@@ -28,7 +28,8 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
   let userID = null;
   let recentNices = [];
 
-  const niceWatch = () => {
+  // You should always call this instead of accessing userID directly
+  const getUserID = () => {
     // Detect the current user to set cookie for
     if(!userID) {
       if(document.getElementById('core')) {
@@ -39,6 +40,12 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
         console.error('Nice watcher failed to detect user');
       }
     }
+    return userID;
+  }
+
+  const niceWatch = () => {
+    // Check if #core is loaded for userID
+    getUserID();
     // Detect if a nice has happened
     let niceEls = document.querySelectorAll('body > .nice_toast');
     if(niceEls) {
@@ -53,7 +60,7 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
   }
 
   const storeNice = (nice) => {
-    if(!userID) {
+    if(!getUserID()) {
       console.error('Failed to store nice: user ID not detected');
       return;
     }
@@ -79,12 +86,12 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
     let niceObjects = getStoredNices();
     niceObjects.push(newNice);
     recentNices.push(userName);
-    localStorage.setItem(userID+'.NiceWatcher', JSON.stringify(niceObjects));
+    localStorage.setItem(getUserID()+'.NiceWatcher', JSON.stringify(niceObjects));
   }
 
   const getStoredNices = () => {
     let niceObjects = [];
-    let existingNices = localStorage.getItem(userID+'.NiceWatcher');
+    let existingNices = localStorage.getItem(getUserID()+'.NiceWatcher');
     if(existingNices) {
       try {
         niceObjects = JSON.parse(existingNices);
@@ -123,7 +130,7 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
     document.getElementById('nice-watcher-close').onclick = function() { closeNiceUI(niceWindow); }
     document.getElementById('nice-watcher-clear').onclick = clearNiceHistory;
     // detect timezone setting
-    let timezoneSetting = localStorage.getItem(userID+'.NiceWatcherTZ');
+    let timezoneSetting = localStorage.getItem(getUserID()+'.NiceWatcherTZ');
     let timezoneCheckbox = document.getElementById('nice-timezone');
     if(timezoneSetting && timezoneSetting=='checked') {
       timezoneCheckbox.checked = true;
@@ -184,7 +191,7 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
 
   const clearNiceHistory = () => {
     if (window.confirm('Really clear the nice history?')) {
-      localStorage.removeItem(userID+'.NiceWatcher');
+      localStorage.removeItem(getUserID()+'.NiceWatcher');
       document.getElementById('nice-watcher-contents').innerHTML = '<p>(No nices detected yet.)</p>';
     }
   }
@@ -193,10 +200,10 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
     console.log('Nice TZ setting changed');
     writeNices(event.target.checked);
     if(event.target.checked) {
-      localStorage.setItem(userID+'.NiceWatcherTZ','checked');
+      localStorage.setItem(getUserID()+'.NiceWatcherTZ','checked');
     }
     else {
-      localStorage.setItem(userID+'.NiceWatcherTZ','unchecked');
+      localStorage.setItem(getUserID()+'.NiceWatcherTZ','unchecked');
     }
   }
 
