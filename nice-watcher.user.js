@@ -78,8 +78,8 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
     }
     let newNice = {
       'user': userName,
-      'date': new Date().getTime(),
-      'content': nice
+      'date': new Date().getTime()
+      //,'content': nice  // for testing only, increases cookie size
     };
 
     // Append to old nices and save
@@ -173,13 +173,9 @@ localStorage.removeItem('b7q.NiceWatcherTZ');
           console.error('Failed to read and convert stored nice time');
           console.error(err);
         }
-        printNice.innerHTML = niceObj.content+'<div>@ '+dateString+'</div>';
+        printNice.innerHTML = '<div class="nice_star1"></div><div class="nice_star2"></div><div class="nice_star3"></div>'
+          +niceObj.user+'<br>gave you a Nice!<div>@ '+dateString+'</div>';
         niceContainer.append(printNice);
-      });
-      // clean up nice close buttons
-      let niceCloses = document.querySelectorAll('.dialog .nice_close');
-      niceCloses.forEach(niceCloseBtn => {
-        niceCloseBtn.remove();
       });
     }
   }
