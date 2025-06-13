@@ -2,7 +2,7 @@
 // @name         Nice watcher
 // @namespace    TarashiaPFQ
 // @description  Track nices recieved so they can be viewed later.
-// @version      1.1
+// @version      1.2
 // @license      MIT
 // @match        https://pokefarm.com/*
 // @icon         https://pokefarm.com/favicon.ico
