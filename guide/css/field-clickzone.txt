@@ -1,0 +1,30 @@
+[display=Enlarge field click zone]This code stacks all Pokemon in a field, then enlarges the click zone to fill the entire field area. The green/red background will still appear small, but the entire area will be clickable once a berry is selected. Great for touch screens, and for use with the berry drag feature!
+
+Updated version for QoL compatibility: Takes effect if all QoL field modes are off and a berry is selected. Should still work if you don't use QoL at all.
+
+[hide=Code][css=user-select:all; font-family:monospace;][nobbcode]/* Increase click zone when berry is selected and no QoL sorting is on */
+#field_field>div.field>.fieldmon {
+  transition: none !important;
+}
+#field_berries.selected {
+  ~#field_field {
+    /* only max-stack when no QoL options are selected */
+    >div.field>.fieldmon:not(.qolSortBerry, .qolSortMiddle, .qolGridPokeSize) {
+      left: 0 !important;
+      top: 0 !important;
+      margin: 0 !important;
+      width: 60% !important;
+      height: 100% !important;
+      padding-left: 40% !important;
+      cursor: pointer;
+      
+      .small { display: none !important; }
+      .big { display: block !important; }
+    }
+    /* always hide tooltips when berry selected/dragged */
+    >div.field>.fieldmon+.tooltip_content {
+      display: none;
+    }
+  }
+}
+[/nobbcode][/css][/hide][/display]

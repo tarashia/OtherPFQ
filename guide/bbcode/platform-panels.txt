@@ -1,0 +1,148 @@
+[display=Show a pkmnpanel platform-style]Up to two icons are shown on the name bar, so for example my Charizard is from PF1 and is mega, but only shiny/male is shown. Everything customizable is at the top as variables: platform/name/berry bg colors, and show/hide options for the held item and berry button.
+
+Future goals: Expand the name link to make the whole area clickable (padding? would need a new element to form the name bg, and need to ensure berry stays clickable). Add exp bar below name (decide if it shares colors with name/platform or gets its own vars). Prevent ready to evolve button from showing for owner.
+
+[sc=platform-party][pkmnpanel=3mc8] [pkmnpanel=Jg30] [pkmnpanel=kv3l9][/sc]
+
+[hide=Code][sc=code][nobbcode][pkmnpanel=3mc8] [pkmnpanel=Jg30] [pkmnpanel=kv3l9]
+[style]
+/* These default to the VIEWER's skin colors */
+/* To customize them, just set hex color codes instead */
+@platform-base: @col-bg1;
+@platform-border: @col-border1;
+@name-color: @col-fg1;
+@name-background: @col-bg3;
+@name-border: @col-border3;
+@berry-background: @col-flavour-up;
+@berry-border: @col-fg1;
+/* Set to "block" to show, "none" to hide */
+@display-item: block;
+@display-berries: block;
+
+.party {
+  display: inline-block;
+  &,>div {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: 120px !important;
+    height: 120px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  >div {
+    &::after {
+      display: none;
+    }
+    .pkmn {
+      margin: 0 10px;
+      float: unset;
+      &::before {
+        background-color: @platform-base;
+        border-color: @platform-border;
+      }
+      .helditem {
+        display: @display-item;
+        .itemsprite {
+          cursor: unset;
+        }
+        .tooltip_content {
+          display: none;
+        }
+      }
+    }
+    .name {
+      background-color: @name-background;
+      border: 1px solid @name-border;
+      border-radius: 5px;
+      margin-top: 1px;
+      height: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      a {
+        color: @name-color;
+        font-weight: normal;
+        margin: 0 2px;
+        width: 80px !important;
+        flex-grow: 99;
+        font-size: 12px;
+      }
+      img {
+        display: none;
+      }
+      img:nth-last-of-type(-n+2) {
+        display: inline;
+        margin: 0;
+      }
+    }
+    .action {
+      display: @display-berries;
+      position: absolute;
+      left: 88px;
+      top: 70px;
+      height: unset;
+      width: unset;
+      .berrybuttons[data-up="any"]>a[data-berry="aspear"],
+      .berrybuttons[data-up="sour"]>a[data-berry="aspear"], 
+      .berrybuttons[data-up="spicy"]>a[data-berry="cheri"], 
+      .berrybuttons[data-up="dry"]>a[data-berry="chesto"], 
+      .berrybuttons[data-up="sweet"]>a[data-berry="pecha"],
+      .berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+      .berrybuttons {
+        >a {
+          display: none;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          padding: 5px;
+          background-color: @berry-background;
+          border-radius: 20px;
+          >img { 
+            vertical-align: top;
+            max-height: 20px;
+            max-width: 20px;
+          }
+        }
+        >a[data-berry="pecha"] img {
+          /* this berry is short */
+          margin-top: 1px;
+        }
+      }
+      &.working {
+        opacity: 0.5;
+      }
+      table, a[data-evolve] {
+        /* "thank you" message and evolve button */
+        display: none;
+      }
+    }
+    .expbar, .taste, .extra {
+      display: none;
+    }
+  }
+  >div:hover>.action a[data-berry]:after {
+    border-color: @berry-border;
+  }
+}
+[/style][/nobbcode][/sc][/hide]
+[hide=Short-form for signatures][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
+[style]
+/* These default to the VIEWER's skin colors */
+/* To customize them, just set hex color codes instead */
+@pparty-platform-base: @col-bg1;
+@pparty-platform-border: @col-border1;
+@pparty-name-color: @col-fg1;
+@pparty-name-background: @col-bg3;
+@pparty-name-border: @col-border3;
+@pparty-berry-background: @col-flavour-up;
+@pparty-berry-border: @col-fg1;
+/* Set to "block" to show, "none" to hide */
+@pparty-display-item: block;
+@pparty-display-berries: block;
+
+@import "skins/user/b/7/q/sharedcss/__extra"; 
+[/style][/nobbcode][/sc][/hide][/display]

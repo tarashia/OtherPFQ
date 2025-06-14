@@ -1,0 +1,64 @@
+How to use Google Fonts.
+[url]https://fonts.google.com/[/url]
+
+[b]Please choose your fonts carefully[/b] - decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
+
+I will be using this font as an example:
+[url]https://fonts.google.com/specimen/Righteous[/url]
+
+[ol]
+
+[li]Click the "+ Select this style" button on the right side of the font preview area.
+[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide1.png[/img][/hide][/li]
+
+[li]A sidebar should open on the right, but if it doesn't click the square/+ icon in the very upper right of the page. (shown in upper right of screenshot above)[/li]
+
+[li]Change from the "Review" to the "Embed" tab on the side bar. Under "Use on the web", change the radio button to "@import". Copy the URL only from the code - make sure to not grab either of the single quotes.
+[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide2.png[/img][/hide][/li]
+
+[li]Paste that link into a new browser window/tab. You should see some codes. Most English speakers should only need the /* latin */ block, but for other characters you may need latin-ext or perhaps even other alphabets (if available). You may need to scroll down to find it. Copy it.
+[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide3.png[/img][/hide][/li]
+
+[li]Include that code in your [nobbcode][style][/nobbcode] tag, then use the [nobbcode][font=?][/nobbcode] tag or font-family CSS property to apply it to the area you want it. If the font name has a space in it, you must put single or double quotes around it.
+
+[font="Righteous"]This is some sample text with the font tag.[/font]
+[sc=customDisplay][display=Another example]This is a display box with the font as its header.[/display][/sc]
+[hide=Code][nobbcode][font="Righteous"]This is some sample text with the font tag.[/font]
+
+[display=Another example]This is a display box with the font as its header.[/display]
+
+[style]
+.panel h3 { 
+  font-family: "Righteous"; 
+}
+
+/* latin */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+[/style][/nobbcode][/hide][/li]
+
+[/ol]
+
+
+
+[style]
+ol li { margin-bottom: 1em; }
+ol .panel { margin-top: 0.5em; }
+.customDisplay h3 { font-family: "Righteous"; }
+
+/* latin */
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/righteous/v9/1cXxaUPXBpj2rGoU7C9WiHGF.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+[/style]

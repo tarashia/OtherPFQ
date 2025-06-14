@@ -1,0 +1,147 @@
+[display=Preview a specific delta]This demo uses CSS only to preview a delta species - all you need is the base Pokemon image, which can be found [url=https://pokefarm.wiki/Category:List_of_Pok%C3%A9mon]in the Wiki[/url] or your Pokedex, etc. The CSS image may be slightly blurry depending on your browser, and the shape isn't quite the same, but I am fairly pleased with how close I was able to get :)
+
+(This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
+
+[sc=preview-table][table][tr][th]CSS Preview[/th][th]Actual Delta[/th][/tr]
+[tr][td][sc=psychic-delta][img]/img/pkmn/u/7/n/w.png[/img][/sc][/td]
+[td][url=https://pfq.link/?kNSGk][img]https://pfq.link/?kNSGk=platform.png[/img][/url][/td][/tr]
+[tr][td][sc=dragon-delta][img]/img/pkmn/c/m/x.png[/img][/sc][/td]
+[td][url=https://pfq.link/?TvSv7][img]https://pfq.link/?TvSv7=platform.png[/img][/url][/td][/tr][/table][/sc]
+[hide=Code][sc=code][nobbcode][sc=psychic-delta][img]/img/pkmn/u/7/n/w.png[/img][/sc]
+[sc=dragon-delta][img]/img/pkmn/c/m/x.png[/img][/sc]
+
+[style]
+.delta-shadow(@color) {
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px @color)
+    drop-shadow(-1px 0px 0px @color)
+    drop-shadow(1px 0px 0px @color)
+    drop-shadow(0px 0px 1px @color)
+    drop-shadow(0px -2px 1px @color);
+}
+
+.normal-delta img { .delta-shadow(rgb(168, 168, 120)); }
+.fire-delta img { .delta-shadow(rgb(240, 128, 48)); }
+.water-delta img { .delta-shadow(rgb(104, 144, 240)); }
+.electric-delta img { .delta-shadow(rgb(248, 208, 48)); }
+.grass-delta img { .delta-shadow(rgb(120, 200, 80)); }
+.ice-delta img { .delta-shadow(rgb(152, 216, 216)); }
+.fighting-delta img { .delta-shadow(rgb(192, 48, 40)); }
+.poison-delta img { .delta-shadow(rgb(160, 64, 160)); }
+.ground-delta img { .delta-shadow(rgb(224, 192, 104)); }
+.flying-delta img { .delta-shadow(rgb(168, 144, 240)); }
+.psychic-delta img { .delta-shadow(rgb(248, 88, 136)); }
+.bug-delta img { .delta-shadow(rgb(168, 184, 32)); }
+.rock-delta img { .delta-shadow(rgb(184, 160, 56)); }
+.ghost-delta img { .delta-shadow(rgb(112, 88, 152)); }
+.dragon-delta img { .delta-shadow(rgb(112, 56, 248)); }
+.dark-delta img { .delta-shadow(rgb(112, 88, 72)); }
+.steel-delta img { .delta-shadow(rgb(184, 184, 208)); }
+.fairy-delta img { .delta-shadow(rgb(255, 101, 213)); } 
+[/style][/nobbcode][/sc][/hide][/display]
+[display=Preview all delta types for a single Pokemon]This demo uses the same base code as above, but previews all 18 types for a single Pokemon at once, while only needing to change a single line of code. Get the image code for the Pokemon you want to preview as above, then paste it into the @pkmn-img variable at the top of the code block. If you want to preview the deltas on a different color background, or a field image, set @background.
+
+[sc=delta-list]
+[sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
+[sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
+[sc=water][sc=pkmn][/sc][sc=type][type=water][/sc][/sc]
+[sc=electric][sc=pkmn][/sc][sc=type][type=electric][/sc][/sc]
+[sc=grass][sc=pkmn][/sc][sc=type][type=grass][/sc][/sc]
+[sc=ice][sc=pkmn][/sc][sc=type][type=ice][/sc][/sc]
+[sc=fighting][sc=pkmn][/sc][sc=type][type=fighting][/sc][/sc]
+[sc=poison][sc=pkmn][/sc][sc=type][type=poison][/sc][/sc]
+[sc=ground][sc=pkmn][/sc][sc=type][type=ground][/sc][/sc]
+[sc=flying][sc=pkmn][/sc][sc=type][type=flying][/sc][/sc]
+[sc=psychic][sc=pkmn][/sc][sc=type][type=psychic][/sc][/sc]
+[sc=bug][sc=pkmn][/sc][sc=type][type=bug][/sc][/sc]
+[sc=rock][sc=pkmn][/sc][sc=type][type=rock][/sc][/sc]
+[sc=ghost][sc=pkmn][/sc][sc=type][type=ghost][/sc][/sc]
+[sc=dragon][sc=pkmn][/sc][sc=type][type=dragon][/sc][/sc]
+[sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
+[sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
+[sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
+[/sc]
+[hide=Code][sc=code][nobbcode][style]
+/* https://pokefarm.wiki/Category:List_of_Pok%C3%A9mon */
+@pkmn-img: '/img/pkmn/u/7/n/w.png';
+
+/* change to a hex color code of choice, or url('image_link') */
+@bg-color: transparent;
+
+.delta-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background: @bg-color;
+  >div {
+    padding: 5px;
+  }
+  .pkmn {
+    padding: 5px;
+    &:before {
+      content: url(@pkmn-img);
+    }
+  }
+}
+
+.delta-shadow(@color) {
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px @color)
+    drop-shadow(-1px 0px 0px @color)
+    drop-shadow(1px 0px 0px @color)
+    drop-shadow(0px 0px 1px @color)
+    drop-shadow(0px -2px 1px @color);
+}
+
+.delta-list .normal .pkmn:before { .delta-shadow(rgb(168, 168, 120)); }
+.delta-list .fire .pkmn:before { .delta-shadow(rgb(240, 128, 48)); }
+.delta-list .water .pkmn:before { .delta-shadow(rgb(104, 144, 240)); }
+.delta-list .electric .pkmn:before { .delta-shadow(rgb(248, 208, 48)); }
+.delta-list .grass .pkmn:before { .delta-shadow(rgb(120, 200, 80)); }
+.delta-list .ice .pkmn:before { .delta-shadow(rgb(152, 216, 216)); }
+.delta-list .fighting .pkmn:before { .delta-shadow(rgb(192, 48, 40)); }
+.delta-list .poison .pkmn:before { .delta-shadow(rgb(160, 64, 160)); }
+.delta-list .ground .pkmn:before { .delta-shadow(rgb(224, 192, 104)); }
+.delta-list .flying .pkmn:before { .delta-shadow(rgb(168, 144, 240)); }
+.delta-list .psychic .pkmn:before { .delta-shadow(rgb(248, 88, 136)); }
+.delta-list .bug .pkmn:before { .delta-shadow(rgb(168, 184, 32)); }
+.delta-list .rock .pkmn:before { .delta-shadow(rgb(184, 160, 56)); }
+.delta-list .ghost .pkmn:before { .delta-shadow(rgb(112, 88, 152)); }
+.delta-list .dragon .pkmn:before { .delta-shadow(rgb(112, 56, 248)); }
+.delta-list .dark .pkmn:before { .delta-shadow(rgb(112, 88, 72)); }
+.delta-list .steel .pkmn:before { .delta-shadow(rgb(184, 184, 208)); }
+.delta-list .fairy .pkmn:before { .delta-shadow(rgb(255, 101, 213)); } 
+[/style]
+
+[sc=delta-list]
+[sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
+[sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
+[sc=water][sc=pkmn][/sc][sc=type][type=water][/sc][/sc]
+[sc=electric][sc=pkmn][/sc][sc=type][type=electric][/sc][/sc]
+[sc=grass][sc=pkmn][/sc][sc=type][type=grass][/sc][/sc]
+[sc=ice][sc=pkmn][/sc][sc=type][type=ice][/sc][/sc]
+[sc=fighting][sc=pkmn][/sc][sc=type][type=fighting][/sc][/sc]
+[sc=poison][sc=pkmn][/sc][sc=type][type=poison][/sc][/sc]
+[sc=ground][sc=pkmn][/sc][sc=type][type=ground][/sc][/sc]
+[sc=flying][sc=pkmn][/sc][sc=type][type=flying][/sc][/sc]
+[sc=psychic][sc=pkmn][/sc][sc=type][type=psychic][/sc][/sc]
+[sc=bug][sc=pkmn][/sc][sc=type][type=bug][/sc][/sc]
+[sc=rock][sc=pkmn][/sc][sc=type][type=rock][/sc][/sc]
+[sc=ghost][sc=pkmn][/sc][sc=type][type=ghost][/sc][/sc]
+[sc=dragon][sc=pkmn][/sc][sc=type][type=dragon][/sc][/sc]
+[sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
+[sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
+[sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
+[/sc][/nobbcode][/sc][/hide][/display]
+
+[style] @import "skins/user/b/7/q/journalcss/__extra"; 
+.preview-table tr td:nth-of-type(1) {
+  text-align: center;
+  vertical-align: bottom;
+  padding-bottom: 30px;
+}
+[/style]

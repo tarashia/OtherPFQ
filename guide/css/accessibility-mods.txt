@@ -1,0 +1,88 @@
+[display=Accessibility script mod]This is CSS to further improve the accessibility script. For parties, it will stack the accessibility button and the next button. You can get into a nice kind of rhythm - tap tap pause (next, interact, wait) - without moving your mouse or finger. Works on both mobile and desktop, and it will turn itself off if any QoL mode is on so you can easily switch between accessibility and fast clicking. (If you do not use QoL, it still works, don't worry)
+
+This is not tested or intended to be compatible with any party modifications other than the QoL, including the one here or the 1-button code. Sorry!
+
+Updated April 16 2025: Updated to use new button names. If this code does not work for you, try disabling and re-enabling the Accessibility script to get the newest version.
+
+[hide=Multi-User Party Code][css=font-family:monospace;user-select:all;][nobbcode]#multiuser:not(.qolPartyModded) #autofeed-button[disabled] {
+    display: none;
+}
+#multiuser:not(.qolPartyModded) #profilepage {
+    position: relative;
+    max-width: 960px;
+}
+#multiuser:not(.qolPartyModded) #autofeed-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    width: 320px;
+    height: 60pt;
+}
+#multiuser:not(.qolPartyModded) #partybox .next {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 998;
+    width: 320px;
+    height: 60pt;
+    margin: 0;
+    line-height: 60pt;
+    padding: 0;
+}
+
+html:not(.mq3) #multiuser:not(.qolPartyModded) #profilebox {
+    margin-top: 65pt;
+}
+
+.mq3 #multiuser:not(.qolPartyModded) #autofeed-button,
+.mq3 #multiuser:not(.qolPartyModded) #partybox .next,
+.mq3 #multiuser:not(.qolPartyModded) #profilebox {
+    width: 100%;
+}
+.mq3 #multiuser:not(.qolPartyModded) #partybox {
+    margin-top: 65pt;
+}
+.mq3 #multiuser:not(.qolPartyModded) #trainercard {
+    margin: 0 auto;
+}[/nobbcode][/css][/hide]
+[hide=Scour Code][css=font-family:monospace;user-select:all;][nobbcode]#autoscour-button {
+    width: 100%;
+    height: 5em;
+    margin-bottom: 1em;
+}[/nobbcode][/css][/hide]
+[hide=Private/Own Party Code][css=font-family:monospace;][nobbcode].mq3 #partypage {
+    padding-top: 50px;
+    position: relative;
+}
+.mq3 #partypage #autofeed-button, 
+.mq3 #partypage #autohatch-button {
+    position: absolute;
+    top: 0;
+}
+.mq3 #partypage #autofeed-button {
+    margin-left: -150px;
+    left: 50%;
+}
+.mq3 #partypage #autohatch-button {
+    right: 50%;
+    margin-right: -150px;
+}[/nobbcode][/css][/hide]
+[hide=Field Code][css=font-family:monospace;user-select:all;][nobbcode]#content:has(#field_field[data-mode='public']) {
+    position: relative;
+    padding-top: 70pt;
+}
+#field_controls ~ #field_nav button[data-action="next"],
+#field_berries #autofeed-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 60pt;
+    width: 50%;
+    margin: 0 !important;
+    z-index: 998;
+}
+#field_berries #autofeed-button {
+    right: unset;
+    left: 0px;
+}[/nobbcode][/css][/hide][/display]

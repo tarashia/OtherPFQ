@@ -1,0 +1,159 @@
+[display=Change berry images]Changes the berry images in parties, fields, and summary pages, including the drag berry icon for the field click accessibility tool. Does *not* change the berries for pkmnpanels in forums & signatures... the code conflicted too much with the common pkmnpanel customizations people use.
+
+Change the background-image URLs to customize. You shouldn't need to change anything else, the images will auto-resize, but try to choose appropriately sized images to prevent resize distortion.
+
+This code was updated Jan 1 2024 to work better with holiday changes. Please feel free to contact me if you notice any problems. The new version cannot be used in the QoL CSS box without being compiled first, but should work fine in skins.
+
+Updated again October 2024 to work correctly with showcases. The oran/any berry  does not need a big counterpart, as it only appears as a small berry in the showcase.
+
+[hide=Code][css=user-select:all; font-family:monospace;][nobbcode]/* --- CHANGE ME --- */
+/* big berries */
+@sour-big: url("/img/events/halloween/sour.candy.big.png");
+@spicy-big: url("/img/events/halloween/spicy.candy.big.png");
+@dry-big: url("/img/events/halloween/dry.candy.big.png");
+@sweet-big: url("/img/events/halloween/sweet.candy.big.png");
+@bitter-big: url("/img/events/halloween/bitter.candy.big.png");
+/* small berries */
+@sour-small: url("/img/events/halloween/sour.candy.png");
+@spicy-small: url("/img/events/halloween/spicy.candy.png");
+@dry-small: url("/img/events/halloween/dry.candy.png");
+@sweet-small: url("/img/events/halloween/sweet.candy.png");
+@bitter-small: url("/img/events/halloween/bitter.candy.png");
+@any-small: url("/img/events/halloween/neutral.candy.png");
+
+/* --- do not change below this line --- */
+
+/* small berries */
+#profilepage .berrybuttons,
+.showcase .berrybuttons {
+  a[data-berry="aspear"] img,
+  a[data-berry="cheri"] img,
+  a[data-berry="chesto"] img,
+  a[data-berry="pecha"] img,
+  a[data-berry="rawst"] img,
+  a[data-berry="oran"] img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: 24px;
+    width: 24px;
+  }
+  a[data-berry="aspear"] img {
+    background-image: @sour-small !important;
+  }
+  a[data-berry="cheri"] img {
+    background-image: @spicy-small !important;
+  }
+  a[data-berry="chesto"] img {
+    background-image: @dry-small !important;
+  }
+  a[data-berry="pecha"] img {
+    background-image: @sweet-small !important;
+  }
+  a[data-berry="rawst"] img {
+    background-image: @bitter-small !important;
+  }
+  a[data-berry="oran"] img {
+    background-image: @any-small !important;
+  }
+}
+
+/* big berries */
+#partypage .party .berrybuttons,
+#summarypage .berrybuttons,
+#field_berries {
+  a[data-berry="aspear"] img,
+  a[data-berry="cheri"] img,
+  a[data-berry="chesto"] img,
+  a[data-berry="pecha"] img,
+  a[data-berry="rawst"] img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: 52px;
+    width: 40px;
+  }
+  a[data-berry="aspear"] img {
+    background-image: @sour-big !important;
+  }
+  a[data-berry="cheri"] img {
+    background-image: @spicy-big !important;
+  }
+  a[data-berry="chesto"] img {
+    background-image: @dry-big !important;
+  }
+  a[data-berry="pecha"] img {
+    background-image: @sweet-big !important;
+  }
+  a[data-berry="rawst"] img {
+    background-image: @bitter-big !important;
+  }
+}
+
+/* field drag may not work during holidays */
+.berrydragghost {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.berrydragghost[style*="/img/items/aspearberry.png"] {
+  background-image: @sour-small !important;
+}
+.berrydragghost[style*="/img/items/cheriberry.png"]  {
+  background-image: @spicy-small !important;
+}
+.berrydragghost[style*="/img/items/chestoberry.png"]  {
+  background-image: @dry-small !important;
+}
+.berrydragghost[style*="/img/items/pechaberry.png"]  {
+  background-image: @sweet-small !important;
+}
+.berrydragghost[style*="/img/items/rawstberry.png"]  {
+  background-image: @bitter-small !important;
+}[/nobbcode][/css][/hide]
+[hide=Halloween candy image URLs][b]Big:[/b]
+https://static.pokefarm.com/img/events/halloween/sour.candy.big.png
+https://static.pokefarm.com/img/events/halloween/spicy.candy.big.png
+https://static.pokefarm.com/img/events/halloween/dry.candy.big.png
+https://static.pokefarm.com/img/events/halloween/sweet.candy.big.png
+https://static.pokefarm.com/img/events/halloween/bitter.candy.big.png
+[b]Small:[/b]
+https://static.pokefarm.com/img/events/halloween/sour.candy.png
+https://static.pokefarm.com/img/events/halloween/spicy.candy.png
+https://static.pokefarm.com/img/events/halloween/dry.candy.png
+https://static.pokefarm.com/img/events/halloween/sweet.candy.png
+https://static.pokefarm.com/img/events/halloween/bitter.candy.png
+https://static.pokefarm.com/img/events/halloween/neutral.candy.png[/hide]
+[hide=Christmas treat image URLs][b]Big:[/b]
+https://static.pokefarm.com/img/events/christmas/sour.sweet.big.png
+https://static.pokefarm.com/img/events/christmas/spicy.sweet.big.png
+https://static.pokefarm.com/img/events/christmas/dry.sweet.big.png
+https://static.pokefarm.com/img/events/christmas/sweet.sweet.big.png
+https://static.pokefarm.com/img/events/christmas/bitter.sweet.big.png
+[b]Small:[/b]
+https://static.pokefarm.com/img/events/christmas/sour.sweet.png
+https://static.pokefarm.com/img/events/christmas/spicy.sweet.png
+https://static.pokefarm.com/img/events/christmas/dry.sweet.png
+https://static.pokefarm.com/img/events/christmas/sweet.sweet.png
+https://static.pokefarm.com/img/events/christmas/bitter.sweet.png
+https://static.pokefarm.com/img/events/christmas/neutral.sweet.png
+[/hide]
+[hide=Valentine's candy image URLs][b]Big:[/b]
+https://static.pokefarm.com/img/events/valentine/sour.dessert.big.png
+https://static.pokefarm.com/img/events/valentine/spicy.dessert.big.png
+https://static.pokefarm.com/img/events/valentine/dry.dessert.big.png
+https://static.pokefarm.com/img/events/valentine/sweet.dessert.big.png
+https://static.pokefarm.com/img/events/valentine/bitter.dessert.big.png
+[b]Small:[/b]
+https://static.pokefarm.com/img/events/valentine/sour.dessert.png
+https://static.pokefarm.com/img/events/valentine/spicy.dessert.png
+https://static.pokefarm.com/img/events/valentine/dry.dessert.png
+https://static.pokefarm.com/img/events/valentine/sweet.dessert.png
+https://static.pokefarm.com/img/events/valentine/bitter.dessert.png
+https://static.pokefarm.com/img/events/valentine/neutral.dessert.png
+[/hide]
+[url=https://pokefarm.wiki/Pi_Day]Pi day pie sprites on Wiki[/url]
+
+[url=https://pokefarm.wiki/Fabulous_Fiesta]Carnival/Fiesta food sprites on Wiki[/url][/display]

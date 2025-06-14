@@ -1,0 +1,15 @@
+[h3]BBCode-based codes, for templates, abouts, signatures[/h3][
+
+][sc=tabbed_interface horizontal mz_tabs][ul][
+][li]Platform-Style PkmnPanels[/li][
+][li]Compact PkmnPanels[/li][
+][li]Delta Previews[/li][
+][/ul][
+
+][sc=tab]<%platform-panels.txt%>[/sc][
+][sc=tab]<%compact-panels.txt%>[/sc][
+][sc=tab]<%delta-preview.txt%>[/sc][
+
+][/sc]
+
+[style] @import "skins/user/b/7/q/journalcss/__extra"; [/style]

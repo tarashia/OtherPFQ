@@ -1,0 +1,19 @@
+{
+    "name": "other-pfq",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Container for Mirzam's non-QOL PFQ related stuff",
+    "scripts": {
+        "build": "node guide/build.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarashia/OtherPFQ.git"
+    },
+    "author": "Tarashia (Mirzam)",
+    "license": "ISC",
+    "devDependencies": {
+        "fs": "^0.0.1-security",
+        "string-replace-async": "^3.0.2"
+    }
+}
