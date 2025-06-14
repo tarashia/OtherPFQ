@@ -1,6 +1,5 @@
-How to use Google Fonts.
-[url]https://fonts.google.com/[/url]
-
+[h3]How to use Google Fonts[/h3][
+][center][url]https://fonts.google.com/[/url][/center]
 [b]Please choose your fonts carefully[/b] - decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
 
 I will be using this font as an example:
