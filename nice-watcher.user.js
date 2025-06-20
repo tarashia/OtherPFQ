@@ -9,18 +9,17 @@
 // ==/UserScript==
 
 /*
-Manually generate a test nice
+Keeps track of Nices recieved, so you can easily see who sent them and when!
+Report bugs and issues in my main code sharing thread: https://pfq.link/~-HvB
 
+For testing: Manually generate a test nice
+Test nices cannot be dismissed normally, but should be detected by the script
+
+username = 'USERNAME';
 testNice = document.createElement('div');
 testNice.className = 'nice_toast';
-testNice.innerHTML = '<div class="nice_star1"></div><div class="nice_star2"></div><div class="nice_star3"></div><a href="#" class="nice_close"></a>USERNAME<br>gave you a Nice!';
+testNice.innerHTML = '<div class="nice_star1"></div><div class="nice_star2"></div><div class="nice_star3"></div><a href="#" class="nice_close"></a>'+username+'<br>gave you a Nice!';
 document.body.append(testNice);
-
-Get & remove local nice storage (replace b7q with your userID)
-
-localStorage.getItem('b7q.NiceWatcher');
-localStorage.removeItem('b7q.NiceWatcher');
-localStorage.removeItem('b7q.NiceWatcherTZ');
 
 */
 
