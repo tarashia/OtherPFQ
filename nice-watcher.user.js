@@ -43,8 +43,6 @@ document.body.append(testNice);
   }
 
   const niceWatch = () => {
-    // Check if #core is loaded for userID
-    getUserID();
     // Detect if a nice has happened
     let niceEls = document.querySelectorAll('body > .nice_toast');
     if(niceEls) {
@@ -183,7 +181,6 @@ document.body.append(testNice);
           console.error(err);
         }
         let showName = niceObj.user;
-        console.log(niceObj);
         if(niceObj.profile) {
           showName = '<a href="https://pokefarm.com/user/'+niceObj.profile+'">'+niceObj.user+'</a>';
         }
