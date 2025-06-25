@@ -1,0 +1,65 @@
+[display=Shelter: Species+Nature/Unown]This code highlights a specific Pokemon by both species *and* nature. 
+
+Replace the number after data-fid in the following code with the Pokemon's dex ID - the number at the end of the URL when you open a dex entry in a new tab. You *must* include leading 0s, if present. 
+
+Note: If a Pokemon has multiple formes, you will need to use this format to match all of them, using the dex # without any forme specifier.
+> Tatsugiri [data-fid^="977"] - matches "977", "977a", "977b"
+Alternatively, you could match only stretchy forme by using the plain "=" and "977b"
+
+Replace the number after data-nature in the code with one of the nature values listed in the hide box. To highlight all Pokemon with the specified nature, just remove the data-fid part.
+
+[display=Highlight timid Pidgey][css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-fid="016"][data-nature="21"] 
+{ border: 4px solid red; }
+[/nobbcode][/css][/display]
+[hide=Nature list][css=font-family: monospace;][nobbcode]"1" : Serious
+"2" : Lonely
+"3" : Adamant
+"4" : Naughty
+"5" : Brave
+"6" : Bold
+"7" : Hardy
+"8" : Impish
+"9" : Lax
+"10" : Relaxed
+"11" : Modest
+"12" : Mild
+"13" : Bashful
+"14" : Rash
+"15" : Quiet
+"16" : Calm
+"17" : Gentle
+"18" : Careful
+"19" : Docile
+"20" : Sassy
+"21" : Timid
+"22" : Hasty
+"23" : Jolly
+"24" : Naïve
+"25" : Quirky[/nobbcode][/css][/hide]
+
+[b]Other things you can do with the data-fid tag:[/b]
+
+Search specific Unown eggs
+Replace "x" with the letter you want
+Use "~" for ? and "|" for !
+Remove data-stage to find hatched Unown too
+
+[display=Highlight Unown X eggs][css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-fid="214x"][data-stage="egg"]
+{ border: 4px solid red; }
+[/nobbcode][/css][/display]
+Highlight all exclusive Pokemon 
+(no equivalent for variants, sorry)
+
+[display=Code][css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-fid^="000"] 
+{ border: 4px solid red; }
+[/nobbcode][/css][/display]
+
+[b]Other things you can do with the data-nature tag:[/b]
+
+Highlight Pokemon of a specific nature that are also found by the QoL
+(may be more convenient than adding multiple data-fid blocks)
+
+[display=Code][css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-nature="21"]
+.shelterfoundme { border: 2px solid red; }
+[/nobbcode][/css][/display]
+[/display]

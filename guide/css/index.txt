@@ -2,13 +2,15 @@
 
 ][sc=tabbed_interface horizontal mz_tabs][ul][
 ][li]Accessibility script mods[/li][
+][li]Shelter: Species+Nature/Unown[/li][
 ][li]Change berry images[/li][
 ][li]Enlarge field click zone[/li][
 ][/ul][
 
-][sc=tab-active]<%accessibility-mods.txt%>[/sc][
-][sc=tab-active]<%berry-images.txt%>[/sc][
-][sc=tab-active]<%field-clickzone.txt%>[/sc][
+][sc=tab]<%accessibility-mods.txt%>[/sc][
+][sc=tab]<%shelter-species-nature.txt%>[/sc][
+][sc=tab]<%berry-images.txt%>[/sc][
+][sc=tab]<%field-clickzone.txt%>[/sc][
 
 ][/sc]
 
