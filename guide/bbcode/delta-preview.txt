@@ -3,12 +3,12 @@
 (This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
 
 [sc=preview-table][table][tr][th]CSS Preview[/th][th]Actual Delta[/th][/tr]
-[tr][td][sc=psychic-delta][img]/img/pkmn/u/7/n/w.png[/img][/sc][/td]
-[td][url=https://pfq.link/?kNSGk][img]https://pfq.link/?kNSGk=platform.png[/img][/url][/td][/tr]
-[tr][td][sc=dragon-delta][img]/img/pkmn/c/m/x.png[/img][/sc][/td]
-[td][url=https://pfq.link/?TvSv7][img]https://pfq.link/?TvSv7=platform.png[/img][/url][/td][/tr][/table][/sc]
-[hide=Code][sc=code][nobbcode][sc=psychic-delta][img]/img/pkmn/u/7/n/w.png[/img][/sc]
-[sc=dragon-delta][img]/img/pkmn/c/m/x.png[/img][/sc]
+[tr][td][sc=poison-delta][img]https://static.pokefarm.com/img/pkmn/5/c/2.png[/img][/sc][/td]
+[td][url=https://pfq.link/?Jyw571][img]https://pfq.link/?Jyw571=platform.png[/img][/url][/td][/tr]
+[tr][td][sc=fairy-delta][img]https://static.pokefarm.com/img/pkmn/m/s/8.png[/img][/sc][/td]
+[td][url=https://pfq.link/?nBf0B][img]https://pfq.link/?nBf0B=platform.png[/img][/url][/td][/tr][/table][/sc]
+[hide=Code][sc=code][nobbcode][sc=psychic-delta][img]https://static.pokefarm.com/img/pkmn/5/c/2.png[/img][/sc]
+[sc=fairy-delta][img]https://static.pokefarm.com/img/pkmn/m/s/8.png[/img][/sc]
 
 [style]
 .delta-shadow(@color) {
@@ -64,7 +64,7 @@
 [/sc]
 [hide=Code][sc=code][nobbcode][style]
 /* https://pokefarm.wiki/Category:List_of_Pok%C3%A9mon */
-@pkmn-img: '/img/pkmn/u/7/n/w.png';
+@pkmn-img: 'https://static.pokefarm.com/img/pkmn/u/7/n/w.png';
 
 /* change to a hex color code of choice, or url('image_link') */
 @bg-color: transparent;
