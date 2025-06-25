@@ -75,8 +75,18 @@ document.body.append(testNice);
       console.log('Skipping repeat nice entry: '+userName);
       return;
     }
+    // Attempt to build the URL-friendly name for link purposes
+    let normalizedName = '';
+    try {
+      normalizedName = userName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      normalizedName = normalizedName.replace(' ','_');
+      normalizedName = normalizedName.replace('.',':');
+    } catch(err) {
+      console.warn('Failed to normalize username: '+userName);
+    }
     let newNice = {
       'user': userName,
+      'profile': normalizedName,
       'date': new Date().getTime()
       //,'content': nice  // for testing only, increases cookie size
     };
@@ -172,8 +182,13 @@ document.body.append(testNice);
           console.error('Failed to read and convert stored nice time');
           console.error(err);
         }
+        let showName = niceObj.user;
+        console.log(niceObj);
+        if(niceObj.profile) {
+          showName = '<a href="https://pokefarm.com/user/'+niceObj.profile+'">'+niceObj.user+'</a>';
+        }
         printNice.innerHTML = '<div class="nice_star1"></div><div class="nice_star2"></div><div class="nice_star3"></div>'
-          +niceObj.user+'<br>gave you a Nice!<div>@ '+dateString+'</div>';
+          +showName+'<br>gave you a Nice!<div>@ '+dateString+'</div>';
         niceContainer.append(printNice);
       });
     }
