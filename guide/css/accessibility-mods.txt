@@ -1,6 +1,6 @@
 [display=Accessibility script mod]This is CSS to further improve the accessibility script. For parties, it will stack the accessibility button and the next button. You can get into a nice kind of rhythm - tap tap pause (next, interact, wait) - without moving your mouse or finger. Works on both mobile and desktop, and it will turn itself off if any QoL mode is on so you can easily switch between accessibility and fast clicking. (If you do not use QoL, it still works, don't worry)
 
-This is not tested or intended to be compatible with any party modifications other than the QoL, including the one here or the 1-button code. Sorry!
+This is not tested or intended to be compatible with any party modifications other than the QoL, including 1-button code. Sorry!
 
 Updated April 16 2025: Updated to use new button names. If this code does not work for you, try disabling and re-enabling the Accessibility script to get the newest version.
 

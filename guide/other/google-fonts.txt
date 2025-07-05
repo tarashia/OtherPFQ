@@ -1,6 +1,10 @@
 [h3]How to use Google Fonts[/h3][
 ][center][url]https://fonts.google.com/[/url][/center]
-[b]Please choose your fonts carefully[/b] - decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
+[b]Please choose your fonts carefully[/b] - custom fonts, especially decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
+
+In general I would recommend not changing your main content font at all, even to fonts similar to the default site font, since some people may be using custom fonts to make the site more readable for them. (ex, dyslexia friendly fonts)
+
+[hr]
 
 I will be using this font as an example:
 [url]https://fonts.google.com/specimen/Righteous[/url]
