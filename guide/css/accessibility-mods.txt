@@ -4,6 +4,7 @@ This is not tested or intended to be compatible with any party modifications oth
 
 Updated April 16 2025: Updated to use new button names. If this code does not work for you, try disabling and re-enabling the Accessibility script to get the newest version.
 
+Stack party click & next buttons:
 [hide=Multi-User Party Code][css=font-family:monospace;user-select:all;][nobbcode]#multiuser:not(.qolPartyModded) #autofeed-button[disabled] {
     display: none;
 }
@@ -46,11 +47,13 @@ html:not(.mq3) #multiuser:not(.qolPartyModded) #profilebox {
 .mq3 #multiuser:not(.qolPartyModded) #trainercard {
     margin: 0 auto;
 }[/nobbcode][/css][/hide]
+Make the scour retrieve/send significantly larger:
 [hide=Scour Code][css=font-family:monospace;user-select:all;][nobbcode]#autoscour-button {
     width: 100%;
     height: 5em;
     margin-bottom: 1em;
 }[/nobbcode][/css][/hide]
+Move hatch eggs button to top on mobile:
 [hide=Private/Own Party Code][css=font-family:monospace;][nobbcode].mq3 #partypage {
     padding-top: 50px;
     position: relative;
@@ -68,6 +71,7 @@ html:not(.mq3) #multiuser:not(.qolPartyModded) #profilebox {
     right: 50%;
     margin-right: -150px;
 }[/nobbcode][/css][/hide]
+Make field click & next significantly larger (cannot stack due to technical limitations, sorry!):
 [hide=Field Code][css=font-family:monospace;user-select:all;][nobbcode]#content:has(#field_field[data-mode='public']) {
     position: relative;
     padding-top: 70pt;
