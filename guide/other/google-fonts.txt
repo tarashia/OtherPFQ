@@ -1,3 +1,5 @@
+[display=Warning]Google Fonts will likely be removed when LESS support is dropped, as the font face import will no longer be supported. Sorry! You will need to investigate web-safe fonts to use instead. Be extra sure to set fallback fonts for devices that do not have your selected font installed/supported.[/display]
+
 [h3]How to use Google Fonts[/h3][
 ][center][url]https://fonts.google.com/[/url][/center]
 [b]Please choose your fonts carefully[/b] - custom fonts, especially decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
