@@ -1,4 +1,4 @@
-[display=Preview a specific delta]This demo uses CSS only to preview a delta species - all you need is the base Pokemon image, which can be found [url=https://pokefarm.wiki/Category:List_of_Pok%C3%A9mon]in the Wiki[/url] or your Pokedex, etc. The CSS image may be slightly blurry depending on your browser, and the shape isn't quite the same, but I am fairly pleased with how close I was able to get :)
+[display=Preview a specific delta]This demo uses CSS only to preview a delta species - all you need is the base Pokemon tag. [url=https://pokefarm.wiki/PKMN_Code_Compendium][Wiki guide][/url] The CSS image may be slightly blurry depending on your browser, and the shape isn't quite the same, but I am fairly pleased with how close I was able to get :)
 
 (This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
 
@@ -11,7 +11,7 @@
 [import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
 [display=Preview all delta types for a single Pokemon]This demo uses the same base code as above, but previews all 18 types for a single Pokemon at once, while only needing to change a single line of code. Get the image code for the Pokemon you want to preview as above, then paste it into the --pkmn-img variable at the top of the code block. If you want to preview the deltas on a different color background, or a field image, set --background.
 
-Note: You used to be able to use wiki images in this code. Sadly, this is no longer possible - you will need to use your dex, or a regular version of the Pokemon, or the !big pkmn code to get the image link to do the preview.
+Note: You used to be able to use wiki images in this code. Sadly, this is no longer possible - you will need to use your dex, or a regular version of the Pokemon, or the !big pkmn code to get the image link to do the preview. In a pinch, for example for costumes, you could re-upload the image to your own image uploader.
 
 [sc=delta-list]
 [sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
