@@ -1,0 +1,404 @@
+/* platform party */
+
+.platform-party, .platform-party .party {
+  display: inline-block;
+}
+.platform-party .party {
+  &,>div {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: 120px !important;
+    height: 120px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  >div {
+    &::after {
+      display: none;
+    }
+    .pkmn {
+      margin: 0 10px;
+      float: unset;
+      &::before {
+        background-color: var(--pparty-platform-base);
+        border-color: var(--pparty-platform-border);
+      }
+      .helditem {
+        .itemsprite {
+          cursor: unset;
+        }
+        .tooltip_content {
+          display: none;
+        }
+      }
+    }
+    .name {
+      background-color: var(--pparty-name-background);
+      border: 1px solid var(--pparty-name-border);
+      border-radius: 5px;
+      margin-top: 1px;
+      height: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      a {
+        color: var(--pparty-name-color);
+        font-weight: normal;
+        margin: 0 2px;
+        width: 80px !important;
+        flex-grow: 99;
+        font-size: 12px;
+      }
+      img {
+        display: none;
+      }
+      img:nth-last-of-type(-n+2) {
+        display: inline;
+        margin: 0;
+      }
+    }
+    .action {
+      position: absolute;
+      left: 88px;
+      top: 70px;
+      height: unset;
+      width: unset;
+      .berrybuttons[data-up="any"]>a[data-berry="aspear"],
+      .berrybuttons[data-up="sour"]>a[data-berry="aspear"], 
+      .berrybuttons[data-up="spicy"]>a[data-berry="cheri"], 
+      .berrybuttons[data-up="dry"]>a[data-berry="chesto"], 
+      .berrybuttons[data-up="sweet"]>a[data-berry="pecha"],
+      .berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+      .berrybuttons {
+        >a {
+          display: none;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          padding: 5px;
+          background-color: var(--pparty-berry-background);
+          border-radius: 20px;
+          >img { 
+            vertical-align: top;
+            max-height: 20px;
+            max-width: 20px;
+          }
+        }
+        >a[data-berry="pecha"] img {
+          /* this berry is short */
+          margin-top: 1px;
+        }
+      }
+      &.working {
+        opacity: 0.5;
+      }
+      table, a[data-evolve] {
+        /* "thank you" message and evolve button */
+        display: none;
+      }
+    }
+    .expbar, .taste, .extra {
+      display: none;
+    }
+  }
+  >div:hover>.action a[data-berry]:after {
+    border-color: var(--pparty-berry-border);
+  }
+}
+
+/* compact party */
+
+.compact-party, .compact-party .party {
+  display: inline-block;
+}
+.compact-party .party {
+  margin: 10px;
+  width: unset !important;
+  color: var(--cparty-pkmn-text-color);
+
+  a {
+    color: var(--cparty-pkmn-link-color);
+  }
+
+  >div {
+    background: var(--cparty-pkmn-panel-bg);
+    border-color: var(--cparty-pkmn-border-color);
+    box-shadow: none;
+    width: 250px;
+    margin: 0;
+    overflow: hidden;
+
+    &:hover>.action a[data-berry]:after {
+      color: var(--cparty-pkmn-border-color);
+    }
+
+    >.pkmn:before {
+      background-color: var(--cparty-pkmn-platform-color);
+      border-color: var(--cparty-pkmn-platform-edge);
+    }
+
+    >.name a {
+      margin-bottom: 5px;
+      max-width: 140px;
+    }
+
+    >.expbar {
+      width: 140px;
+      height: 25px;
+      margin-top: 2px;
+      background-color: var(--cparty-pkmn-xp-remining);
+      border-color: var(--cparty-pkmn-xp-border);
+      color: var(--cparty-pkmn-xp-text);
+
+      >div {
+        border-color: var(--cparty-pkmn-xp-border);
+        background-color: var(--cparty-pkmn-xp-done);
+      }
+    }
+
+    >.extra {
+      >.happy {
+        display: none;
+      }
+
+      >.nature {
+        width: 165px;
+        margin-left: 5px;
+      }
+    }
+
+    >.action {
+      width: 140px;
+      height: 30px;
+
+      >.berrybuttons {
+        >a {
+          background-color: var(--cparty-pkmn-berry-color);
+          display: none;
+          width: 100%;
+          height: 30px;
+          padding: 3px;
+          box-sizing: border-box;
+
+          >img {
+            height: 25px;
+            vertical-align: top;
+          }
+        }
+      }
+
+      >.berrybuttons[data-up="any"]>a[data-berry="aspear"] {
+        display: inline-block;
+        border-radius: 20px;
+      }
+      >.berrybuttons[data-up="sour"]>a[data-berry="aspear"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="spicy"]>a[data-berry="cheri"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="dry"]>a[data-berry="chesto"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="sweet"]>a[data-berry="pecha"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* delta preview */
+
+.delta-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background: var(--delta-bg-color);
+  >div {
+    padding: 5px;
+  }
+  .pkmn {
+    padding: 5px;
+    &:before {
+      content: var(--pkmn-img);
+    }
+  }
+}
+
+.normal-delta, .fire-delta, .water-delta, .electric-delta,
+.grass-delta, .ice-delta, .fighting-delta, .poison-delta, 
+.ground-delta, .flying-delta, .psychic-delta, .bug-delta,
+.rock-delta, .ghost-delta, .dragon-delta, .dark-delta,
+.steel-delta, .fairy-delta { display: inline-block; }
+
+.delta-list .normal .pkmn:before, .normal-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(168, 168, 120))
+    drop-shadow(-1px 0px 0px rgb(168, 168, 120))
+    drop-shadow(1px 0px 0px rgb(168, 168, 120))
+    drop-shadow(0px 0px 1px rgb(168, 168, 120))
+    drop-shadow(0px -2px 1px rgb(168, 168, 120));
+}
+.delta-list .fire .pkmn:before, .fire-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(240, 128, 48))
+    drop-shadow(-1px 0px 0px rgb(240, 128, 48))
+    drop-shadow(1px 0px 0px rgb(240, 128, 48))
+    drop-shadow(0px 0px 1px rgb(240, 128, 48))
+    drop-shadow(0px -2px 1px rgb(240, 128, 48)); 
+}
+.delta-list .water .pkmn:before, .water-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(104, 144, 240))
+    drop-shadow(-1px 0px 0px rgb(104, 144, 240))
+    drop-shadow(1px 0px 0px rgb(104, 144, 240))
+    drop-shadow(0px 0px 1px rgb(104, 144, 240))
+    drop-shadow(0px -2px 1px rgb(104, 144, 240)); 
+}
+.delta-list .electric .pkmn:before, .electric-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(248, 208, 48))
+    drop-shadow(-1px 0px 0px rgb(248, 208, 48))
+    drop-shadow(1px 0px 0px rgb(248, 208, 48))
+    drop-shadow(0px 0px 1px rgb(248, 208, 48))
+    drop-shadow(0px -2px 1px rgb(248, 208, 48)); 
+}
+.delta-list .grass .pkmn:before, .grass-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(120, 200, 80))
+    drop-shadow(-1px 0px 0px rgb(120, 200, 80))
+    drop-shadow(1px 0px 0px rgb(120, 200, 80))
+    drop-shadow(0px 0px 1px rgb(120, 200, 80))
+    drop-shadow(0px -2px 1px rgb(120, 200, 80));
+}
+.delta-list .ice .pkmn:before, .ice-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(152, 216, 216))
+    drop-shadow(-1px 0px 0px rgb(152, 216, 216))
+    drop-shadow(1px 0px 0px rgb(152, 216, 216))
+    drop-shadow(0px 0px 1px rgb(152, 216, 216))
+    drop-shadow(0px -2px 1px rgb(152, 216, 216));
+}
+.delta-list .fighting .pkmn:before, .fighting-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(192, 48, 40))
+    drop-shadow(-1px 0px 0px rgb(192, 48, 40))
+    drop-shadow(1px 0px 0px rgb(192, 48, 40))
+    drop-shadow(0px 0px 1px rgb(192, 48, 40))
+    drop-shadow(0px -2px 1px rgb(192, 48, 40));
+}
+.delta-list .poison .pkmn:before, .poison-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(160, 64, 160))
+    drop-shadow(-1px 0px 0px rgb(160, 64, 160))
+    drop-shadow(1px 0px 0px rgb(160, 64, 160))
+    drop-shadow(0px 0px 1px rgb(160, 64, 160))
+    drop-shadow(0px -2px 1px rgb(160, 64, 160));
+}
+.delta-list .ground .pkmn:before, .ground-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(224, 192, 104))
+    drop-shadow(-1px 0px 0px rgb(224, 192, 104))
+    drop-shadow(1px 0px 0px rgb(224, 192, 104))
+    drop-shadow(0px 0px 1px rgb(224, 192, 104))
+    drop-shadow(0px -2px 1px rgb(224, 192, 104));
+}
+.delta-list .flying .pkmn:before, .flying-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(168, 144, 240))
+    drop-shadow(-1px 0px 0px rgb(168, 144, 240))
+    drop-shadow(1px 0px 0px rgb(168, 144, 240))
+    drop-shadow(0px 0px 1px rgb(168, 144, 240))
+    drop-shadow(0px -2px 1px rgb(168, 144, 240));
+}
+.delta-list .psychic .pkmn:before, .psychic-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(248, 88, 136))
+    drop-shadow(-1px 0px 0px rgb(248, 88, 136))
+    drop-shadow(1px 0px 0px rgb(248, 88, 136))
+    drop-shadow(0px 0px 1px rgb(248, 88, 136))
+    drop-shadow(0px -2px 1px rgb(248, 88, 136));
+}
+.delta-list .bug .pkmn:before, .bug-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(168, 184, 32))
+    drop-shadow(-1px 0px 0px rgb(168, 184, 32))
+    drop-shadow(1px 0px 0px rgb(168, 184, 32))
+    drop-shadow(0px 0px 1px rgb(168, 184, 32))
+    drop-shadow(0px -2px 1px rgb(168, 184, 32));
+}
+.delta-list .rock .pkmn:before, .rock-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(184, 160, 56))
+    drop-shadow(-1px 0px 0px rgb(184, 160, 56))
+    drop-shadow(1px 0px 0px rgb(184, 160, 56))
+    drop-shadow(0px 0px 1px rgb(184, 160, 56))
+    drop-shadow(0px -2px 1px rgb(184, 160, 56));
+}
+.delta-list .ghost .pkmn:before, .ghost-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(112, 88, 152))
+    drop-shadow(-1px 0px 0px rgb(112, 88, 152))
+    drop-shadow(1px 0px 0px rgb(112, 88, 152))
+    drop-shadow(0px 0px 1px rgb(112, 88, 152))
+    drop-shadow(0px -2px 1px rgb(112, 88, 152));
+}
+.delta-list .dragon .pkmn:before, .dragon-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(112, 56, 248))
+    drop-shadow(-1px 0px 0px rgb(112, 56, 248))
+    drop-shadow(1px 0px 0px rgb(112, 56, 248))
+    drop-shadow(0px 0px 1px rgb(112, 56, 248))
+    drop-shadow(0px -2px 1px rgb(112, 56, 248));
+}
+.delta-list .dark .pkmn:before, .dark-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(112, 88, 72))
+    drop-shadow(-1px 0px 0px rgb(112, 88, 72))
+    drop-shadow(1px 0px 0px rgb(112, 88, 72))
+    drop-shadow(0px 0px 1px rgb(112, 88, 72))
+    drop-shadow(0px -2px 1px rgb(112, 88, 72));
+}
+.delta-list .steel .pkmn:before, .steel-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(184, 184, 208))
+    drop-shadow(-1px 0px 0px rgb(184, 184, 208))
+    drop-shadow(1px 0px 0px rgb(184, 184, 208))
+    drop-shadow(0px 0px 1px rgb(184, 184, 208))
+    drop-shadow(0px -2px 1px rgb(184, 184, 208));
+}
+.delta-list .fairy .pkmn:before, .fairy-delta img { 
+  margin: 5px;
+  filter: 
+    drop-shadow(0px 1px 0px rgb(255, 101, 213))
+    drop-shadow(-1px 0px 0px rgb(255, 101, 213))
+    drop-shadow(1px 0px 0px rgb(255, 101, 213))
+    drop-shadow(0px 0px 1px rgb(255, 101, 213))
+    drop-shadow(0px -2px 1px rgb(255, 101, 213));
+} 

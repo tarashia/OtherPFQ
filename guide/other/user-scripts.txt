@@ -20,5 +20,3 @@ Update: As of Nov 17, 2024 this *should* work with the lab changes. Default high
 [url=https://pokefarm.com/forum/post/6257714]Change notification sound[/url]
 
 [sc=spacer][/sc]
-
-[style] @import "skins/user/b/7/q/journalcss/__extra"; [/style]

@@ -4,23 +4,40 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
 
 [sc=platform-party][pkmnpanel=3mc8] [pkmnpanel=Jg30] [pkmnpanel=kv3l9][/sc]
 
-[hide=Code][sc=code][nobbcode][pkmnpanel=3mc8] [pkmnpanel=Jg30] [pkmnpanel=kv3l9]
+[hide=Short-form, especially for signatures][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
 [style]
 /* These default to the VIEWER's skin colors */
 /* To customize them, just set hex color codes instead */
-@platform-base: @col-bg1;
-@platform-border: @col-border1;
-@name-color: @col-fg1;
-@name-background: @col-bg3;
-@name-border: @col-border3;
-@berry-background: @col-flavour-up;
-@berry-border: @col-fg1;
+--pparty-platform-base: var(--col-bg1);
+--pparty-platform-border: var(--col-border1);
+--pparty-name-color: var(--col-fg1);
+--pparty-name-background: var(--col-bg3);
+--pparty-name-border: var(--col-border3);
+--pparty-berry-background: var(--col-flavour-up);
+--pparty-berry-border: var(--col-fg1);
 /* Set to "block" to show, "none" to hide */
-@display-item: block;
-@display-berries: block;
+.platform-party .helditem { display: block; } /* held item */
+.platform-party .action { display: block; } /* berry buttons */
+[/style][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
+[hide=Full code, for advanced users][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
+[style]
+/* These default to the VIEWER's skin colors */
+/* To customize them, just set hex color codes instead */
+--pparty-platform-base: var(--col-bg1);
+--pparty-platform-border: var(--col-border1);
+--pparty-name-color: var(--col-fg1);
+--pparty-name-background: var(--col-bg3);
+--pparty-name-border: var(--col-border3);
+--pparty-berry-background: var(--col-flavour-up);
+--pparty-berry-border: var(--col-fg1);
+/* Set to "block" to show, "none" to hide */
+.platform-party .helditem { display: block; } /* held item */
+.platform-party .action { display: block; } /* berry buttons */
 
-.party {
+.platform-party, .platform-party .party {
   display: inline-block;
+}
+.platform-party .party {
   &,>div {
     padding: 0;
     margin: 0;
@@ -40,11 +57,10 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
       margin: 0 10px;
       float: unset;
       &::before {
-        background-color: @platform-base;
-        border-color: @platform-border;
+        background-color: var(--pparty-platform-base);
+        border-color: var(--pparty-platform-border);
       }
       .helditem {
-        display: @display-item;
         .itemsprite {
           cursor: unset;
         }
@@ -54,15 +70,15 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
       }
     }
     .name {
-      background-color: @name-background;
-      border: 1px solid @name-border;
+      background-color: var(--pparty-name-background);
+      border: 1px solid var(--pparty-name-border);
       border-radius: 5px;
       margin-top: 1px;
       height: 16px;
       display: flex;
       flex-wrap: nowrap;
       a {
-        color: @name-color;
+        color: var(--pparty-name-color);
         font-weight: normal;
         margin: 0 2px;
         width: 80px !important;
@@ -78,7 +94,6 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
       }
     }
     .action {
-      display: @display-berries;
       position: absolute;
       left: 88px;
       top: 70px;
@@ -99,7 +114,7 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
           height: 20px;
           line-height: 20px;
           padding: 5px;
-          background-color: @berry-background;
+          background-color: var(--pparty-berry-background);
           border-radius: 20px;
           >img { 
             vertical-align: top;
@@ -125,24 +140,17 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
     }
   }
   >div:hover>.action a[data-berry]:after {
-    border-color: @berry-border;
+    border-color: var(--pparty-berry-border);
   }
 }
-[/style][/nobbcode][/sc][/hide]
-[hide=Short-form for signatures][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
-[style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
-@pparty-platform-base: @col-bg1;
-@pparty-platform-border: @col-border1;
-@pparty-name-color: @col-fg1;
-@pparty-name-background: @col-bg3;
-@pparty-name-border: @col-border3;
-@pparty-berry-background: @col-flavour-up;
-@pparty-berry-border: @col-fg1;
-/* Set to "block" to show, "none" to hide */
-@pparty-display-item: block;
-@pparty-display-berries: block;
-
-@import "skins/user/b/7/q/sharedcss/__extra"; 
 [/style][/nobbcode][/sc][/hide][/display]
+
+[style]
+--pparty-platform-base: var(--col-bg1);
+--pparty-platform-border: var(--col-border1);
+--pparty-name-color: var(--col-fg1);
+--pparty-name-background: var(--col-bg3);
+--pparty-name-border: var(--col-border3);
+--pparty-berry-background: var(--col-flavour-up);
+--pparty-berry-border: var(--col-fg1);
+[/style]

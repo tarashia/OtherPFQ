@@ -12,4 +12,5 @@
 
 ][/sc]
 
-[style] @import "skins/user/b/7/q/journalcss/__extra"; [/style]
+[import-style=b7q/journalcss]
+[import-style=b7q/sharedcss-new]

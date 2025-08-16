@@ -7,19 +7,21 @@ This code was updated Jan 1 2024 to work better with holiday changes. Please fee
 Updated again October 2024 to work correctly with showcases. The oran/any berry  does not need a big counterpart, as it only appears as a small berry in the showcase.
 
 [hide=Code][css=user-select:all; font-family:monospace;][nobbcode]/* --- CHANGE ME --- */
+:root {
 /* big berries */
-@sour-big: url("https://static.pokefarm.com/img/events/halloween/sour.candy.big.png");
-@spicy-big: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.big.png");
-@dry-big: url("https://static.pokefarm.com/img/events/halloween/dry.candy.big.png");
-@sweet-big: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.big.png");
-@bitter-big: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.big.png");
+--sour-big: url("https://static.pokefarm.com/img/events/halloween/sour.candy.big.png");
+--spicy-big: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.big.png");
+--dry-big: url("https://static.pokefarm.com/img/events/halloween/dry.candy.big.png");
+--sweet-big: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.big.png");
+--bitter-big: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.big.png");
 /* small berries */
-@sour-small: url("https://static.pokefarm.com/img/events/halloween/sour.candy.png");
-@spicy-small: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.png");
-@dry-small: url("https://static.pokefarm.com/img/events/halloween/dry.candy.png");
-@sweet-small: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.png");
-@bitter-small: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.png");
-@any-small: url("https://static.pokefarm.com/img/events/halloween/neutral.candy.png");
+--sour-small: url("https://static.pokefarm.com/img/events/halloween/sour.candy.png");
+--spicy-small: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.png");
+--dry-small: url("https://static.pokefarm.com/img/events/halloween/dry.candy.png");
+--sweet-small: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.png");
+--bitter-small: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.png");
+--any-small: url("https://static.pokefarm.com/img/events/halloween/neutral.candy.png");
+}
 
 /* --- do not change below this line --- */
 
@@ -40,22 +42,22 @@ Updated again October 2024 to work correctly with showcases. The oran/any berry 
     width: 24px;
   }
   a[data-berry="aspear"] img {
-    background-image: @sour-small !important;
+    background-image: var(--sour-small) !important;
   }
   a[data-berry="cheri"] img {
-    background-image: @spicy-small !important;
+    background-image: var(--spicy-small) !important;
   }
   a[data-berry="chesto"] img {
-    background-image: @dry-small !important;
+    background-image: var(--dry-small) !important;
   }
   a[data-berry="pecha"] img {
-    background-image: @sweet-small !important;
+    background-image: var(--sweet-small) !important;
   }
   a[data-berry="rawst"] img {
-    background-image: @bitter-small !important;
+    background-image: var(--bitter-small) !important;
   }
   a[data-berry="oran"] img {
-    background-image: @any-small !important;
+    background-image: var(--any-small) !important;
   }
 }
 
@@ -76,19 +78,19 @@ Updated again October 2024 to work correctly with showcases. The oran/any berry 
     width: 40px;
   }
   a[data-berry="aspear"] img {
-    background-image: @sour-big !important;
+    background-image: var(--sour-big) !important;
   }
   a[data-berry="cheri"] img {
-    background-image: @spicy-big !important;
+    background-image: var(--spicy-big) !important;
   }
   a[data-berry="chesto"] img {
-    background-image: @dry-big !important;
+    background-image: var(--dry-big) !important;
   }
   a[data-berry="pecha"] img {
-    background-image: @sweet-big !important;
+    background-image: var(--sweet-big) !important;
   }
   a[data-berry="rawst"] img {
-    background-image: @bitter-big !important;
+    background-image: var(--bitter-big) !important;
   }
 }
 
@@ -98,20 +100,20 @@ Updated again October 2024 to work correctly with showcases. The oran/any berry 
   background-repeat: no-repeat;
   background-size: contain;
 }
-.berrydragghost[style*="https://static.pokefarm.com/img/items/aspearberry.png"] {
-  background-image: @sour-small !important;
+.berrydragghost[style*="/img/items/aspearberry.png"] {
+  background-image: var(--sour-small) !important;
 }
-.berrydragghost[style*="https://static.pokefarm.com/img/items/cheriberry.png"]  {
-  background-image: @spicy-small !important;
+.berrydragghost[style*="/img/items/cheriberry.png"]  {
+  background-image: var(--spicy-small) !important;
 }
-.berrydragghost[style*="https://static.pokefarm.com/img/items/chestoberry.png"]  {
-  background-image: @dry-small !important;
+.berrydragghost[style*="/img/items/chestoberry.png"]  {
+  background-image: var(--dry-small) !important;
 }
-.berrydragghost[style*="https://static.pokefarm.com/img/items/pechaberry.png"]  {
-  background-image: @sweet-small !important;
+.berrydragghost[style*="/img/items/pechaberry.png"]  {
+  background-image: var(--sweet-small) !important;
 }
-.berrydragghost[style*="https://static.pokefarm.com/img/items/rawstberry.png"]  {
-  background-image: @bitter-small !important;
+.berrydragghost[style*="/img/items/rawstberry.png"]  {
+  background-image: var(--bitter-small) !important;
 }[/nobbcode][/css][/hide]
 [hide=Halloween candy image URLs][b]Big:[/b]
 https://static.pokefarm.com/img/events/halloween/sour.candy.big.png
@@ -156,4 +158,6 @@ https://static.pokefarm.com/img/events/valentine/neutral.dessert.png
 [/hide]
 [url=https://pokefarm.wiki/Pi_Day]Pi day pie sprites on Wiki[/url]
 
-[url=https://pokefarm.wiki/Fabulous_Fiesta]Carnival/Fiesta food sprites on Wiki[/url][/display]
+[url=https://pokefarm.wiki/Fabulous_Fiesta]Carnival/Fiesta food sprites on Wiki[/url]
+
+Note: You can no longer hot link from the wiki. If you have PFQ versions of the carnival food sprites, *please* PM them to me! I may re-upload the Pi day ones to my own image space, if there's demand for that.[/display]

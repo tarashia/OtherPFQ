@@ -2,47 +2,65 @@
 
 [sc=compact-party][pkmnpanel=3mc8][pkmnpanel=hynl1][/sc]
 
-[hide=Code][sc=code][nobbcode][pkmnpanel=3mc8][pkmnpanel=hynl1]
+[hide=Short-form, especially for signatures][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
 [style]
 /* These default to the VIEWER's skin colors */
 /* To customize them, just set hex color codes instead */
-@pkmn-panel-bg: @col-bg3;
-@pkmn-border-color: @col-border3;
-@pkmn-text-color: @col-fg1;
-@pkmn-link-color: @col-link1;
-@pkmn-platform-color: @col-bg1;
-@pkmn-platform-edge: @col-border1;
-@pkmn-berry-color: @col-flavour-up;
-@pkmn-xp-done: @col-bg1;
-@pkmn-xp-remining: @col-bg3;
-@pkmn-xp-text: @col-fg1;
-@pkmn-xp-border: @col-border3;
+--cparty-pkmn-panel-bg: var(--col-bg3);
+--cparty-pkmn-border-color: var(--col-border3);
+--cparty-pkmn-text-color: var(--col-fg1);
+--cparty-pkmn-link-color: var(--col-link1);
+--cparty-pkmn-platform-color: var(--col-bg1);
+--cparty-pkmn-platform-edge: var(--col-border1);
+--cparty-pkmn-berry-color: var(--col-flavour-up);
+--cparty-pkmn-xp-done: var(--col-bg1);
+--cparty-pkmn-xp-remining: var(--col-bg3);
+--cparty-pkmn-xp-text: var(--col-fg1);
+--cparty-pkmn-xp-border: var(--col-border3); 
+[/style][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
+[hide=Full code, for advanced users][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
+[style]
+/* These default to the VIEWER's skin colors */
+/* To customize them, just set hex color codes instead */
+--cparty-pkmn-panel-bg: var(--col-bg3);
+--cparty-pkmn-border-color: var(--col-border3);
+--cparty-pkmn-text-color: var(--col-fg1);
+--cparty-pkmn-link-color: var(--col-link1);
+--cparty-pkmn-platform-color: var(--col-bg1);
+--cparty-pkmn-platform-edge: var(--col-border1);
+--cparty-pkmn-berry-color: var(--col-flavour-up);
+--cparty-pkmn-xp-done: var(--col-bg1);
+--cparty-pkmn-xp-remining: var(--col-bg3);
+--cparty-pkmn-xp-text: var(--col-fg1);
+--cparty-pkmn-xp-border: var(--col-border3); 
 
-.party {
+.compact-party, .compact-party .party {
   display: inline-block;
+}
+.compact-party .party {
   margin: 10px;
   width: unset !important;
-  color: @pkmn-text-color;
+  color: var(--cparty-pkmn-text-color);
 
   a {
-    color: @pkmn-link-color;
+    color: var(--cparty-pkmn-link-color);
   }
 
   >div {
-    background: @pkmn-panel-bg;
-    border-color: @pkmn-border-color;
+    background: var(--cparty-pkmn-panel-bg);
+    border-color: var(--cparty-pkmn-border-color);
     box-shadow: none;
     width: 250px;
     margin: 0;
     overflow: hidden;
 
     &:hover>.action a[data-berry]:after {
-      color: @pkmn-border-color;
+      color: var(--cparty-pkmn-border-color);
     }
 
     >.pkmn:before {
-      background-color: @pkmn-platform-color;
-      border-color: @pkmn-platform-edge;
+      background-color: var(--cparty-pkmn-platform-color);
+      border-color: var(--cparty-pkmn-platform-edge);
     }
 
     >.name a {
@@ -54,13 +72,13 @@
       width: 140px;
       height: 25px;
       margin-top: 2px;
-      background-color: @pkmn-xp-remining;
-      border-color: @pkmn-xp-border;
-      color: @pkmn-xp-text;
+      background-color: var(--cparty-pkmn-xp-remining);
+      border-color: var(--cparty-pkmn-xp-border);
+      color: var(--cparty-pkmn-xp-text);
 
       >div {
-        border-color: @pkmn-xp-border;
-        background-color: @pkmn-xp-done;
+        border-color: var(--cparty-pkmn-xp-border);
+        background-color: var(--cparty-pkmn-xp-done);
       }
     }
 
@@ -81,7 +99,7 @@
 
       >.berrybuttons {
         >a {
-          background-color: @pkmn-berry-color;
+          background-color: var(--cparty-pkmn-berry-color);
           display: none;
           width: 100%;
           height: 30px;
@@ -117,22 +135,18 @@
     }
   }
 }
-[/style][/nobbcode][/sc][/hide]
-[hide=Short-form for signatures][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
-[style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
-@cparty-pkmn-panel-bg: @col-bg3;
-@cparty-pkmn-border-color: @col-border3;
-@cparty-pkmn-text-color: @col-fg1;
-@cparty-pkmn-link-color: @col-link1;
-@cparty-pkmn-platform-color: @col-bg1;
-@cparty-pkmn-platform-edge: @col-border1;
-@cparty-pkmn-berry-color: @col-flavour-up;
-@cparty-pkmn-xp-done: @col-bg1;
-@cparty-pkmn-xp-remining: @col-bg3;
-@cparty-pkmn-xp-text: @col-fg1;
-@cparty-pkmn-xp-border: @col-border3;
-
-@import "skins/user/b/7/q/sharedcss/__extra"; 
 [/style][/nobbcode][/sc][/hide][/display]
+
+[style]
+--cparty-pkmn-panel-bg: var(--col-bg3);
+--cparty-pkmn-border-color: var(--col-border3);
+--cparty-pkmn-text-color: var(--col-fg1);
+--cparty-pkmn-link-color: var(--col-link1);
+--cparty-pkmn-platform-color: var(--col-bg1);
+--cparty-pkmn-platform-edge: var(--col-border1);
+--cparty-pkmn-berry-color: var(--col-flavour-up);
+--cparty-pkmn-xp-done: var(--col-bg1);
+--cparty-pkmn-xp-remining: var(--col-bg3);
+--cparty-pkmn-xp-text: var(--col-fg1);
+--cparty-pkmn-xp-border: var(--col-border3); 
+[/style]

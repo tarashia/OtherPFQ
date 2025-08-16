@@ -3,44 +3,15 @@
 (This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
 
 [sc=preview-table][table][tr][th]CSS Preview[/th][th]Actual Delta[/th][/tr]
-[tr][td][sc=poison-delta][img]https://static.pokefarm.com/img/pkmn/5/c/2.png[/img][/sc][/td]
+[tr][td][sc=poison-delta][pkmn=Jolteon !big][/sc][/td]
 [td][url=https://pfq.link/?Jyw571][img]https://pfq.link/?Jyw571=platform.png[/img][/url][/td][/tr]
-[tr][td][sc=fairy-delta][img]https://static.pokefarm.com/img/pkmn/m/s/8.png[/img][/sc][/td]
+[tr][td][sc=fairy-delta][pkmn=Serperior !big][/sc][/td]
 [td][url=https://pfq.link/?nBf0B][img]https://pfq.link/?nBf0B=platform.png[/img][/url][/td][/tr][/table][/sc]
-[hide=Code][sc=code][nobbcode][sc=psychic-delta][img]https://static.pokefarm.com/img/pkmn/5/c/2.png[/img][/sc]
-[sc=fairy-delta][img]https://static.pokefarm.com/img/pkmn/m/s/8.png[/img][/sc]
+[hide=Code][sc=code][nobbcode][sc=poison-delta][pkmn=Jolteon !big][/sc] [sc=fairy-delta][pkmn=Serperior !big][/sc]
+[import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
+[display=Preview all delta types for a single Pokemon]This demo uses the same base code as above, but previews all 18 types for a single Pokemon at once, while only needing to change a single line of code. Get the image code for the Pokemon you want to preview as above, then paste it into the --pkmn-img variable at the top of the code block. If you want to preview the deltas on a different color background, or a field image, set --background.
 
-[style]
-.delta-shadow(@color) {
-  margin: 5px;
-  filter: 
-    drop-shadow(0px 1px 0px @color)
-    drop-shadow(-1px 0px 0px @color)
-    drop-shadow(1px 0px 0px @color)
-    drop-shadow(0px 0px 1px @color)
-    drop-shadow(0px -2px 1px @color);
-}
-
-.normal-delta img { .delta-shadow(rgb(168, 168, 120)); }
-.fire-delta img { .delta-shadow(rgb(240, 128, 48)); }
-.water-delta img { .delta-shadow(rgb(104, 144, 240)); }
-.electric-delta img { .delta-shadow(rgb(248, 208, 48)); }
-.grass-delta img { .delta-shadow(rgb(120, 200, 80)); }
-.ice-delta img { .delta-shadow(rgb(152, 216, 216)); }
-.fighting-delta img { .delta-shadow(rgb(192, 48, 40)); }
-.poison-delta img { .delta-shadow(rgb(160, 64, 160)); }
-.ground-delta img { .delta-shadow(rgb(224, 192, 104)); }
-.flying-delta img { .delta-shadow(rgb(168, 144, 240)); }
-.psychic-delta img { .delta-shadow(rgb(248, 88, 136)); }
-.bug-delta img { .delta-shadow(rgb(168, 184, 32)); }
-.rock-delta img { .delta-shadow(rgb(184, 160, 56)); }
-.ghost-delta img { .delta-shadow(rgb(112, 88, 152)); }
-.dragon-delta img { .delta-shadow(rgb(112, 56, 248)); }
-.dark-delta img { .delta-shadow(rgb(112, 88, 72)); }
-.steel-delta img { .delta-shadow(rgb(184, 184, 208)); }
-.fairy-delta img { .delta-shadow(rgb(255, 101, 213)); } 
-[/style][/nobbcode][/sc][/hide][/display]
-[display=Preview all delta types for a single Pokemon]This demo uses the same base code as above, but previews all 18 types for a single Pokemon at once, while only needing to change a single line of code. Get the image code for the Pokemon you want to preview as above, then paste it into the @pkmn-img variable at the top of the code block. If you want to preview the deltas on a different color background, or a field image, set @background.
+Note: You used to be able to use wiki images in this code. Sadly, this is no longer possible - you will need to use your dex, or a regular version of the Pokemon, or the !big pkmn code to get the image link to do the preview.
 
 [sc=delta-list]
 [sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
@@ -62,62 +33,7 @@
 [sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
 [sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
 [/sc]
-[hide=Code][sc=code][nobbcode][style]
-/* https://pokefarm.wiki/Category:List_of_Pok%C3%A9mon */
-@pkmn-img: 'https://static.pokefarm.com/img/pkmn/u/7/n/w.png';
-
-/* change to a hex color code of choice, or url('image_link') */
-@bg-color: transparent;
-
-.delta-list {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  background: @bg-color;
-  >div {
-    padding: 5px;
-  }
-  .pkmn {
-    padding: 5px;
-    &:before {
-      content: url(@pkmn-img);
-    }
-  }
-}
-
-.delta-shadow(@color) {
-  margin: 5px;
-  filter: 
-    drop-shadow(0px 1px 0px @color)
-    drop-shadow(-1px 0px 0px @color)
-    drop-shadow(1px 0px 0px @color)
-    drop-shadow(0px 0px 1px @color)
-    drop-shadow(0px -2px 1px @color);
-}
-
-.delta-list .normal .pkmn:before { .delta-shadow(rgb(168, 168, 120)); }
-.delta-list .fire .pkmn:before { .delta-shadow(rgb(240, 128, 48)); }
-.delta-list .water .pkmn:before { .delta-shadow(rgb(104, 144, 240)); }
-.delta-list .electric .pkmn:before { .delta-shadow(rgb(248, 208, 48)); }
-.delta-list .grass .pkmn:before { .delta-shadow(rgb(120, 200, 80)); }
-.delta-list .ice .pkmn:before { .delta-shadow(rgb(152, 216, 216)); }
-.delta-list .fighting .pkmn:before { .delta-shadow(rgb(192, 48, 40)); }
-.delta-list .poison .pkmn:before { .delta-shadow(rgb(160, 64, 160)); }
-.delta-list .ground .pkmn:before { .delta-shadow(rgb(224, 192, 104)); }
-.delta-list .flying .pkmn:before { .delta-shadow(rgb(168, 144, 240)); }
-.delta-list .psychic .pkmn:before { .delta-shadow(rgb(248, 88, 136)); }
-.delta-list .bug .pkmn:before { .delta-shadow(rgb(168, 184, 32)); }
-.delta-list .rock .pkmn:before { .delta-shadow(rgb(184, 160, 56)); }
-.delta-list .ghost .pkmn:before { .delta-shadow(rgb(112, 88, 152)); }
-.delta-list .dragon .pkmn:before { .delta-shadow(rgb(112, 56, 248)); }
-.delta-list .dark .pkmn:before { .delta-shadow(rgb(112, 88, 72)); }
-.delta-list .steel .pkmn:before { .delta-shadow(rgb(184, 184, 208)); }
-.delta-list .fairy .pkmn:before { .delta-shadow(rgb(255, 101, 213)); } 
-[/style]
-
-[sc=delta-list]
+[hide=Code][sc=code][nobbcode][sc=delta-list]
 [sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
 [sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
 [sc=water][sc=pkmn][/sc][sc=type][type=water][/sc][/sc]
@@ -136,12 +52,21 @@
 [sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
 [sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
 [sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
-[/sc][/nobbcode][/sc][/hide][/display]
+[/sc]
+[style]
+--delta-bg-color: transparent;
+--pkmn-img: url("https://r2.pokefarm.com/img/pkmn/u/7/n/w.png?t=1481502727");
+[/style]
+[import-style=b7q/sharedcss-new]
+[/nobbcode][/sc][/hide][/display]
 
-[style] @import "skins/user/b/7/q/journalcss/__extra"; 
+[style]
 .preview-table tr td:nth-of-type(1) {
   text-align: center;
   vertical-align: bottom;
   padding-bottom: 30px;
 }
+
+--delta-bg-color: transparent;
+--pkmn-img: url("https://r2.pokefarm.com/img/pkmn/u/7/n/w.png?t=1481502727");
 [/style]
