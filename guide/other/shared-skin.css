@@ -1,6 +1,6 @@
 /* platform party */
 
-.platform-party, .platform-party .party {
+.platform-party:has(>.party), .platform-party .party {
   display: inline-block;
 }
 .platform-party .party {
@@ -112,7 +112,7 @@
 
 /* compact party */
 
-.compact-party, .compact-party .party {
+.compact-party:has(>.party), .compact-party .party {
   display: inline-block;
 }
 .compact-party .party {

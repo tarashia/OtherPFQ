@@ -18,7 +18,8 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
 /* Set to "block" to show, "none" to hide */
 .platform-party .helditem { display: block; } /* held item */
 .platform-party .action { display: block; } /* berry buttons */
-[/style][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
+[/style]
+[import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
 [hide=Full code, for advanced users][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
 [style]
 /* These default to the VIEWER's skin colors */
@@ -34,7 +35,7 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
 .platform-party .helditem { display: block; } /* held item */
 .platform-party .action { display: block; } /* berry buttons */
 
-.platform-party, .platform-party .party {
+.platform-party:has(>.party), .platform-party .party {
   display: inline-block;
 }
 .platform-party .party {

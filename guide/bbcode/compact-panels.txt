@@ -17,7 +17,8 @@
 --cparty-pkmn-xp-remining: var(--col-bg3);
 --cparty-pkmn-xp-text: var(--col-fg1);
 --cparty-pkmn-xp-border: var(--col-border3); 
-[/style][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
+[/style]
+[import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
 [hide=Full code, for advanced users][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
 [style]
 /* These default to the VIEWER's skin colors */
@@ -34,7 +35,7 @@
 --cparty-pkmn-xp-text: var(--col-fg1);
 --cparty-pkmn-xp-border: var(--col-border3); 
 
-.compact-party, .compact-party .party {
+.compact-party:has(>.party), .compact-party .party {
   display: inline-block;
 }
 .compact-party .party {
