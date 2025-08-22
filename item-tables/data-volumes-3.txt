@@ -1,0 +1,70 @@
+[sc=autoParadox]
+[table]
+[tr]
+[th=4x1]Past Paradox[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Brute Bonnet]"][tip=Data Volume: Brute Bonnet][item=Data Volume: Brute Bonnet][/tip] x[inventory=Data Volume: Brute Bonnet][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Flutter Mane]"][tip=Data Volume: Flutter Mane][item=Data Volume: Flutter Mane][/tip] x[inventory=Data Volume: Flutter Mane][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Great Tusk]"][tip=Data Volume: Great Tusk][item=Data Volume: Great Tusk][/tip] x[inventory=Data Volume: Great Tusk][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Roaring Moon]"][tip=Data Volume: Roaring Moon][item=Data Volume: Roaring Moon][/tip] x[inventory=Data Volume: Roaring Moon][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Sandy Shocks]"][tip=Data Volume: Sandy Shocks][item=Data Volume: Sandy Shocks][/tip] x[inventory=Data Volume: Sandy Shocks][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Scream Tail]"][tip=Data Volume: Scream Tail][item=Data Volume: Scream Tail][/tip] x[inventory=Data Volume: Scream Tail][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Slither Wing]"][tip=Data Volume: Slither Wing][item=Data Volume: Slither Wing][/tip] x[inventory=Data Volume: Slither Wing][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Winged King]"][tip=Data Volume: Winged King][item=Data Volume: Winged King][/tip] x[inventory=Data Volume: Winged King][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Walking Wake]"][tip=Data Volume: Walking Wake][item=Data Volume: Walking Wake][/tip] x[inventory=Data Volume: Walking Wake][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Raging Bolt]"][tip=Data Volume: Raging Bolt][item=Data Volume: Raging Bolt][/tip] x[inventory=Data Volume: Raging Bolt][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Gouging Fire]"][tip=Data Volume: Gouging Fire][item=Data Volume: Gouging Fire][/tip] x[inventory=Data Volume: Gouging Fire][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume Q: Stone Horn]"][tip=Data Volume Q: Stone Horn][item=Data Volume Q: Stone Horn][/tip] x[inventory=Data Volume Q: Stone Horn][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume Q: Tangled Vines]"][tip=Data Volume Q: Tangled Vines][item=Data Volume Q: Tangled Vines][/tip] x[inventory=Data Volume Q: Tangled Vines][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume Q: Feral Fluff]"][tip=Data Volume Q: Feral Fluff][item=Data Volume Q: Feral Fluff][/tip] x[inventory=Data Volume Q: Feral Fluff][/sc][/td]
+[td=2x1][/td]
+[/tr]
+
+[tr]
+[th=4x1]Future Paradox[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Iron Bundle]"][tip=Data Volume: Iron Bundle][item=Data Volume: Iron Bundle][/tip] x[inventory=Data Volume: Iron Bundle][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Hands]"][tip=Data Volume: Iron Hands][item=Data Volume: Iron Hands][/tip] x[inventory=Data Volume: Iron Hands][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Jugulis]"][tip=Data Volume: Iron Jugulis][item=Data Volume: Iron Jugulis][/tip] x[inventory=Data Volume: Iron Jugulis][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Moth]"][tip=Data Volume: Iron Moth][item=Data Volume: Iron Moth][/tip] x[inventory=Data Volume: Iron Moth][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Iron Thorns]"][tip=Data Volume: Iron Thorns][item=Data Volume: Iron Thorns][/tip] x[inventory=Data Volume: Iron Thorns][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Treads]"][tip=Data Volume: Iron Treads][item=Data Volume: Iron Treads][/tip] x[inventory=Data Volume: Iron Treads][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Valiant]"][tip=Data Volume: Iron Valiant][item=Data Volume: Iron Valiant][/tip] x[inventory=Data Volume: Iron Valiant][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Serpent]"][tip=Data Volume: Iron Serpent][item=Data Volume: Iron Serpent][/tip] x[inventory=Data Volume: Iron Serpent][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume: Iron Leaves]"][tip=Data Volume: Iron Leaves][item=Data Volume: Iron Leaves][/tip] x[inventory=Data Volume: Iron Leaves][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Boulder]"][tip=Data Volume: Iron Boulder][item=Data Volume: Iron Boulder][/tip] x[inventory=Data Volume: Iron Boulder][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume: Iron Crown]"][tip=Data Volume: Iron Crown][item=Data Volume: Iron Crown][/tip] x[inventory=Data Volume: Iron Crown][/sc][/td]
+[td][sc="autohide-[inventory=Data Volume Q: Iron Seagrass]"][tip=Data Volume Q: Iron Seagrass][item=Data Volume Q: Iron Seagrass][/tip] x[inventory=Data Volume Q: Iron Seagrass][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Data Volume Q: Iron Cranium]"][tip=Data Volume Q: Iron Cranium][item=Data Volume Q: Iron Cranium][/tip] x[inventory=Data Volume Q: Iron Cranium][/sc][/td]
+[td=3x1][/td]
+[/tr]
+[/table]
+[/sc]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]
