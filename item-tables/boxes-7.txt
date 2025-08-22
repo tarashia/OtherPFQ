@@ -1,0 +1,42 @@
+[table]
+[tr]
+ [th=6x1]Boxes[/th]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Cute Box]"][tip=Cute Box][item=Cute Box][/tip] x[inventory=Cute Box][/sc][/td]
+ [td][sc="autohide-[inventory=Dainty Box]"][tip=Dainty Box][item=Dainty Box][/tip] x[inventory=Dainty Box][/sc][/td]
+ [td][sc="autohide-[inventory=Deluxe Box]"][tip=Deluxe Box][item=Deluxe Box][/tip] x[inventory=Deluxe Box][/sc][/td]
+ [td][sc="autohide-[inventory=Glittery Box]"][tip=Glittery Box][item=Glittery Box][/tip] x[inventory=Glittery Box][/sc][/td]
+ [td][sc="autohide-[inventory=Gorgeous Box]"][tip=Gorgeous Box][item=Gorgeous Box][/tip] x[inventory=Gorgeous Box][/sc][/td]
+ [td][sc="autohide-[inventory=Hard Box]"][tip=Hard Box][item=Hard Box][/tip] x[inventory=Hard Box][/sc][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Heavy Box]"][tip=Heavy Box][item=Heavy Box][/tip] x[inventory=Heavy Box][/sc][/td]
+ [td][sc="autohide-[inventory=Light Box]"][tip=Light Box][item=Light Box][/tip] x[inventory=Light Box][/sc][/td]
+ [td][sc="autohide-[inventory=Nifty Box]"][tip=Nifty Box][item=Nifty Box][/tip] x[inventory=Nifty Box][/sc][/td]
+ [td][sc="autohide-[inventory=Pretty Box]"][tip=Pretty Box][item=Pretty Box][/tip] x[inventory=Pretty Box][/sc][/td]
+ [td][sc="autohide-[inventory=Shiny Box]"][tip=Shiny Box][item=Shiny Box][/tip] x[inventory=Shiny Box][/sc][/td]
+ [td][sc="autohide-[inventory=Sinister Box]"][tip=Sinister Box][item=Sinister Box][/tip] x[inventory=Sinister Box][/sc][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Box Box]"][tip=Box Box][item=Box Box][/tip] x[inventory=Box Box][/sc][/td]
+ [td][sc="autohide-[inventory=Box Box Box]"][tip=Box Box Box][item=Box Box Box][/tip] x[inventory=Box Box Box][/sc][/td]
+ [td][sc="autohide-[inventory=Gragon's Stash]"][tip=Gragon's Stash][item=Gragon's Stash][/tip] x[inventory=Gragon's Stash][/sc][/td]
+[td=3x1][/td]
+[/tr]
+
+[tr]
+[th]Total: [math][inventory=Cute Box]+[inventory=Dainty Box]+[inventory=Deluxe Box]+[inventory=Glittery Box]+[inventory=Gorgeous Box]+[inventory=Hard Box]+[inventory=Heavy Box]+[inventory=Light Box]+[inventory=Nifty Box]+[inventory=Pretty Box]+[inventory=Shiny Box]+[inventory=Sinister Box]+[inventory=Box Box]*21+[inventory=Box Box Box]*126+[inventory=Gragon's Stash]*630[/math] 
+[/th]
+[td=5x1][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

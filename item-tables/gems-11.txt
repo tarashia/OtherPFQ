@@ -1,0 +1,115 @@
+[sc=medgems][table][tr][th]Type[/th][th]# Medium[/th][th]# Flawless[/th][/tr]
+
+[tr][th][type=Normal][/th]
+[td][sc="autohide-[math]floor([inventory=Normal Gem]/11)+[inventory=Medium Normal Gem]+(10*[inventory=Large Normal Gem])[/math]]"][item=Medium Normal Gem] [number][math]floor([inventory=Normal Gem]/11)+[inventory=Medium Normal Gem]+(10*[inventory=Large Normal Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Normal Gem]"][item=Flawless Normal Gem] [inventory=Flawless Normal Gem][/sc][/td][/tr]
+
+[tr][th][type=Fire][/th]
+[td][sc="autohide-[math]floor([inventory=Fire Gem]/11)+[inventory=Medium Fire Gem]+(10*[inventory=Large Fire Gem])[/math]"][item=Medium Fire Gem] [number][math]floor([inventory=Fire Gem]/11)+[inventory=Medium Fire Gem]+(10*[inventory=Large Fire Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Fire Gem]"][item=Flawless Fire Gem] [inventory=Flawless Fire Gem][/sc][/td][/tr]
+
+[tr][th][type=Water][/th][td][sc="autohide-[math]floor([inventory=Water Gem]/11)+[inventory=Medium Water Gem]+(10*[inventory=Large Water Gem])[/math]"][item=Medium Water Gem] [number][math]floor([inventory=Water Gem]/11)+[inventory=Medium Water Gem]+(10*[inventory=Large Water Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Water Gem]"][item=Flawless Water Gem] [inventory=Flawless Water Gem][/sc][/td][/tr]
+
+[tr][th][type=Electric][/th][td][sc="autohide-[math]floor([inventory=Electric Gem]/11)+[inventory=Medium Electric Gem]+(10*[inventory=Large Electric Gem])[/math]"][item=Medium Electric Gem] [number][math]floor([inventory=Electric Gem]/11)+[inventory=Medium Electric Gem]+(10*[inventory=Large Electric Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Electric Gem]"][item=Flawless Electric Gem] [inventory=Flawless Electric Gem][/sc][/td][/tr]
+
+[tr][th][type=Grass][/th][td][sc="autohide-[math]floor([inventory=Grass Gem]/11)+[inventory=Medium Grass Gem]+(10*[inventory=Large Grass Gem])[/math]"][item=Medium Grass Gem] [number][math]floor([inventory=Grass Gem]/11)+[inventory=Medium Grass Gem]+(10*[inventory=Large Grass Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Grass Gem]"][item=Flawless Grass Gem] [inventory=Flawless Grass Gem][/sc][/td][/tr]
+
+[tr][th][type=Ice][/th][td][sc="autohide-[math]floor([inventory=Ice Gem]/11)+[inventory=Medium Ice Gem]+(10*[inventory=Large Ice Gem])[/math]"][item=Medium Ice Gem] [number][math]floor([inventory=Ice Gem]/11)+[inventory=Medium Ice Gem]+(10*[inventory=Large Ice Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Ice Gem]"][item=Flawless Ice Gem] [inventory=Flawless Ice Gem][/sc][/td][/tr]
+
+[tr][th][type=Fighting][/th][td][sc="autohide-[math]floor([inventory=Fighting Gem]/11)+[inventory=Medium Fighting Gem]+(10*[inventory=Large Fighting Gem])[/math]"][item=Medium Fighting Gem] [number][math]floor([inventory=Fighting Gem]/11)+[inventory=Medium Fighting Gem]+(10*[inventory=Large Fighting Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Fighting Gem]"][item=Flawless Fighting Gem] [inventory=Flawless Fighting Gem][/sc][/td][/tr]
+
+[tr][th][type=Poison][/th][td][sc="autohide-[math]floor([inventory=Poison Gem]/11)+[inventory=Medium Poison Gem]+(10*[inventory=Large Poison Gem])[/math]"][item=Medium Poison Gem] [number][math]floor([inventory=Poison Gem]/11)+[inventory=Medium Poison Gem]+(10*[inventory=Large Poison Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Poison Gem]"][item=Flawless Poison Gem] [inventory=Flawless Poison Gem][/sc][/td][/tr]
+
+[tr][th][type=Ground][/th][td][sc="autohide-[math]floor([inventory=Ground Gem]/11)+[inventory=Medium Ground Gem]+(10*[inventory=Large Ground Gem])[/math]"][item=Medium Ground Gem] [number][math]floor([inventory=Ground Gem]/11)+[inventory=Medium Ground Gem]+(10*[inventory=Large Ground Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Ground Gem]"][item=Flawless Ground Gem] [inventory=Flawless Ground Gem][/sc][/td][/tr]
+
+[tr][th][type=Flying][/th][td][sc="autohide-[math]floor([inventory=Flying Gem]/11)+[inventory=Medium Flying Gem]+(10*[inventory=Large Flying Gem])[/math]"][item=Medium Flying Gem] [number][math]floor([inventory=Flying Gem]/11)+[inventory=Medium Flying Gem]+(10*[inventory=Large Flying Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Flying Gem]"][item=Flawless Flying Gem] [inventory=Flawless Flying Gem][/sc][/td][/tr]
+
+[tr][th][type=Psychic][/th][td][sc="autohide-[math]floor([inventory=Psychic Gem]/11)+[inventory=Medium Psychic Gem]+(10*[inventory=Large Psychic Gem])[/math]"][item=Medium Psychic Gem] [number][math]floor([inventory=Psychic Gem]/11)+[inventory=Medium Psychic Gem]+(10*[inventory=Large Psychic Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Psychic Gem]"][item=Flawless Psychic Gem] [inventory=Flawless Psychic Gem][/sc][/td][/tr]
+
+[tr][th][type=Bug][/th][td][sc="autohide-[math]floor([inventory=Bug Gem]/11)+[inventory=Medium Bug Gem]+(10*[inventory=Large Bug Gem])[/math]"][item=Medium Bug Gem] [number][math]floor([inventory=Bug Gem]/11)+[inventory=Medium Bug Gem]+(10*[inventory=Large Bug Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Bug Gem]"][item=Flawless Bug Gem] [inventory=Flawless Bug Gem][/sc][/td][/tr]
+
+[tr][th][type=Rock][/th][td][sc="autohide-[math]floor([inventory=Rock Gem]/11)+[inventory=Medium Rock Gem]+(10*[inventory=Large Rock Gem])[/math]"][item=Medium Rock Gem] [number][math]floor([inventory=Rock Gem]/11)+[inventory=Medium Rock Gem]+(10*[inventory=Large Rock Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Rock Gem]"][item=Flawless Rock Gem] [inventory=Flawless Rock Gem][/sc][/td][/tr]
+
+[tr][th][type=Ghost][/th][td][sc="autohide-[math]floor([inventory=Ghost Gem]/11)+[inventory=Medium Ghost Gem]+(10*[inventory=Large Ghost Gem])[/math]"][item=Medium Ghost Gem] [number][math]floor([inventory=Ghost Gem]/11)+[inventory=Medium Ghost Gem]+(10*[inventory=Large Ghost Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Ghost Gem]"][item=Flawless Ghost Gem] [inventory=Flawless Ghost Gem][/sc][/td][/tr]
+
+[tr][th][type=Dragon][/th][td][sc="autohide-[math]floor([inventory=Dragon Gem]/11)+[inventory=Medium Dragon Gem]+(10*[inventory=Large Dragon Gem])[/math]"][item=Medium Dragon Gem] [number][math]floor([inventory=Dragon Gem]/11)+[inventory=Medium Dragon Gem]+(10*[inventory=Large Dragon Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Dragon Gem]"][item=Flawless Dragon Gem] [inventory=Flawless Dragon Gem][/sc][/td][/tr]
+
+[tr][th][type=Dark][/th][td][sc="autohide-[math]floor([inventory=Dark Gem]/11)+[inventory=Medium Dark Gem]+(10*[inventory=Large Dark Gem])[/math]"][item=Medium Dark Gem] [number][math]floor([inventory=Dark Gem]/11)+[inventory=Medium Dark Gem]+(10*[inventory=Large Dark Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Dark Gem]"][item=Flawless Dark Gem] [inventory=Flawless Dark Gem][/sc][/td][/tr]
+
+[tr][th][type=Steel][/th][td][sc="autohide-[math]floor([inventory=Steel Gem]/11)+[inventory=Medium Steel Gem]+(10*[inventory=Large Steel Gem])[/math]"][item=Medium Steel Gem] [number][math]floor([inventory=Steel Gem]/11)+[inventory=Medium Steel Gem]+(10*[inventory=Large Steel Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Steel Gem]"][item=Flawless Steel Gem] [inventory=Flawless Steel Gem][/sc][/td][/tr]
+
+[tr][th][type=Fairy][/th][td][sc="autohide-[math]floor([inventory=Fairy Gem]/11)+[inventory=Medium Fairy Gem]+(10*[inventory=Large Fairy Gem])[/math]"][item=Medium Fairy Gem] [number][math]floor([inventory=Fairy Gem]/11)+[inventory=Medium Fairy Gem]+(10*[inventory=Large Fairy Gem])[/math][/number][/sc][/td]
+[td][sc="autohide-[inventory=Flawless Fairy Gem]"][item=Flawless Fairy Gem] [inventory=Flawless Fairy Gem][/sc][/td][/tr]
+
+[tr][th]Totals[/th]
+
+[td][number][math]
+[number][math]floor([inventory=Normal Gem]/11)+[inventory=Medium Normal Gem]+(10*[inventory=Large Normal Gem])[/math][/number]+
+[number][math]floor([inventory=Fire Gem]/11)+[inventory=Medium Fire Gem]+(10*[inventory=Large Fire Gem])[/math][/number]+
+[number][math]floor([inventory=Water Gem]/11)+[inventory=Medium Water Gem]+(10*[inventory=Large Water Gem])[/math][/number]+
+[number][math]floor([inventory=Electric Gem]/11)+[inventory=Medium Electric Gem]+(10*[inventory=Large Electric Gem])[/math][/number]+
+[number][math]floor([inventory=Grass Gem]/11)+[inventory=Medium Grass Gem]+(10*[inventory=Large Grass Gem])[/math][/number]+
+[number][math]floor([inventory=Ice Gem]/11)+[inventory=Medium Ice Gem]+(10*[inventory=Large Ice Gem])[/math][/number]+
+[number][math]floor([inventory=Fighting Gem]/11)+[inventory=Medium Fighting Gem]+(10*[inventory=Large Fighting Gem])[/math][/number]+
+[number][math]floor([inventory=Poison Gem]/11)+[inventory=Medium Poison Gem]+(10*[inventory=Large Poison Gem])[/math][/number]+
+[number][math]floor([inventory=Ground Gem]/11)+[inventory=Medium Ground Gem]+(10*[inventory=Large Ground Gem])[/math][/number]+
+[number][math]floor([inventory=Flying Gem]/11)+[inventory=Medium Flying Gem]+(10*[inventory=Large Flying Gem])[/math][/number]+
+[number][math]floor([inventory=Psychic Gem]/11)+[inventory=Medium Psychic Gem]+(10*[inventory=Large Psychic Gem])[/math][/number]+
+[number][math]floor([inventory=Bug Gem]/11)+[inventory=Medium Bug Gem]+(10*[inventory=Large Bug Gem])[/math][/number]+
+[number][math]floor([inventory=Rock Gem]/11)+[inventory=Medium Rock Gem]+(10*[inventory=Large Rock Gem])[/math][/number]+
+[number][math]floor([inventory=Ghost Gem]/11)+[inventory=Medium Ghost Gem]+(10*[inventory=Large Ghost Gem])[/math][/number]+
+[number][math]floor([inventory=Dragon Gem]/11)+[inventory=Medium Dragon Gem]+(10*[inventory=Large Dragon Gem])[/math][/number]+
+[number][math]floor([inventory=Dark Gem]/11)+[inventory=Medium Dark Gem]+(10*[inventory=Large Dark Gem])[/math][/number]+
+[number][math]floor([inventory=Steel Gem]/11)+[inventory=Medium Steel Gem]+(10*[inventory=Large Steel Gem])[/math][/number]+
+[number][math]floor([inventory=Fairy Gem]/11)+[inventory=Medium Fairy Gem]+(10*[inventory=Large Fairy Gem])[/math][/number]
+[/math][/number][/td]
+
+[td][number][math]
+[inventory=Flawless Normal Gem]+
+[inventory=Flawless Fire Gem]+
+[inventory=Flawless Water Gem]+
+[inventory=Flawless Electric Gem]+
+[inventory=Flawless Grass Gem]+
+[inventory=Flawless Ice Gem]+
+[inventory=Flawless Fighting Gem]+
+[inventory=Flawless Poison Gem]+
+[inventory=Flawless Ground Gem]+
+[inventory=Flawless Flying Gem]+
+[inventory=Flawless Psychic Gem]+
+[inventory=Flawless Bug Gem]+
+[inventory=Flawless Rock Gem]+
+[inventory=Flawless Ghost Gem]+
+[inventory=Flawless Dragon Gem]+
+[inventory=Flawless Dark Gem]+
+[inventory=Flawless Steel Gem]+
+[inventory=Flawless Fairy Gem]
+[/math][/number][/td]
+
+[/tr][/table][/sc]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+.medgems th, .medgems td {
+  padding: 0.3em 0.5em;
+}
+.medgems th img, .medgems td img {
+  vertical-align: middle; 
+}
+[/style]

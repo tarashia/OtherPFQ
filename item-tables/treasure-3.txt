@@ -1,0 +1,41 @@
+[table]
+[tr]
+ [th=7x1]Treasure[/th]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Relic Copper]"][tip=Relic Copper][item=Relic Copper][/tip] x[inventory=Relic Copper][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Silver]"][tip=Relic Silver][item=Relic Silver][/tip] x[inventory=Relic Silver][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Gold]"][tip=Relic Gold][item=Relic Gold][/tip] x[inventory=Relic Gold][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Vase]"][tip=Relic Vase][item=Relic Vase][/tip] x[inventory=Relic Vase][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Band]"][tip=Relic Band][item=Relic Band][/tip] x[inventory=Relic Band][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Statue]"][tip=Relic Statue][item=Relic Statue][/tip] x[inventory=Relic Statue][/sc][/td]
+ [td][sc="autohide-[inventory=Relic Crown]"][tip=Relic Crown][item=Relic Crown][/tip] x[inventory=Relic Crown][/sc][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Star Piece]"][tip=Star Piece][item=Star Piece][/tip] x[inventory=Star Piece][/sc][/td]
+ [td][sc="autohide-[inventory=Gold Leaf]"][tip=Gold Leaf][item=Gold Leaf][/tip] x[inventory=Gold Leaf][/sc][/td]
+ [td][sc="autohide-[inventory=Brick Piece]"][tip=Brick Piece][item=Brick Piece][/tip] x[inventory=Brick Piece][/sc][/td]
+ [td][sc="autohide-[inventory=Silver Leaf]"][tip=Silver Leaf][item=Silver Leaf][/tip] x[inventory=Silver Leaf][/sc][/td]
+ [td][sc="autohide-[inventory=Rare Bone]"][tip=Rare Bone][item=Rare Bone][/tip] x[inventory=Rare Bone][/sc][/td]
+ [td][sc="autohide-[inventory=StarDust]"][tip=StarDust][item=StarDust][/tip] x[inventory=StarDust][/sc][/td]
+ [td][sc="autohide-[inventory=Nugget]"][tip=Nugget][item=Nugget][/tip] x[inventory=Nugget][/sc][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Pearl]"][tip=Pearl][item=Pearl][/tip] x[inventory=Pearl][/sc][/td]
+ [td][sc="autohide-[inventory=Big Pearl]"][tip=Big Pearl][item=Big Pearl][/tip] x[inventory=Big Pearl][/sc][/td]
+ [td][sc="autohide-[inventory=Tiny Mushroom]"][tip=Tiny Mushroom][item=Tiny Mushroom][/tip] x[inventory=Tiny Mushroom][/sc][/td]
+ [td][sc="autohide-[inventory=Big Mushroom]"][tip=Big Mushroom][item=Big Mushroom][/tip] x[inventory=Big Mushroom][/sc][/td]
+ [td][sc="autohide-[inventory=Pretty Wing]"][tip=Pretty Wing][item=Pretty Wing][/tip] x[inventory=Pretty Wing][/sc][/td]
+[td][sc="autohide-[inventory=Scrap Metal]"][tip=Scrap Metal][item=Scrap Metal][/tip] x[inventory=Scrap Metal][/sc][/td]
+[td][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

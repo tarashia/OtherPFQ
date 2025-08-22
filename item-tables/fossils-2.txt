@@ -1,0 +1,41 @@
+[table][tr][th=6x1]Fossils[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Dome Fossil]"][tip=Dome Fossil][item=Dome Fossil][/tip] x[inventory=Dome Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Helix Fossil]"][tip=Helix Fossil][item=Helix Fossil][/tip] x[inventory=Helix Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Old Amber]"][tip=Old Amber][item=Old Amber][/tip] x[inventory=Old Amber][/sc][/td]
+[td][sc="autohide-[inventory=Root Fossil]"][tip=Root Fossil][item=Root Fossil][/tip] x[inventory=Root Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Claw Fossil]"][tip=Claw Fossil][item=Claw Fossil][/tip] x[inventory=Claw Fossil][/sc][/td]
+ [/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Skull Fossil]"][tip=Skull Fossil][item=Skull Fossil][/tip] x[inventory=Skull Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Armour Fossil]"][tip=Armour Fossil][item=Armour Fossil][/tip] x[inventory=Armour Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Cover Fossil]"][tip=Cover Fossil][item=Cover Fossil][/tip] x[inventory=Cover Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Plume Fossil]"][tip=Plume Fossil][item=Plume Fossil][/tip] x[inventory=Plume Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Jaw Fossil]"][tip=Jaw Fossil][item=Jaw Fossil][/tip] x[inventory=Jaw Fossil][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Sail Fossil]"][tip=Sail Fossil][item=Sail Fossil][/tip] x[inventory=Sail Fossil][/sc][/td]
+[td][sc="autohide-[inventory=Fossilised Bird]"][tip=Fossilised Bird][item=Fossilised Bird][/tip] x[inventory=Fossilised Bird][/sc][/td]
+[td][sc="autohide-[inventory=Fossilised Drake]"][tip=Fossilised Drake][item=Fossilised Drake][/tip] x[inventory=Fossilised Drake][/sc][/td]
+[td][sc="autohide-[inventory=Fossilised Dino]"][tip=Fossilised Dino][item=Fossilised Dino][/tip] x[inventory=Fossilised Dino][/sc][/td]
+[td][sc="autohide-[inventory=Fossilised Fish]"][tip=Fossilised Fish][item=Fossilised Fish][/tip] x[inventory=Fossilised Fish][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Reconstructed Fossil FR]"][tip=Reconstructed Fossil FR][item=Reconstructed Fossil FR][/tip] x[inventory=Reconstructed Fossil FR][/sc][/td]
+[td][sc="autohide-[inventory=Reconstructed Fossil FD]"][tip=Reconstructed Fossil FD][item=Reconstructed Fossil FD][/tip] x[inventory=Reconstructed Fossil FD][/sc][/td]
+[td][sc="autohide-[inventory=Reconstructed Fossil BR]"][tip=Reconstructed Fossil BR][item=Reconstructed Fossil BR][/tip] x[inventory=Reconstructed Fossil BR][/sc][/td]
+[td][sc="autohide-[inventory=Reconstructed Fossil BD]"][tip=Reconstructed Fossil BD][item=Reconstructed Fossil BD][/tip] x[inventory=Reconstructed Fossil BD][/sc][/td]
+ [td][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]
