@@ -1,0 +1,39 @@
+[table]
+[tr]
+[th=4x1]Fishing Rods[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Old Rod]"][tip=Old Rod][item=Old Rod][/tip] x [inventory=Old Rod][/sc][/td]
+[td][sc="autohide-[inventory=Good Rod]"][tip=Good Rod][item=Good Rod][/tip] x [inventory=Good Rod][/sc][/td]
+[td=2x1][/td]
+[/tr]
+
+[tr]
+[th=4x1]Bait[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Freshwater Bait]"][tip=Freshwater Bait][item=Freshwater Bait][/tip] x [inventory=Freshwater Bait][/sc][/td]
+[td][sc="autohide-[inventory=Stillwater Bait]"][tip=Stillwater Bait][item=Stillwater Bait][/tip] x [inventory=Stillwater Bait][/sc][/td]
+[td][sc="autohide-[inventory=Saltwater Bait]"][tip=Saltwater Bait][item=Saltwater Bait][/tip] x [inventory=Saltwater Bait][/sc][/td]
+[td][sc="autohide-[inventory=Deepwater Bait]"][tip=Deepwater Bait][item=Deepwater Bait][/tip] x [inventory=Deepwater Bait][/sc][/td]
+[/tr]
+
+[tr]
+[th=4x1]Fishing PokéBalls[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Fishing Poké Ball]"][tip=Fishing Poké Ball][item=Fishing Poké Ball][/tip] x [inventory=Fishing Poké Ball][/sc][/td]
+[td][sc="autohide-[inventory=Fishing Great Ball]"][tip=Fishing Great Ball][item=Fishing Great Ball][/tip] x [inventory=Fishing Great Ball][/sc][/td]
+[td][sc="autohide-[inventory=Fishing Ultra Ball]"][tip=Fishing Ultra Ball][item=Fishing Ultra Ball][/tip] x [inventory=Fishing Ultra Ball][/sc][/td]
+[td][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

@@ -1,0 +1,23 @@
+[table]
+[tr]
+[th]Currency[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Credits]"][center][tip=Credits][item=Credits][/tip] x[number][inventory=Credits][/number][/center][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Gold]"][center][tip=Gold Poke][item=Gold][/tip] x[number][inventory=gold][/number][/center][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Zophan]"][center][tip=Zophan Canister][item=Zophan][/tip] x[number][inventory=Zophan][/number][/center][/sc][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

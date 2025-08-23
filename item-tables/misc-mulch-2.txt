@@ -1,0 +1,19 @@
+[table]
+[tr]
+ [th=5x1]Mulch[/th]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Damp Mulch]"][tip=Damp Mulch][item=Damp Mulch][/tip] x[inventory=Damp Mulch][/sc][/td]
+ [td][sc="autohide-[inventory=Gooey Mulch]"][tip=Gooey Mulch][item=Gooey Mulch][/tip] x[inventory=Gooey Mulch][/sc][/td]
+ [td][sc="autohide-[inventory=Growth Mulch]"][tip=Growth Mulch][item=Growth Mulch][/tip] x[inventory=Growth Mulch][/sc][/td]
+ [td][sc="autohide-[inventory=Stable Mulch]"][tip=Stable Mulch][item=Stable Mulch][/tip] x[inventory=Stable Mulch][/sc][/td]
+ [td][sc="autohide-[inventory=Amaze Mulch]"][tip=Amaze Mulch][item=Amaze Mulch][/tip] x[inventory=Amaze mulch][/sc][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

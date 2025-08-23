@@ -1,0 +1,51 @@
+[table]
+[tr]
+[th=3x1]Tera Shards[/th]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Normal Tera Shard]"][tip=Normal Tera Shard][item=Normal Tera Shard] x[inventory=Normal Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Fire Tera Shard]"][tip=Fire Tera Shard][item=Fire Tera Shard] x[inventory=Fire Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Water Tera Shard]"][tip=Water Tera Shard][item=Water Tera Shard] x[inventory=Water Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Electric Tera Shard]"][tip=Electric Tera Shard][item=Electric Tera Shard] x[inventory=Electric Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Grass Tera Shard]"][tip=Grass Tera Shard][item=Grass Tera shard] x[inventory=Grass Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Ice Tera Shard]"][tip=Ice Tera Shard][item=Ice Tera Shard] x[inventory=Ice Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Fighting Tera Shard]"][tip=Fighting Tera Shard][item=Fighting Tera Shard] x[inventory=Fighting Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Poison Tera Shard]"][tip=Poison Tera Shard][item=Poison Tera Shard] x[inventory=Poison Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Ground Tera Shard]"][tip=Ground Tera Shard][item=Ground Tera Shard] x[inventory=Ground Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Flying Tera Shard]"][tip=Flying Tera Shard][item=Flying Tera Shard] x[inventory=Flying Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Psychic Tera Shard]"][tip=Psychic Tera Shard][item=Psychic Tera Shard] x[inventory=Psychic Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Bug Tera Shard]"][tip=Bug Tera Shard][item=Bug Tera Shard] x[inventory=Bug Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Rock Tera Shard]"][tip=Rock Tera Shard][item=Rock Tera Shard] x[inventory=Rock Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Ghost Tera Shard]"][tip=Ghost Tera Shard][item=Ghost Tera Shard] x[inventory=Ghost Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Dragon Tera Shard]"][tip=Dragon Tera Shard][item=Dragon Tera Shard] x[inventory=Dragon Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td][sc="autohide-[inventory=Dark Tera Shard]"][tip=Dark Tera Shard][item=Dark Tera Shard] x[inventory=Dark Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Steel Tera Shard]"][tip=Steel Tera Shard][item=Steel Tera Shard] x[inventory=Steel Tera Shard][/tip][/sc][/td]
+[td][sc="autohide-[inventory=Fairy Tera Shard]"][tip=Fairy Tera Shard][item=Fairy Tera Shard] x[inventory=Fairy Tera Shard][/tip][/sc][/td]
+[/tr]
+
+[tr]
+[td=3x1][sc="autohide-[inventory=Stellar Tera Shard]"][tip=Stellar Tera Shard][center][item=Stellar Tera Shard] x[inventory=Stellar Tera Shard][/center][/tip][/sc][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

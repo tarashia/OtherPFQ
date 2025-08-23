@@ -1,0 +1,29 @@
+[table]
+[tr]
+ [th=5x1]Incense[/th]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Full Incense]"][tip=Full Incense][item=Full Incense][/tip] x[inventory=Full Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Lax Incense]"][tip=Lax Incense][item=Lax Incense][/tip] x[inventory=Lax Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Luck Incense]"][tip=Luck Incense][item=Luck Incense][/tip] x[inventory=Luck Incense][/sc][/td]
+ [/tr]
+ 
+[tr]
+ [td][sc="autohide-[inventory=Odd Incense]"][tip=Odd Incense][item=Odd Incense][/tip] x[inventory=Odd Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Pure Incense]"][tip=Pure Incense][item=Pure Incense][/tip] x[inventory=Pure Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Rock Incense]"][tip=Rock Incense][item=Rock Incense][/tip] x[inventory=Rock Incense][/sc][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Rose Incense]"][tip=Rose Incense][item=Rose Incense][/tip] x[inventory=Rose Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Sea Incense]"][tip=Sea Incense][item=Sea Incense][/tip] x[inventory=Sea Incense][/sc][/td]
+ [td][sc="autohide-[inventory=Wave Incense]"][tip=Wave Incense][item=Wave incense][/tip] x[inventory=Wave incense][/sc][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]

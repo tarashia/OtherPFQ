@@ -1,0 +1,67 @@
+[table]
+[tr]
+[th]Type[/th]
+[th]Small[/th]
+[th]Medium[/th]
+[th]Large[/th]
+[/tr]
+
+[tr]
+[th]HP[/th]
+[td][sc="autohide-[inventory=HP Bag S]"][tip=HP Bag S][item=HP Bag S][/tip]x[inventory=HP Bag S][/sc][/td]
+[td][sc="autohide-[inventory=HP Bag M]"][tip=HP Bag M][item=HP Bag M][/tip]x[inventory=HP Bag M][/sc][/td]
+[td][sc="autohide-[inventory=HP Bag L]"][tip=HP Bag L][item=HP Bag L][/tip]x[inventory=HP Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th]Attack[/th]
+[td][sc="autohide-[inventory=Attack Bag S]"][tip=Attack Bag S][item=Attack Bag S][/tip]x[inventory=Attack Bag S][/sc][/td]
+[td][sc="autohide-[inventory=Attack Bag M]"][tip=Attack Bag M][item=Attack Bag M][/tip]x[inventory=Attack Bag M][/sc][/td]
+[td][sc="autohide-[inventory=Attack Bag L]"][tip=Attack Bag L][item=Attack Bag L][/tip]x[inventory=Attack Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th]Defence[/th]
+[td][sc="autohide-[inventory=Defence Bag S]"][tip=Defence Bag S][item=Defence Bag S][/tip]x[inventory=Defence Bag S][/sc][/td]
+[td][sc="autohide-[inventory=Defence Bag M]"][tip=Defence Bag M][item=Defence Bag M][/tip]x[inventory=Defence Bag M][/sc][/td]
+[td][sc="autohide-[inventory=Defence Bag L]"][tip=Defence Bag S][item=Defence Bag L][/tip]x[inventory=Defence Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th]Sp. Atk.[/th]
+[td][sc="autohide-[inventory=Sp. Atk. Bag S]"][tip=Sp. Atk. Bag S][item=Sp.Atk. Bag S][/tip]x[inventory=Sp.Atk. Bag S][/sc][/td]
+[td][sc="autohide-[inventory=Sp. Atk. Bag M]"][tip=Sp. Atk. Bag M][item=Sp.Atk. Bag M][/tip]x[inventory=Sp.Atk. Bag M][/sc][/td]
+[td][sc="autohide-[inventory=Sp. Atk. Bag L]"][tip=Sp. Atk. Bag L][item=Sp.Atk. Bag L][/tip]x[inventory=Sp.Atk. Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th]Sp. Def.[/th]
+[td][sc="autohide-[inventory=Sp.Def. Bag S]"][tip=Sp.Def. Bag S][item=Sp.Def. Bag S][/tip]x[inventory=Sp.Def. Bag S][/sc][/td]
+[td][sc="autohide-[inventory=Sp.Def. Bag M]"][tip=Sp.Def. Bag M][item=Sp.Def. Bag M][/tip]x[inventory=Sp.Def. Bag M][/sc][/td]
+[td][sc="autohide-[inventory=Sp.Def. Bag L]"][tip=Sp.Def. Bag L][item=Sp.Def. Bag L][/tip]x[inventory=Sp.Def. Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th]Speed[/th]
+[td][sc="autohide-[inventory=Speed Bag S]"][tip=Speed Bag S][item=Speed Bag S][/tip]x[inventory=Speed Bag S][/sc][/td]
+[td][sc="autohide-[inventory=Speed Bag M]"][tip=Speed Bag M][item=Speed Bag M][/tip]x[inventory=Speed Bag M][/sc][/td]
+[td][sc="autohide-[inventory=Speed Bag L]"][tip=Speed Bag L][item=Speed Bag L][/tip]x[inventory=Speed Bag L][/sc][/td]
+[/tr]
+
+[tr]
+[th=4x1][/th]
+[/tr]
+
+[tr]
+[th]Other[/th]
+[td][sc="autohide-[inventory=Double-Up Bag]"][tip=Double-Up Bag][item=Double-Up Bag][/tip]x[inventory=Double-Up Bag][/sc][/td]
+[td][sc="autohide-[inventory=Team Flare Bag]"][tip=Team Flare Bag][item=Team Flare Bag][/tip]x[inventory=Team Flare Bag][/sc][/td]
+[td][sc="autohide-[inventory=Reset Bag]"][tip=Reset Bag][item=Reset Bag][/tip]x[inventory=Reset Bag][/sc][/td]
+[/tr]
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]
