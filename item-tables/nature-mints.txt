@@ -1,0 +1,60 @@
+[table]
+[tr]
+  [th=5x1]Nature Mints[/th]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Lonely Mint]"][tip=Lonely Mint][item=Lonely Mint][/tip] x[inventory=Lonely Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Adamant Mint]"][tip=Adamant Mint][item=Adamant Mint][/tip] x[inventory=Adamant Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Naughty Mint]"][tip=Naughty Mint][item=Naughty Mint][/tip] x[inventory=Naughty Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Brave Mint]"][tip=Brave Mint][item=Brave Mint][/tip] x[inventory=Brave Mint][/sc][/td]
+ [td][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Bold Mint]"][tip=Bold Mint][item=Bold Mint][/tip] x[inventory=Bold Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Impish Mint]"][tip=Impish Mint][item=Impish Mint][/tip] x[inventory=Impish Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Lax Mint]"][tip=Lax Mint][item=Lax Mint][/tip] x[inventory=Lax Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Relaxed Mint]"][tip=Relaxed Mint][item=Relaxed Mint][/tip] x[inventory=Relaxed Mint][/sc][/td]
+ [td][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Modest Mint]"][tip=Modest Mint][item=Modest Mint][/tip] x[inventory=Modest Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Mild Mint]"][tip=Mild Mint][item=Mild Mint][/tip] x[inventory=Mild Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Rash Mint]"][tip=Rash Mint][item=Rash Mint][/tip] x[inventory=Rash Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Quiet Mint]"][tip=Quiet Mint][item=Quiet Mint][/tip] x[inventory=Quiet Mint][/sc][/td]
+ [td][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Calm Mint]"][tip=Calm Mint][item=Calm Mint][/tip] x[inventory=Calm Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Gentle Mint]"][tip=Gentle Mint][item=Gentle Mint][/tip] x[inventory=Gentle Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Careful Mint]"][tip=Careful Mint][item=Careful Mint][/tip] x[inventory=Careful Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Sassy Mint]"][tip=Sassy Mint][item=Sassy Mint][/tip] x[inventory=Sassy Mint][/sc][/td]
+ [td][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Timid Mint]"][tip=Timid Mint][item=Timid Mint][/tip] x[inventory=Timid Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Hasty Mint]"][tip=Hasty Mint][item=Hasty Mint][/tip] x[inventory=Hasty Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Jolly Mint]"][tip=Jolly Mint][item=Jolly Mint][/tip] x[inventory=Jolly Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Naïve Mint]"][tip=Naïve Mint][item=Naïve Mint][/tip] x[inventory=Naïve Mint][/sc][/td]
+ [td][/td]
+[/tr]
+
+[tr]
+ [td][sc="autohide-[inventory=Serious Mint]"][tip=Serious Mint][item=Serious Mint][/tip] x[inventory=Serious Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Hardy Mint]"][tip=Hardy Mint][item=Hardy Mint][/tip] x[inventory=Hardy Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Bashful Mint]"][tip=Bashful Mint][item=Bashful Mint][/tip] x[inventory=Bashful Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Docile Mint]"][tip=Docile Mint][item=Docile Mint][/tip] x[inventory=Docile Mint][/sc][/td]
+ [td][sc="autohide-[inventory=Quirky Mint]"][tip=Quirky Mint][item=Quirky Mint][/tip] x[inventory=Quirky Mint][/sc][/td]
+[/tr]
+
+[/table]
+
+[style]
+.autohide-0 {
+  display: none;
+}
+[/style]
