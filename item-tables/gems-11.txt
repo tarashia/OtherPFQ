@@ -59,24 +59,24 @@
 [tr][th]Totals[/th]
 
 [td][number][math]
-[number][math]floor([inventory=Normal Gem]/11)+[inventory=Medium Normal Gem]+(10*[inventory=Large Normal Gem])[/math][/number]+
-[number][math]floor([inventory=Fire Gem]/11)+[inventory=Medium Fire Gem]+(10*[inventory=Large Fire Gem])[/math][/number]+
-[number][math]floor([inventory=Water Gem]/11)+[inventory=Medium Water Gem]+(10*[inventory=Large Water Gem])[/math][/number]+
-[number][math]floor([inventory=Electric Gem]/11)+[inventory=Medium Electric Gem]+(10*[inventory=Large Electric Gem])[/math][/number]+
-[number][math]floor([inventory=Grass Gem]/11)+[inventory=Medium Grass Gem]+(10*[inventory=Large Grass Gem])[/math][/number]+
-[number][math]floor([inventory=Ice Gem]/11)+[inventory=Medium Ice Gem]+(10*[inventory=Large Ice Gem])[/math][/number]+
-[number][math]floor([inventory=Fighting Gem]/11)+[inventory=Medium Fighting Gem]+(10*[inventory=Large Fighting Gem])[/math][/number]+
-[number][math]floor([inventory=Poison Gem]/11)+[inventory=Medium Poison Gem]+(10*[inventory=Large Poison Gem])[/math][/number]+
-[number][math]floor([inventory=Ground Gem]/11)+[inventory=Medium Ground Gem]+(10*[inventory=Large Ground Gem])[/math][/number]+
-[number][math]floor([inventory=Flying Gem]/11)+[inventory=Medium Flying Gem]+(10*[inventory=Large Flying Gem])[/math][/number]+
-[number][math]floor([inventory=Psychic Gem]/11)+[inventory=Medium Psychic Gem]+(10*[inventory=Large Psychic Gem])[/math][/number]+
-[number][math]floor([inventory=Bug Gem]/11)+[inventory=Medium Bug Gem]+(10*[inventory=Large Bug Gem])[/math][/number]+
-[number][math]floor([inventory=Rock Gem]/11)+[inventory=Medium Rock Gem]+(10*[inventory=Large Rock Gem])[/math][/number]+
-[number][math]floor([inventory=Ghost Gem]/11)+[inventory=Medium Ghost Gem]+(10*[inventory=Large Ghost Gem])[/math][/number]+
-[number][math]floor([inventory=Dragon Gem]/11)+[inventory=Medium Dragon Gem]+(10*[inventory=Large Dragon Gem])[/math][/number]+
-[number][math]floor([inventory=Dark Gem]/11)+[inventory=Medium Dark Gem]+(10*[inventory=Large Dark Gem])[/math][/number]+
-[number][math]floor([inventory=Steel Gem]/11)+[inventory=Medium Steel Gem]+(10*[inventory=Large Steel Gem])[/math][/number]+
-[number][math]floor([inventory=Fairy Gem]/11)+[inventory=Medium Fairy Gem]+(10*[inventory=Large Fairy Gem])[/math][/number]
+[math]floor([inventory=Normal Gem]/11)+[inventory=Medium Normal Gem]+(10*[inventory=Large Normal Gem])[/math]+
+[math]floor([inventory=Fire Gem]/11)+[inventory=Medium Fire Gem]+(10*[inventory=Large Fire Gem])[/math]+
+[math]floor([inventory=Water Gem]/11)+[inventory=Medium Water Gem]+(10*[inventory=Large Water Gem])[/math]+
+[math]floor([inventory=Electric Gem]/11)+[inventory=Medium Electric Gem]+(10*[inventory=Large Electric Gem])[/math]+
+[math]floor([inventory=Grass Gem]/11)+[inventory=Medium Grass Gem]+(10*[inventory=Large Grass Gem])[/math]+
+[math]floor([inventory=Ice Gem]/11)+[inventory=Medium Ice Gem]+(10*[inventory=Large Ice Gem])[/math]+
+[math]floor([inventory=Fighting Gem]/11)+[inventory=Medium Fighting Gem]+(10*[inventory=Large Fighting Gem])[/math]+
+[math]floor([inventory=Poison Gem]/11)+[inventory=Medium Poison Gem]+(10*[inventory=Large Poison Gem])[/math]+
+[math]floor([inventory=Ground Gem]/11)+[inventory=Medium Ground Gem]+(10*[inventory=Large Ground Gem])[/math]+
+[math]floor([inventory=Flying Gem]/11)+[inventory=Medium Flying Gem]+(10*[inventory=Large Flying Gem])[/math]+
+[math]floor([inventory=Psychic Gem]/11)+[inventory=Medium Psychic Gem]+(10*[inventory=Large Psychic Gem])[/math]+
+[math]floor([inventory=Bug Gem]/11)+[inventory=Medium Bug Gem]+(10*[inventory=Large Bug Gem])[/math]+
+[math]floor([inventory=Rock Gem]/11)+[inventory=Medium Rock Gem]+(10*[inventory=Large Rock Gem])[/math]+
+[math]floor([inventory=Ghost Gem]/11)+[inventory=Medium Ghost Gem]+(10*[inventory=Large Ghost Gem])[/math]+
+[math]floor([inventory=Dragon Gem]/11)+[inventory=Medium Dragon Gem]+(10*[inventory=Large Dragon Gem])[/math]+
+[math]floor([inventory=Dark Gem]/11)+[inventory=Medium Dark Gem]+(10*[inventory=Large Dark Gem])[/math]+
+[math]floor([inventory=Steel Gem]/11)+[inventory=Medium Steel Gem]+(10*[inventory=Large Steel Gem])[/math]+
+[math]floor([inventory=Fairy Gem]/11)+[inventory=Medium Fairy Gem]+(10*[inventory=Large Fairy Gem])[/math]
 [/math][/number][/td]
 
 [td][number][math]
