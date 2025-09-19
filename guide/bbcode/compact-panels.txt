@@ -4,8 +4,11 @@
 
 [hide=Short-form, especially for signatures][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
 [style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
+/* These default to the VIEWER's skin colors 
+   To customize them, just set hex color codes instead 
+   Note: You need to replace the entire var(--name) with your color
+   Example: --cparty-pkmn-panel-bg: #CC0000;
+*/
 --cparty-pkmn-panel-bg: var(--col-bg3);
 --cparty-pkmn-border-color: var(--col-border3);
 --cparty-pkmn-text-color: var(--col-fg1);
@@ -21,8 +24,11 @@
 [import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
 [hide=Full code, for advanced users][sc=code][nobbcode][sc=compact-party][pkmnpanel=3mc8][/sc] [sc=compact-party][pkmnpanel=hynl1][/sc]
 [style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
+/* These default to the VIEWER's skin colors 
+   To customize them, just set hex color codes instead 
+   Note: You need to replace the entire var(--name) with your color
+   Example: --cparty-pkmn-panel-bg: #CC0000;
+*/
 --cparty-pkmn-panel-bg: var(--col-bg3);
 --cparty-pkmn-border-color: var(--col-border3);
 --cparty-pkmn-text-color: var(--col-fg1);

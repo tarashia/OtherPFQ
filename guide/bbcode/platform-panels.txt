@@ -6,8 +6,11 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
 
 [hide=Short-form, especially for signatures][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
 [style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
+/* These default to the VIEWER's skin colors 
+   To customize them, just set hex color codes instead 
+   Note: You need to replace the entire var(--name) with your color
+   Example: --pparty-platform-base: #CC0000;
+*/
 --pparty-platform-base: var(--col-bg1);
 --pparty-platform-border: var(--col-border1);
 --pparty-name-color: var(--col-fg1);
@@ -22,8 +25,11 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
 [import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide]
 [hide=Full code, for advanced users][sc=code][nobbcode][sc=platform-party][pkmnpanel=3mc8][/sc] [sc=platform-party][pkmnpanel=Jg30][/sc] [sc=platform-party][pkmnpanel=kv3l9][/sc]
 [style]
-/* These default to the VIEWER's skin colors */
-/* To customize them, just set hex color codes instead */
+/* These default to the VIEWER's skin colors 
+   To customize them, just set hex color codes instead 
+   Note: You need to replace the entire var(--name) with your color
+   Example: --pparty-platform-base: #CC0000;
+*/
 --pparty-platform-base: var(--col-bg1);
 --pparty-platform-border: var(--col-border1);
 --pparty-name-color: var(--col-fg1);
