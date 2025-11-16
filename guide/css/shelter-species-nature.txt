@@ -47,6 +47,31 @@ Remove data-stage to find hatched Unown too
 [display=Highlight Unown X eggs][css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-fid="214x"][data-stage="egg"]
 { border: 4px solid red; }
 [/nobbcode][/css][/display]
+[hide=Alternate Unown X eggs]This version includes QoL-like text under the shelter that indicates your Unown letter is found, and bumps the reload buttons down in case you're spam clicking it. Set the shadow color and the 3 locations of the letter (two in data-fids, one in the text display)
+
+
+[css=font-family:monospace;][nobbcode]#shelterarea .pokemon[data-fid="214x"][data-stage="egg"] { 
+    --shadow-color: yellow;
+    filter: drop-shadow(0 0 3px var(--shadow-color))
+            drop-shadow(0 0 3px var(--shadow-color))
+            drop-shadow(0 0 3px var(--shadow-color))
+            drop-shadow(0 0 3px var(--shadow-color))
+            drop-shadow(0 0 3px var(--shadow-color))
+            drop-shadow(0 0 3px var(--shadow-color));
+}
+#shelterarea:has(.pokemon[data-fid="214x"][data-stage="egg"]) {
+    padding-bottom: 3em;
+    &:after {
+        content: "Unown X found!";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: var(--col-bg3);
+        padding: 0.5em 0;
+    }
+}[/nobbcode][/css]
+[/hide]
 Highlight all exclusive Pokemon 
 (no equivalent for variants, sorry)
 
