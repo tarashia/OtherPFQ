@@ -1,3 +1,4 @@
+// https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line
 import fs from 'fs';
 import readline from 'readline';
 
