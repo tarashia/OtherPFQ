@@ -9,18 +9,18 @@ Updated again October 2024 to work correctly with showcases. The oran/any berry 
 [hide=Code][css=user-select:all; font-family:monospace;][nobbcode]/* --- CHANGE ME --- */
 :root {
 /* big berries */
---sour-big: url("https://static.pokefarm.com/img/events/halloween/sour.candy.big.png");
---spicy-big: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.big.png");
---dry-big: url("https://static.pokefarm.com/img/events/halloween/dry.candy.big.png");
---sweet-big: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.big.png");
---bitter-big: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.big.png");
+--sour-big: url("https://r2.pokefarm.com/img/events/halloween/sour.candy.big.png");
+--spicy-big: url("https://r2.pokefarm.com/img/events/halloween/spicy.candy.big.png");
+--dry-big: url("https://r2.pokefarm.com/img/events/halloween/dry.candy.big.png");
+--sweet-big: url("https://r2.pokefarm.com/img/events/halloween/sweet.candy.big.png");
+--bitter-big: url("https://r2.pokefarm.com/img/events/halloween/bitter.candy.big.png");
 /* small berries */
---sour-small: url("https://static.pokefarm.com/img/events/halloween/sour.candy.png");
---spicy-small: url("https://static.pokefarm.com/img/events/halloween/spicy.candy.png");
---dry-small: url("https://static.pokefarm.com/img/events/halloween/dry.candy.png");
---sweet-small: url("https://static.pokefarm.com/img/events/halloween/sweet.candy.png");
---bitter-small: url("https://static.pokefarm.com/img/events/halloween/bitter.candy.png");
---any-small: url("https://static.pokefarm.com/img/events/halloween/neutral.candy.png");
+--sour-small: url("https://r2.pokefarm.com/img/events/halloween/sour.candy.png");
+--spicy-small: url("https://r2.pokefarm.com/img/events/halloween/spicy.candy.png");
+--dry-small: url("https://r2.pokefarm.com/img/events/halloween/dry.candy.png");
+--sweet-small: url("https://r2.pokefarm.com/img/events/halloween/sweet.candy.png");
+--bitter-small: url("https://r2.pokefarm.com/img/events/halloween/bitter.candy.png");
+--any-small: url("https://r2.pokefarm.com/img/events/halloween/neutral.candy.png");
 }
 
 /* --- do not change below this line --- */
@@ -116,45 +116,45 @@ Updated again October 2024 to work correctly with showcases. The oran/any berry 
   background-image: var(--bitter-small) !important;
 }[/nobbcode][/css][/hide]
 [hide=Halloween candy image URLs][b]Big:[/b]
-https://static.pokefarm.com/img/events/halloween/sour.candy.big.png
-https://static.pokefarm.com/img/events/halloween/spicy.candy.big.png
-https://static.pokefarm.com/img/events/halloween/dry.candy.big.png
-https://static.pokefarm.com/img/events/halloween/sweet.candy.big.png
-https://static.pokefarm.com/img/events/halloween/bitter.candy.big.png
+https://r2.pokefarm.com/img/events/halloween/sour.candy.big.png
+https://r2.pokefarm.com/img/events/halloween/spicy.candy.big.png
+https://r2.pokefarm.com/img/events/halloween/dry.candy.big.png
+https://r2.pokefarm.com/img/events/halloween/sweet.candy.big.png
+https://r2.pokefarm.com/img/events/halloween/bitter.candy.big.png
 [b]Small:[/b]
-https://static.pokefarm.com/img/events/halloween/sour.candy.png
-https://static.pokefarm.com/img/events/halloween/spicy.candy.png
-https://static.pokefarm.com/img/events/halloween/dry.candy.png
-https://static.pokefarm.com/img/events/halloween/sweet.candy.png
-https://static.pokefarm.com/img/events/halloween/bitter.candy.png
-https://static.pokefarm.com/img/events/halloween/neutral.candy.png[/hide]
+https://r2.pokefarm.com/img/events/halloween/sour.candy.png
+https://r2.pokefarm.com/img/events/halloween/spicy.candy.png
+https://r2.pokefarm.com/img/events/halloween/dry.candy.png
+https://r2.pokefarm.com/img/events/halloween/sweet.candy.png
+https://r2.pokefarm.com/img/events/halloween/bitter.candy.png
+https://r2.pokefarm.com/img/events/halloween/neutral.candy.png[/hide]
 [hide=Christmas treat image URLs][b]Big:[/b]
-https://static.pokefarm.com/img/events/christmas/sour.sweet.big.png
-https://static.pokefarm.com/img/events/christmas/spicy.sweet.big.png
-https://static.pokefarm.com/img/events/christmas/dry.sweet.big.png
-https://static.pokefarm.com/img/events/christmas/sweet.sweet.big.png
-https://static.pokefarm.com/img/events/christmas/bitter.sweet.big.png
+https://r2.pokefarm.com/img/events/christmas/sour.sweet.big.png
+https://r2.pokefarm.com/img/events/christmas/spicy.sweet.big.png
+https://r2.pokefarm.com/img/events/christmas/dry.sweet.big.png
+https://r2.pokefarm.com/img/events/christmas/sweet.sweet.big.png
+https://r2.pokefarm.com/img/events/christmas/bitter.sweet.big.png
 [b]Small:[/b]
-https://static.pokefarm.com/img/events/christmas/sour.sweet.png
-https://static.pokefarm.com/img/events/christmas/spicy.sweet.png
-https://static.pokefarm.com/img/events/christmas/dry.sweet.png
-https://static.pokefarm.com/img/events/christmas/sweet.sweet.png
-https://static.pokefarm.com/img/events/christmas/bitter.sweet.png
-https://static.pokefarm.com/img/events/christmas/neutral.sweet.png
+https://r2.pokefarm.com/img/events/christmas/sour.sweet.png
+https://r2.pokefarm.com/img/events/christmas/spicy.sweet.png
+https://r2.pokefarm.com/img/events/christmas/dry.sweet.png
+https://r2.pokefarm.com/img/events/christmas/sweet.sweet.png
+https://r2.pokefarm.com/img/events/christmas/bitter.sweet.png
+https://r2.pokefarm.com/img/events/christmas/neutral.sweet.png
 [/hide]
 [hide=Valentine's candy image URLs][b]Big:[/b]
-https://static.pokefarm.com/img/events/valentine/sour.dessert.big.png
-https://static.pokefarm.com/img/events/valentine/spicy.dessert.big.png
-https://static.pokefarm.com/img/events/valentine/dry.dessert.big.png
-https://static.pokefarm.com/img/events/valentine/sweet.dessert.big.png
-https://static.pokefarm.com/img/events/valentine/bitter.dessert.big.png
+https://r2.pokefarm.com/img/events/valentine/sour.dessert.big.png
+https://r2.pokefarm.com/img/events/valentine/spicy.dessert.big.png
+https://r2.pokefarm.com/img/events/valentine/dry.dessert.big.png
+https://r2.pokefarm.com/img/events/valentine/sweet.dessert.big.png
+https://r2.pokefarm.com/img/events/valentine/bitter.dessert.big.png
 [b]Small:[/b]
-https://static.pokefarm.com/img/events/valentine/sour.dessert.png
-https://static.pokefarm.com/img/events/valentine/spicy.dessert.png
-https://static.pokefarm.com/img/events/valentine/dry.dessert.png
-https://static.pokefarm.com/img/events/valentine/sweet.dessert.png
-https://static.pokefarm.com/img/events/valentine/bitter.dessert.png
-https://static.pokefarm.com/img/events/valentine/neutral.dessert.png
+https://r2.pokefarm.com/img/events/valentine/sour.dessert.png
+https://r2.pokefarm.com/img/events/valentine/spicy.dessert.png
+https://r2.pokefarm.com/img/events/valentine/dry.dessert.png
+https://r2.pokefarm.com/img/events/valentine/sweet.dessert.png
+https://r2.pokefarm.com/img/events/valentine/bitter.dessert.png
+https://r2.pokefarm.com/img/events/valentine/neutral.dessert.png
 [/hide]
 [url=https://pokefarm.wiki/Pi_Day]Pi day pie sprites on Wiki[/url]
 
