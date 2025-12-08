@@ -4,17 +4,17 @@
 
 [display="Keep track of nices"]Saves a copy of each nice you receive while this is running, and lets you display them using a button next to the nice count. Includes the user who sent it, and the time the script recorded it (may not be the time it was sent if you were afk).
 
-[url=https://github.com/tarashia/OtherPFQ/blob/main/nice-watcher.user.js]View Code[/url]
+[url=https://github.com/tarashia/OtherPFQ/blob/main/user-scripts/nice-watcher.user.js]View Code[/url]
 
-[url=https://github.com/tarashia/OtherPFQ/raw/refs/heads/main/nice-watcher.user.js]Install Now[/url]
+[url=https://github.com/tarashia/OtherPFQ/raw/refs/heads/main/user-scripts/nice-watcher.user.js]Install Now[/url]
 [/display]
 [display="Hatch variety eggs tournament"]Keep track of eggs during the hatch variety eggs tournament. Tracks lab & shelter eggs automatically - must manually add daycare, supplier, etc. The list of eggs is stored locally on your browser, so if you use multiple devices you'll need to export your data manually.
 
 Update: As of Nov 17, 2024 this *should* work with the lab changes. Default highlight now uses a blue border to avoid conflicts with the QoL - you can change this by setting the "newStyle" on line 18.
 
-[url=https://github.com/tarashia/OtherPFQ/blob/main/variety-eggs.user.js]View Code[/url]
+[url=https://github.com/tarashia/OtherPFQ/blob/main/user-scripts/variety-eggs.user.js]View Code[/url]
 
-[url=https://github.com/tarashia/OtherPFQ/raw/refs/heads/main/variety-eggs.user.js]Install Now[/url]
+[url=https://github.com/tarashia/OtherPFQ/raw/refs/heads/main/user-scripts/variety-eggs.user.js]Install Now[/url]
 [/display]
 (Not mine, but link for reference)
 [url=https://pokefarm.com/forum/post/6257714]Change notification sound[/url]
