@@ -21,7 +21,6 @@ const addClass = "foundHighLevel";
 
 function addCSS() {
   let cssElem = document.createElement('style');
-  cssElem.type = "text/css";
   document.getElementsByTagName('head')[0].append(cssElem);
   cssElem.innerHTML = "."+addClass+" {";
   if(addGlow) {
@@ -40,7 +39,7 @@ function addCSS() {
 function tagPokemon() {
   const shelterArea = document.getElementById('shelterarea');
   const pkmn = shelterArea.getElementsByClassName('tooltip_content');
-  const regex = /\(Lv\.(\d+)/;
+  const regex = /\(Lv\.(\d+)/; // find level and put it in group 1
   for(let i=0; i<pkmn.length; i++) {
     let matches = pkmn[i].innerHTML.match(regex);
     if(matches && matches.length > 1) {
@@ -57,11 +56,13 @@ function observeShelter() {
   if(!shelterArea) {
     return false;
   }
+  // we should only need to watch for when the children (pkmn) change
   const observerConfig = { childList: true, characterData: false };
   const observer = new MutationObserver(function() {
     tagPokemon();
   });
   observer.observe(shelterArea, observerConfig);
+  tagPokemon(); // run immediately as well
   return observer;
 }
 
@@ -70,13 +71,12 @@ function sleep(ms) {
 }
 
 (async function(){
+  addCSS();
   let observer = false;
   let attempts = 0;
   while(observer === false && attempts < 10) {
-    await sleep(500);
     attempts ++;
-		observer = observeShelter();
+    observer = observeShelter();
+    await sleep(500);
   }
-  addCSS();
-  tagPokemon();
 })();
