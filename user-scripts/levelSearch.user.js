@@ -10,10 +10,11 @@
 /* Change these to modify script behavior */
 const minimumLevel = 80;
 const highlightColor = "white";
+/* color may be any HTML color keyword, or hex color value ex: #FFFFFF */
 const addGlow = true;
 const addBorder = false;
-const glowStacks = 4;
-/* glowStacks controls how big the glow is, if using glow */
+const highlightSize = 4;
+/* controls how big the glow or border size is */
 
 
 /* Don't change below here */
@@ -25,13 +26,13 @@ function addCSS() {
   cssElem.innerHTML = "."+addClass+" {";
   if(addGlow) {
     cssElem.innerHTML += "filter:";
-    for(let i=0; i<glowStacks; i++) {
+    for(let i=0; i<highlightSize; i++) {
       cssElem.innerHTML += "drop-shadow(0 0 3px "+highlightColor+")";
     }
     cssElem.innerHTML += ";";
   }
   if(addBorder) {
-    cssElem.innerHTML += "border: 4px solid "+highlightColor+";";
+    cssElem.innerHTML += "border: "+highlightSize+"px solid "+highlightColor+";";
   }
   cssElem.innerHTML += "}";
 }
