@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         PFQ Shelter: Level Search
+// @name         PFQ Shelter: Donor search
 // @namespace    https://github.com/tarashia/
 // @author       Mirzam
 // @match        https://pokefarm.com/shelter
@@ -8,17 +8,19 @@
 // ==/UserScript==
 
 /* Change these to modify script behavior */
-const minimumLevel = 80;
+const apiKey = "";
+const matchUser = "b7q";
+const speciesID = "472";
 const highlightColor = "white";
 /* color may be any HTML color keyword, or hex color value ex: #FFFFFF */
-const addGlow = true;
-const addBorder = false;
+const addGlow = false;
+const addBorder = true;
 const highlightSize = 4;
 /* controls how big the glow or border size is */
 
 
 /* Don't change below here */
-const addClass = "foundHighLevel";
+const addClass = "foundDonorMatch";
 
 function addCSS() {
   let cssElem = document.createElement('style');
@@ -37,18 +39,59 @@ function addCSS() {
   cssElem.innerHTML += "}";
 }
 
-function tagPokemon() {
+async function callAPI(api, test=false) {
+  const url = 'https://api.pokefarm.com/v1' + api;
+  if(test) {
+    console.log(url);
+    return;
+  }
+  try {
+    const response = await fetch(url, {
+      headers: {
+        'x-api-key': apiKey
+      }
+    });
+    if(!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error(error.message);
+    console.log(url);
+    return false;
+  }
+}
+
+async function tagPokemon() {
   const shelterArea = document.getElementById('shelterarea');
-  const pkmn = shelterArea.getElementsByClassName('tooltip_content');
-  const regex = /\(Lv\.(\d+)/; // find level and put it in group 1
+  const pkmn = shelterArea.querySelectorAll('.pokemon[data-fid="' + speciesID + '"] + .tooltip_content');
+  if(pkmn.length < 1) {
+    return;
+  }
+  let  idList = '';
   for(let i=0; i<pkmn.length; i++) {
-    let matches = pkmn[i].innerHTML.match(regex);
-    if(matches && matches.length > 1) {
-      let pkmnLvl = parseInt(matches[1]);
-      if(pkmnLvl >= minimumLevel) {
-        pkmn[i].previousSibling.classList.add(addClass);
+    if(idList.length > 0) {
+      idList += ',';
+    }
+    idList += pkmn[i].getAttribute('data-adopt');
+  }
+  let api = '/pokemon/shelter/donors?adopts=' + idList;
+  const result = await callAPI(api);
+  if(result && Object.hasOwn(result, "adopts")) {
+    for(let i=0; i<result.adopts.length; i++) {
+      if(result.adopts[i].user_shortlink == matchUser || result.adopts[i].user_name == matchUser) {
+        const toHighlight = shelterArea.querySelector('.tooltip_content[data-adopt="' + result.adopts[i].shortlink + '"]');
+        toHighlight.previousSibling.classList.add(addClass);
+      }
+      else {
+        console.log('Did not highlight egg donated by '+result.adopts[i].user_name);
       }
     }
+  }
+  else {
+    console.error('Unexpected API return format');
+    console.log(JSON.stringify(result));
   }
 }
 

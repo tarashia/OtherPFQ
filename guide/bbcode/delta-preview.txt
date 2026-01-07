@@ -3,8 +3,8 @@
 (This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
 
 [sc=preview-table][table][tr][th]CSS Preview[/th][th]Actual Delta[/th][/tr]
-[tr][td][sc=poison-delta][pkmn=Jolteon !big][/sc][/td]
-[td][url=https://pfq.link/?Jyw571][img]https://pfq.link/?Jyw571=platform.png[/img][/url][/td][/tr]
+[tr][td][sc=poison-delta][pkmn=Rapidash/Galarian Forme !big][/sc][/td]
+[td][url=https://pfq.link/?nhyWk][img]https://pfq.link/?nhyWk=platform.png[/img][/url][/td][/tr]
 [tr][td][sc=fairy-delta][pkmn=Serperior !big][/sc][/td]
 [td][url=https://pfq.link/?nBf0B][img]https://pfq.link/?nBf0B=platform.png[/img][/url][/td][/tr][/table][/sc]
 [hide=Code][sc=code][nobbcode][sc=poison-delta][pkmn=Jolteon !big][/sc] [sc=fairy-delta][pkmn=Serperior !big][/sc]
