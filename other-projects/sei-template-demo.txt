@@ -1,0 +1,145 @@
+[style]
+/* existing colors */
+--outer-bg: #aa2726;
+--header-text: #ffd6e0;
+--outer-border: #e78e8d;
+
+--inner-bg: #921b1b;
+--main-text: #ffd6e0;
+--link-color: #ffffff;
+--inner-border: #e78e8d;
+
+--tab-bg: #ffd6e0;
+--tab-text: #921b1b;
+--tab-active-bg: #921b1b;
+--tab-active-text: #ffd6e0;
+--tab-border: #e78e8d;
+
+--tip-bg: #e78e8d;
+--tip-text: #921b1b;
+--tip-border: #921b1b;
+
+/* skin based colors */
+/*
+--outer-bg: var(--col-bg2);
+--header-text: var(--col-fg2);
+--outer-border: var(--col-border2);
+
+--inner-bg: var(--col-bg1); 
+--main-text: var(--col-fg1);
+--link-color: var(--col-link1);
+--inner-border: var(--col-border2);
+
+--tab-bg: var(--col-bg2);
+--tab-text: var(--col-fg2);
+--tab-active-bg: var(--col-bg3);
+--tab-active-text: var(--col-fg1);
+--tab-border: var(--col-border2);
+
+--tip-bg: #e78e8d;
+--tip-text: #921b1b;
+--tip-border: #921b1b;
+*/
+[/style]
+
+[sc=template][
+
+][sc=header][item=Daycare Pass][item=Destiny Knot][item=Red Gigaremo][item=Pure Incense][item=Matchup Checker][sc=head-text]breeding guide[/sc][item=Matchup Checker][item=Pure Incense][item=Red Gigaremo][item=Destiny Knot][item=Daycare Pass][/sc][
+
+][sc=content]Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus diam in ipsum laoreet accumsan. Suspendisse interdum sit amet tortor eu tempor. Cras imperdiet ullamcorper dictum. Vivamus pretium eros non vestibulum ultrices. Donec sapien nunc, consectetur vitae mollis et, ultrices non ante. Vivamus vel nulla eu sem consequat dignissim sit amet sit amet nunc. 
+
+Donec et arcu pulvinar, hendrerit est a, volutpat sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec dui leo, luctus quis metus lobortis, luctus porttitor velit. Nunc ac ultricies dui. Curabitur ut consectetur ante. Aliquam rhoncus eleifend aliquet. Praesent nibh ante, consequat sed interdum ac, maximus sit amet tortor. Quisque vel nibh mi. Phasellus nec turpis lacinia, rutrum orci sit amet, facilisis dolor. 
+
+[sc=tabbed_interface horizontal][ul][
+][li]Title 1[/li][
+][li]Title 2[/li][
+][li]Title 3[/li][
+][/ul][
+][sc=tab-active]Example text, with [url=https://pokefarm.com]example link[/url][/sc][
+][sc=tab]Example text, tab 2[/sc][
+][sc=tab]Example text the third[/sc][
+][/sc][
+
+][sc=credit][tip="[i]template made by magnus opum images used by Pokemon and PFQ credit image by magnus opum[/i]"][img]https://pokefarm.com/upload/:tML/carneliantiny.png[/img][/tip][/sc][/sc][/sc]
+
+[style]
+.template {
+  border: 6px solid var(--outer-border);
+  background: var(--outer-bg);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: none;
+  padding: 20px 15px 0 15px;
+}
+.header {
+  color: var(--header-text);
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  img:nth-of-type(n+6) {
+    transform: scaleX(-1);
+  }
+  .head-text {
+    text-align: center;
+  }
+}
+.content {
+  background: var(--inner-bg);
+  border: 2px solid var(--inner-border);
+  color: var(--main-text);
+  border-bottom: none;
+  padding: 15px;
+  a {
+    color: var(--link-color);
+  }
+}
+.tabbed_interface {
+  >ul {
+    &,>li.tab-active {
+      background: var(--tab-active-bg);
+      color: var(--tab-active-text);
+    }
+    >li {
+      background: var(--tab-bg);
+      color: var(--tab-text);
+      border: 2px solid var(--tab-border);
+      padding: 5px;
+    }
+    >li+li {
+      border-left: none;
+    }
+  }
+  >div {
+      background: var(--inner-bg);
+      color: var(--main-text);
+      border: none;
+      padding: 10px;
+      box-shadow: none;
+      >a {
+        color: var(--link-color);
+      }
+  }
+}
+.tooltip_content {
+  background: var(--tip-bg);
+  color: var(--tip-text);
+  border-color: var(--tip-border);
+}
+.credit {
+  margin-top: 15px;
+  text-align: center;
+  .bbcode_tooltip {
+    border: none;
+  }
+  .tooltip_content {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+  }
+}
+[/style]
