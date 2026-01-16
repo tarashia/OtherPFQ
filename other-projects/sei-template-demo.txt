@@ -20,7 +20,6 @@
 --tip-border: #921b1b;
 
 /* skin based colors */
-/*
 --outer-bg: var(--col-bg2);
 --header-text: var(--col-fg2);
 --outer-border: var(--col-border2);
@@ -39,7 +38,6 @@
 --tip-bg: #e78e8d;
 --tip-text: #921b1b;
 --tip-border: #921b1b;
-*/
 [/style]
 
 [sc=template][
