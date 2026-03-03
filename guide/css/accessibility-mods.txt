@@ -89,4 +89,26 @@ Make field click & next significantly larger (cannot stack due to technical limi
 #field_berries #autofeed-button {
     right: unset;
     left: 0px;
-}[/nobbcode][/css][/hide][/display]
+}[/nobbcode][/css][/hide]
+New experimental field code that stacks accessibility & next when not in QoL grid mode:
+[hide=Field Code (Experimental)][css=font-family:monospace;user-select:all;][nobbcode]#content:has(#field_field[data-mode='public']):not(:has(.qolGridField)) {
+    position: relative;
+    padding-top: 70pt;
+  
+  #field_controls ~ #field_nav button[data-action="next"],
+  #field_berries #autofeed-button {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      height: 60pt;
+      width: 300px;
+      margin: 0 0 0 -150px !important;
+  }
+  #field_controls ~ #field_nav button[data-action="next"] {
+    z-index: 900;
+  }
+  &:has(.fieldmon[data-fed="0"]) #field_berries #autofeed-button {
+    z-index: 901;
+  }
+}
+[/nobbcode][/css][/hide][/display]
