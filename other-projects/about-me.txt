@@ -1,0 +1,259 @@
+[styleclass=wrapper][accordion=1][a-section=Welcome][center][url=https://pokefarm.com/summary/3mSt][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/p1.png[/img][/url][url=https://pokefarm.com/summary/3mST][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/p2.png[/img][/url]
+Hello, and welcome to my page!
+
+I'll dex-trade anything in my "Mega & Forme" fields. [url=https://pokefarm.com/forum/post/5951249]Details, costs & rules[/url]
+
+I have [url=https://pokefarm.com/forum/thread/475527/Mirzam-s-Shared-Codes/]a guide[/url] with some of the codes and short guides I've written.
+
+[url=https://pokefarm.com/summary/3mSt][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/poryn.png[/img][/url][url=https://pokefarm.com/summary/3mST][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/porys.png[/img][/url][/center][/a-section]
+[a-section=About][center][styleclass=flags][tip=Asexual][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/ace.png[/img][/tip] [tip=Aromantic][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/aro.png[/img][/tip][/styleclass]Pronouns: Any[/center]
+I like bicycles, computers, and sci-fi/fantasy. I'm a programmer irl, working on an eclectic set of apps for a university.
+
+Feel free to PM me about pretty much anything, but I'm often not up for chatting. I do struggle with names, so if I forget something, sorry in advance!
+
+I used to play in my school's marching band. I'm pretty much a huge band nerd. You can find some of my favorite classical music [url=https://www.youtube.com/watch?v=vQVeaIHWWck&list=PLewsLItNcQsGdA2aQFjm8SW_t5q8GE1IO]here[/url].[/a-section]
+[a-section=Pretties][center][styleclass=platform1][pkmnpanel=JQVc][pkmnpanel=zmHw][/styleclass][styleclass=platform2][pkmnpanel=Xc2H][pkmnpanel=ylcp9][/styleclass][/center][/a-section]
+[a-section=Spars]All of my sparring Pokemon are trained, with high IVs and IQ. Pick your battle:
+[sc=list][ul][li]Regular[/li]
+[li]Mega & Legendary[/li]
+[li]Easy mode (task list)[/li][/ul][/sc]In easy mode, I'll choose an untrained Pokemon at random. If I win, I'll send a request back to you with a low-stat Pokemon.
+
+[pkmn=Milotic/Mega Forme Q (A)] You can also face [url=https://pokefarm.com/summary/XdTt1]Lavender[/url] for the ultimate challenge! :3[/a-section][/accordion]
+[sc=credits][pit=Credits]Pokemon sprite edits (including mini shiny Porygon2) made by me, from official sprite sources. Pride flag sprites made by me, from official references. Space background from [url=https://www.nasa.gov/sites/default/files/14-230_0.jpg]public domain NASA photograph[/url], with colors modified by me.[/pit][/sc][/styleclass][style]
+.wrapper {
+  height: 320px;
+  background: #011328 url("https://pokefarm.com/upload/Mirzam/Profile_Etc/space_new.jpg");
+  background-size: cover;
+  margin-top: -8px;
+  padding-top: 8px;
+  color: #f8f8ff;
+  position: relative;
+  .accordion {
+      border: none;
+      h3 {
+          font-size: 14px;
+          position: absolute;
+          width: 69px;
+          text-align: center;
+          color: #d6c1db;
+          background: rgb(4,44,79);
+          background: linear-gradient(rgb(4,44,79), rgb(1,34,67));
+          border: 1px solid #365565;
+          font-weight: unset;
+          box-shadow: none;
+          border-radius: 0;
+          .acctoggle {
+              display: none;
+          }
+      }
+      h3+div+h3 {
+          left: 78px;
+          width: 68px;
+      }
+      h3+div+h3+div+h3 {
+          left: 155px;
+      }
+      h3+div+h3+div+h3+div+h3 {
+          left: 232px;
+      }
+      h3:hover, .wrapper .accordion h3.active {
+          background: rgb(44,113,174);
+          background: linear-gradient(rgb(44,113,174), rgb(1,34,67));
+      }
+      >div {
+          position: absolute;
+          background: rgb(4,44,79);
+          background: linear-gradient(rgba(4,44,79,0.85), rgba(1,34,67,0.85));
+          top: 40px;
+          width: 288px;
+          box-shadow: none;
+          color: #f8f8ff;
+          height: 240px;
+          overflow: hidden;
+          border: 1px solid #365565;
+          padding: 10px;
+          font-size: 12px;
+      }
+  }
+  .flags {
+      margin-bottom: 6px;
+      >span+div {
+          left: 41px;
+          top: -6px;
+      }
+      >span+div+span+div{
+          left: 175px;
+          top: -6px;
+      }
+  }
+  .platform1 {
+      margin-top: -25px;
+      position: relative;
+      z-index: 1;
+  }
+  .platform2 {
+      margin-top: -10px;
+  }
+
+}
+a {
+  color: #d6c1db;
+}
+.bbcode_tooltip {
+  border-color: #d6c1db;
+}
+.tooltip_content {
+  border: 1px solid #202020;
+  background-color: #ccc;
+  color: #202020;
+}
+.tooltip_content a {
+  color: #0645ad;
+}
+.list li+li {
+  margin-top: 0.25rem;
+}
+.credits {
+  position: absolute;
+  bottom: 2px;
+  font-size: 11px;
+  right: 3px;
+  background: rgba(4,44,79,0.8);
+  padding: 3px;
+  border-radius: 5px;
+}
+.credits .tooltip_content {
+  left: -260px;
+  top: -240px;
+}
+@platform-base: #05557d;
+@platform-border: #002f46;
+@name-color: #d6c1db;
+@name-background: #05557d;
+@name-border: #002f46;
+@berry-background: #d6c1db;
+@berry-border: #002f46;
+/* Set to "block" to show, "none" to hide */
+@display-item: block;
+@display-berries: block;
+.party {
+  display: inline-block;
+  &,>div {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: 120px !important;
+    height: 120px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  >div {
+    &::after {
+      display: none;
+    }
+    .pkmn {
+      margin: 0 10px;
+      float: unset;
+      &::before {
+        background-color: @platform-base;
+        border-color: @platform-border;
+      }
+      .helditem {
+        display: @display-item;
+        .itemsprite {
+          cursor: unset;
+        }
+        .tooltip_content {
+          display: none;
+        }
+      }
+    }
+    .name {
+      background-color: @name-background;
+      border: 1px solid @name-border;
+      border-radius: 5px;
+      margin-top: 1px;
+      height: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      a {
+        color: @name-color;
+        font-weight: normal;
+        margin: 0 2px;
+        width: 80px !important;
+        flex-grow: 99;
+        font-size: 12px;
+      }
+      img {
+        display: none;
+      }
+      img:nth-last-of-type(-n+2) {
+        display: inline;
+        margin: 0;
+      }
+    }
+    .action {
+      display: @display-berries;
+      position: absolute;
+      left: 88px;
+      top: 70px;
+      height: unset;
+      width: unset;
+      .berrybuttons[data-up="any"]>a[data-berry="aspear"],
+      .berrybuttons[data-up="sour"]>a[data-berry="aspear"], 
+      .berrybuttons[data-up="spicy"]>a[data-berry="cheri"], 
+      .berrybuttons[data-up="dry"]>a[data-berry="chesto"], 
+      .berrybuttons[data-up="sweet"]>a[data-berry="pecha"],
+      .berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+      .berrybuttons {
+        >a {
+          display: none;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          padding: 5px;
+          background-color: @berry-background;
+          border-radius: 20px;
+          >img { 
+            vertical-align: top;
+            max-height: 20px;
+            max-width: 20px;
+          }
+        }
+        >a[data-berry="pecha"] img {
+          /* this berry is short */
+          margin-top: 1px;
+        }
+      }
+      &.working {
+        opacity: 0.5;
+      }
+      table, a[data-evolve] {
+        /* "thank you" message and evolve button */
+        display: none;
+      }
+    }
+    .expbar, .taste, .extra {
+      display: none;
+    }
+  }
+  >div:hover>.action a[data-berry]:after {
+    border-color: @berry-border;
+  }
+}
+.expbar {
+  color: #d6c1db;
+  border-color: #d6c1db;
+  background-color: #05557d;
+  >div:first-child {
+    background-color: #002f46;
+  }
+  img { 
+    vertical-align: middle; 
+  }
+}
+[/style]

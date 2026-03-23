@@ -1,0 +1,307 @@
+/*
+:root {
+  --custom-nav-bg: #111;
+  --custom-nav-bg: var(--col-bg3);
+}
+@import "skins/user/b/7/q/sharedskincss/__extra";
+*/
+
+/* Misc */
+body { 
+  background-size: auto; 
+  background-repeat: repeat;
+}
+#core {
+  overflow: hidden;
+}
+#announcements > ul > li > a.new::after {
+  animation: none;
+}
+.panel,
+.tabbed_interface>div { 
+  box-shadow:none; 
+} 
+.panel > h3 a {
+  color: var(--col-fg2);
+}
+#berryblender_canvas,
+#sheltercommands,
+#multiuser #partybox {
+  user-select: none; 
+}
+/* Force platform to be only display code shown */
+#displaycodelist {
+  > ul {
+    display: none !important;
+  }
+  > div.tab-active {
+    display: none !important;
+  }
+  > div:nth-of-type(4) {
+    display: block !important;
+  }
+}
+/* Remove unwanted items (timers bar, social media, nice, top shortcut) 
+.nice_toast, #header li:has(#nicecount), */
+#announcement-box a[href="/chat"],
+#announcement-box a[href*="facebook.com"], 
+#announcement-box a[href*="twitter.com"], 
+#eggtimeinfo, #thisisyourprofile, #shelterinfo,
+.berrybuttons .tooltip_content,
+#displaycodelist+p, #displaycodelist+p+div,
+#toplink
+{ 
+  display: none !important; 
+}
+/* Change notification icon */
+#header>#head-social>#notifs>a { 
+  background-image: url('https://pokefarm.com/upload/Mirzam/Gray_Skin/Vulpix_Alola.png'); 
+  background-size: cover; 
+}
+#header>#head-social>#notifs>a > img { 
+  opacity: 0; 
+} 
+#header>#head-social>#notifs>a[data-count]::after { 
+  padding: 1px; 
+  height: 14px; 
+  min-width: 14px; 
+  line-height: 14px; 
+  font-size: 8pt; 
+} 
+#header>#head-social>#notifs>div::before, 
+#header>#head-social>#notifs>div::after { 
+  display: none; 
+}
+/* Darken main nav button background */
+#navigation { 
+  background-color: var(--custom-nav-bg); 
+  overflow: hidden;
+} 
+#counters {
+  background-color: var(--custom-nav-bg); 
+  color: var(--col-fg2);
+}
+#counters>#dailybonus a,
+#counters>#dailybonus a:visited,
+#counters>#dailybonus a:active {
+  color: var(--col-fg2);
+  font-weight: bold;
+}
+#counters>#dailybonus {
+  background: var(--col-bg2);
+  border-radius: 5px;
+  padding: 3px 0;
+}
+#counters>#counterlist>li {
+  border-color: var(--custom-nav-bg);
+}
+#counters>#counterlist>li>.counter_item>span {
+  transform: none;
+  font-size: 10pt;
+}
+/* monospace text edit */
+#farmnotepad textarea, 
+#skineditorform textarea,
+textarea.bbcode_editor {
+  font-family: monospace;
+}
+/* fishing */
+#fishing .shake {
+  padding: 2em 3em;
+}
+/* daycare */
+#dcegglist {
+  text-align: center;
+  margin-bottom: 2em;
+  + p { text-align: right; }
+}
+/* Mobile-specific changes */
+.mq2 { 
+  /* header collapse */
+  #head-middle,
+  #head-right,
+  #counters {
+    display: none; 
+    position: absolute !important; 
+    width: 100% !important; 
+  } 
+  #header:hover #head-middle,
+  #header:hover #head-right {
+    background-color: var(--col-bg3);
+    display: block; 
+    top: 58px; 
+  }
+  #header:hover #head-right {
+    top: 112px; 
+    border-bottom: 1px solid var(--col-border1); 
+  }
+  #announcement-box:hover #counters {
+    display: block; 
+  }
+  #navigation>#navbtns>li>a>span, 
+  #navigation #navbookmark>li>a>span {
+    transform: none !important;
+    font-size: 10pt !important;
+    width: 100% !important;
+  }
+  #counters { 
+    background-color:var(--col-bg2); 
+    top: 54px;
+  } 
+  #counters>#dailybonus {
+    background: var(--custom-nav-bg);
+    border-radius: 5px;
+  }
+  /* Add extra scroll on modals for new FF mobile nav bar */
+  .dialog {
+    margin-bottom: 75px;
+  }
+  /* Increase shelter button width */
+  #sheltercommands > button {
+    padding: 0 15px;
+    margin: 15px 5px;
+  }
+  /* Increase height of public field navigation */
+  #field_globalmeta + #field_nav {
+    button[data-action="previous"],
+    button[data-action="next"] {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    button[data-action="jump"] {
+      height: 25px;
+    }
+  }
+}
+/* lab eggs always two columns */
+.mq15 #egglist > div {
+  width: 48%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+/* QoL related changes */
+.qolshelterareagridmq2 .qoltooltipgrid .buttons button:nth-of-type(2) {
+  display: none;
+}
+.qolGridField {
+  background-image: none !important;
+  background-color: #999;
+}
+/* Increase click zone when berry is selected and no QoL sorting is on */
+#field_field>div.field>.fieldmon {
+  transition: none !important;
+}
+#field_berries.selected {
+  ~#field_field {
+    /* only max-stack when no QoL options are selected */
+    >div.field>.fieldmon:not(.qolSortBerry, .qolSortMiddle, .qolGridPokeSize) {
+      left: 0 !important;
+      top: 0 !important;
+      margin: 0 !important;
+      width: 60% !important;
+      height: 100% !important;
+      padding-left: 40% !important;
+      cursor: pointer;
+      
+      .small { display: none !important; }
+      .big { display: block !important; }
+    }
+    /* always hide tooltips when berry selected/dragged */
+    >div.field>.fieldmon+.tooltip_content {
+      display: none;
+    }
+  }
+}
+/* Accessibility script improvement */
+#multiuser:not(.qolPartyModded) #autofeed-button[disabled] {
+    display: none;
+}
+#multiuser:not(.qolPartyModded) #profilepage {
+    position: relative;
+    max-width: 960px;
+}
+#multiuser:not(.qolPartyModded) #autofeed-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    width: 320px;
+    height: 60pt;
+}
+#multiuser:not(.qolPartyModded) #partybox .next:not([next-page="true"]) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 998;
+    width: 320px;
+    height: 60pt;
+    margin: 0;
+    line-height: 60pt;
+    padding: 0;
+}
+
+html:not(.mq3) #multiuser:not(.qolPartyModded) #profilebox {
+    margin-top: 65pt;
+}
+
+.mq3 #multiuser:not(.qolPartyModded) #autofeed-button,
+.mq3 #multiuser:not(.qolPartyModded) #partybox .next:not([next-page="true"]),
+.mq3 #multiuser:not(.qolPartyModded) #profilebox {
+    width: 100%;
+}
+.mq3 #multiuser:not(.qolPartyModded) #partybox {
+    margin-top: 65pt;
+}
+.mq3 #multiuser:not(.qolPartyModded) #trainercard {
+    margin: 0 auto;
+}
+#autoscour-button {
+    width: 100%;
+    height: 5em;
+    margin-bottom: 1em;
+}
+
+.mq2 {
+  #field_berries {
+    position: relative;
+  }
+  #field_berries #autofeed-button {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -80px !important;
+    height: 20px;
+    padding: 15px 25px !important;
+    box-sizing: unset;
+  }
+}
+
+.mq3 #partypage {
+    padding-top: 50px;
+    position: relative;
+}
+.mq3 #partypage #autofeed-button, 
+.mq3 #partypage #autohatch-button {
+    position: absolute;
+    top: 0;
+}
+.mq3 #partypage #autofeed-button {
+    margin-left: -150px;
+    left: 50%;
+}
+.mq3 #partypage #autohatch-button {
+    right: 50%;
+    margin-right: -150px;
+}
+
+.mu_navlink.next[next-page="true"] { 
+    z-index: unset !important;
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    width: 120px !important;
+    height: unset !important;
+    line-height: unset !important;
+    margin:  0 10px 8px !important;
+    padding: 8px !important;
+}
