@@ -1,4 +1,4 @@
-[h3]BBCode-based codes, for templates, abouts, signatures[/h3][
+[sc=mz_guide][h3]BBCode-based codes, for templates, abouts, signatures[/h3][
 
 ][sc=tabbed_interface horizontal mz_tabs][ul][
 ][li]Platform-Style PkmnPanels[/li][
@@ -10,7 +10,6 @@
 ][sc=tab]<%compact-panels.txt%>[/sc][
 ][sc=tab]<%delta-preview.txt%>[/sc][
 
-][/sc]
+][/sc][/sc]
 
-[import-style=b7q/journalcss]
 [import-style=b7q/sharedcss-new]

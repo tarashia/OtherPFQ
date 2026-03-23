@@ -1,3 +1,40 @@
+/* guide customizations */
+.mz_guide {
+  .code {
+    user-select: all;
+    font-family: monospace;
+    font-size: .75em;
+  }
+
+  table th, td {
+    padding: 3px;
+  }
+
+  .mz_list, .mz_list li+li {
+    margin-top: 0.3em;
+  }
+
+  .mz_tabs {
+    > div { 
+      background: transparent;
+      box-shadow: none;
+      border: none;
+    }
+    > ul {
+      background-color: transparent;
+      gap: 0.5em;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+      li {
+        padding: 0.3em;
+        border: 1px solid var(--col-border2) !important;
+        border-radius: 0.3em;;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 /* platform party */
 
 .platform-party:has(>.party), .platform-party .party {

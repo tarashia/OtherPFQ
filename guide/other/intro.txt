@@ -1,0 +1,20 @@
+[sc=mz_guide]I am converting my journal codes into a guide thread so it can be a bit more interactive: ask questions, give feedback, get update notifications :)
+
+[display=Please read]Please keep things very on topic for the sake of peoples' notifications. Ex: questions, bug reports, suggestions on [b]these specific[/b] codes.
+
+If you have suggestions about something new, or questions about things only tangentially related to these codes, feel free to PM me.
+
+If you have general CSS questions, try another guide thread or the help forum. (I check both of those often as well, or another user could help you sooner!)[/display][
+]
+All of my codes here are fully free to use, modify, and distribute for any PFQ related purpose. Enjoy!
+
+Contents:
+[sc=mz_list][ol]
+[li][This post] Introduction (unfinished)[/li]
+[li][url=/forum/post/8103319]BBCode-based codes, for templates, abouts, signatures[/url][/li]
+[li][url=/forum/post/8103320]CSS-based codes, for skins[/url][/li]
+[li][url=/forum/post/8103321]Userscripts, for Grease/Tampermonkey[/url][/li]
+[li][url=/forum/post/8103322]How to use Google Fonts[/url][/li]
+[/ol][/sc]
+[/sc]
+[import-style=b7q/sharedcss-new]

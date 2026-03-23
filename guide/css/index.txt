@@ -1,4 +1,4 @@
-[h3]CSS-based codes, for skins[/h3][
+[sc=mz_guide][h3]CSS-based codes, for skins[/h3][
 
 ][sc=tabbed_interface horizontal mz_tabs][ul][
 ][li]Accessibility script mods[/li][
@@ -12,7 +12,6 @@
 ][sc=tab]<%berry-images.txt%>[/sc][
 ][sc=tab]<%field-clickzone.txt%>[/sc][
 
-][/sc]
+][/sc][/sc]
 
-[import-style=b7q/journalcss]
 [import-style=b7q/sharedcss-new]
