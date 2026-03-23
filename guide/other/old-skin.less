@@ -1,0 +1,233 @@
+/* platform-party */
+@pparty-platform-base: @col-bg1;
+@pparty-platform-border: @col-border1;
+@pparty-name-color: @col-fg1;
+@pparty-name-background: @col-bg3;
+@pparty-name-border: @col-border3;
+@pparty-berry-background: @col-flavour-up;
+@pparty-berry-border: @col-fg1;
+@pparty-display-item: block;
+@pparty-display-berries: block;
+
+.platform-party .party {
+  display: inline-block;
+  &,>div {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: 120px !important;
+    height: 120px;
+    overflow: hidden;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  >div {
+    &::after {
+      display: none;
+    }
+    .pkmn {
+      margin: 0 10px;
+      float: unset;
+      &::before {
+        background-color: @pparty-platform-base;
+        border-color: @pparty-platform-border;
+      }
+      .helditem {
+        display: @pparty-display-item;
+        .itemsprite {
+          cursor: unset;
+        }
+        .tooltip_content {
+          display: none;
+        }
+      }
+    }
+    .name {
+      background-color: @pparty-name-background;
+      border: 1px solid @pparty-name-border;
+      border-radius: 5px;
+      margin-top: 1px;
+      height: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      a {
+        color: @pparty-name-color;
+        font-weight: normal;
+        margin: 0 2px;
+        width: 80px !important;
+        flex-grow: 99;
+        font-size: 12px;
+      }
+      img {
+        display: none;
+      }
+      img:nth-last-of-type(-n+2) {
+        display: inline;
+        margin: 0;
+      }
+    }
+    .action {
+      display: @pparty-display-berries;
+      position: absolute;
+      left: 88px;
+      top: 70px;
+      height: unset;
+      width: unset;
+      .berrybuttons[data-up="any"]>a[data-berry="aspear"],
+      .berrybuttons[data-up="sour"]>a[data-berry="aspear"], 
+      .berrybuttons[data-up="spicy"]>a[data-berry="cheri"], 
+      .berrybuttons[data-up="dry"]>a[data-berry="chesto"], 
+      .berrybuttons[data-up="sweet"]>a[data-berry="pecha"],
+      .berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+      .berrybuttons {
+        >a {
+          display: none;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          padding: 5px;
+          background-color: @pparty-berry-background;
+          border-radius: 20px;
+          >img { 
+            vertical-align: top;
+            max-height: 20px;
+            max-width: 20px;
+          }
+        }
+        >a[data-berry="pecha"] img {
+          /* this berry is short */
+          margin-top: 1px;
+        }
+      }
+      &.working {
+        opacity: 0.5;
+      }
+      table, a[data-evolve] {
+        /* "thank you" message and evolve button */
+        display: none;
+      }
+    }
+    .expbar, .taste, .extra {
+      display: none;
+    }
+  }
+  >div:hover>.action a[data-berry]:after {
+    border-color: @pparty-berry-border;
+  }
+}
+
+/* compact-panel */
+@cparty-pkmn-panel-bg: @col-bg3;
+@cparty-pkmn-border-color: @col-border3;
+@cparty-pkmn-text-color: @col-fg1;
+@cparty-pkmn-link-color: @col-link1;
+@cparty-pkmn-platform-color: @col-bg1;
+@cparty-pkmn-platform-edge: @col-border1;
+@cparty-pkmn-berry-color: @col-flavour-up;
+@cparty-pkmn-xp-done: @col-bg1;
+@cparty-pkmn-xp-remining: @col-bg3;
+@cparty-pkmn-xp-text: @col-fg1;
+@cparty-pkmn-xp-border: @col-border3;
+
+.compact-party .party {
+  display: inline-block;
+  margin: 10px;
+  width: unset !important;
+  color: @cparty-pkmn-text-color;
+
+  a {
+    color: @cparty-pkmn-link-color;
+  }
+
+  >div {
+    background: @cparty-pkmn-panel-bg;
+    border-color: @cparty-pkmn-border-color;
+    box-shadow: none;
+    width: 250px;
+    margin: 0;
+    overflow: hidden;
+
+    &:hover>.action a[data-berry]:after {
+      color: @cparty-pkmn-border-color;
+    }
+
+    >.pkmn:before {
+      background-color: @cparty-pkmn-platform-color;
+      border-color: @cparty-pkmn-platform-edge;
+    }
+
+    >.name a {
+      margin-bottom: 5px;
+      max-width: 140px;
+    }
+
+    >.expbar {
+      width: 140px;
+      height: 25px;
+      margin-top: 2px;
+      background-color: @cparty-pkmn-xp-remining;
+      border-color: @cparty-pkmn-xp-border;
+      color: @cparty-pkmn-xp-text;
+
+      >div {
+        border-color: @cparty-pkmn-xp-border;
+        background-color: @cparty-pkmn-xp-done;
+      }
+    }
+
+    >.extra {
+      >.happy {
+        display: none;
+      }
+
+      >.nature {
+        width: 165px;
+        margin-left: 5px;
+      }
+    }
+
+    >.action {
+      width: 140px;
+      height: 30px;
+
+      >.berrybuttons {
+        >a {
+          background-color: @cparty-pkmn-berry-color;
+          display: none;
+          width: 100%;
+          height: 30px;
+          padding: 3px;
+          box-sizing: border-box;
+
+          >img {
+            height: 25px;
+            vertical-align: top;
+          }
+        }
+      }
+
+      >.berrybuttons[data-up="any"]>a[data-berry="aspear"] {
+        display: inline-block;
+        border-radius: 20px;
+      }
+      >.berrybuttons[data-up="sour"]>a[data-berry="aspear"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="spicy"]>a[data-berry="cheri"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="dry"]>a[data-berry="chesto"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="sweet"]>a[data-berry="pecha"] {
+        display: inline-block;
+      }
+      >.berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
+        display: inline-block;
+      }
+    }
+  }
+}
