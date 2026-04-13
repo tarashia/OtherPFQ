@@ -220,6 +220,7 @@ textarea.bbcode_editor {
 #multiuser:not(.qolPartyModded) #profilepage {
     position: relative;
     max-width: 960px;
+    margin: 0 auto;
 }
 #multiuser:not(.qolPartyModded) #autofeed-button {
     position: absolute;
