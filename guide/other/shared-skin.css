@@ -53,6 +53,7 @@
     box-shadow: none;
   }
   >div {
+    display: block;
     &::after {
       display: none;
     }
@@ -80,6 +81,7 @@
       height: 16px;
       display: flex;
       flex-wrap: nowrap;
+      padding: 0;
       a {
         color: var(--pparty-name-color);
         font-weight: normal;

@@ -12,7 +12,7 @@ I like bicycles, computers, and sci-fi/fantasy. I'm a programmer irl, working on
 Feel free to PM me about pretty much anything, but I'm often not up for chatting. I do struggle with names, so if I forget something, sorry in advance!
 
 I used to play in my school's marching band. I'm pretty much a huge band nerd. You can find some of my favorite classical music [url=https://www.youtube.com/watch?v=vQVeaIHWWck&list=PLewsLItNcQsGdA2aQFjm8SW_t5q8GE1IO]here[/url].[/a-section]
-[a-section=Pretties][center][styleclass=platform1][pkmnpanel=JQVc][pkmnpanel=zmHw][/styleclass][styleclass=platform2][pkmnpanel=Xc2H][pkmnpanel=ylcp9][/styleclass][/center][/a-section]
+[a-section=Pretties][center][styleclass=platform1 platform-party][pkmnpanel=JQVc][pkmnpanel=zmHw][/styleclass][styleclass=platform2 platform-party][pkmnpanel=Xc2H][pkmnpanel=ylcp9][/styleclass][/center][/a-section]
 [a-section=Spars]All of my sparring Pokemon are trained, with high IVs and IQ. Pick your battle:
 [sc=list][ul][li]Regular[/li]
 [li]Mega & Legendary[/li]
@@ -126,125 +126,16 @@ a {
   left: -260px;
   top: -240px;
 }
-@platform-base: #05557d;
-@platform-border: #002f46;
-@name-color: #d6c1db;
-@name-background: #05557d;
-@name-border: #002f46;
-@berry-background: #d6c1db;
-@berry-border: #002f46;
+--pparty-platform-base: #05557d;
+--pparty-platform-border: #002f46;
+--pparty-name-color: #d6c1db;
+--pparty-name-background: #05557d;
+--pparty-name-border: #002f46;
+--pparty-berry-background: #d6c1db;
+--pparty-berry-border: #002f46;
 /* Set to "block" to show, "none" to hide */
-@display-item: block;
-@display-berries: block;
-.party {
-  display: inline-block;
-  &,>div {
-    padding: 0;
-    margin: 0;
-    background: transparent;
-    width: 120px !important;
-    height: 120px;
-    overflow: hidden;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  >div {
-    &::after {
-      display: none;
-    }
-    .pkmn {
-      margin: 0 10px;
-      float: unset;
-      &::before {
-        background-color: @platform-base;
-        border-color: @platform-border;
-      }
-      .helditem {
-        display: @display-item;
-        .itemsprite {
-          cursor: unset;
-        }
-        .tooltip_content {
-          display: none;
-        }
-      }
-    }
-    .name {
-      background-color: @name-background;
-      border: 1px solid @name-border;
-      border-radius: 5px;
-      margin-top: 1px;
-      height: 16px;
-      display: flex;
-      flex-wrap: nowrap;
-      a {
-        color: @name-color;
-        font-weight: normal;
-        margin: 0 2px;
-        width: 80px !important;
-        flex-grow: 99;
-        font-size: 12px;
-      }
-      img {
-        display: none;
-      }
-      img:nth-last-of-type(-n+2) {
-        display: inline;
-        margin: 0;
-      }
-    }
-    .action {
-      display: @display-berries;
-      position: absolute;
-      left: 88px;
-      top: 70px;
-      height: unset;
-      width: unset;
-      .berrybuttons[data-up="any"]>a[data-berry="aspear"],
-      .berrybuttons[data-up="sour"]>a[data-berry="aspear"], 
-      .berrybuttons[data-up="spicy"]>a[data-berry="cheri"], 
-      .berrybuttons[data-up="dry"]>a[data-berry="chesto"], 
-      .berrybuttons[data-up="sweet"]>a[data-berry="pecha"],
-      .berrybuttons[data-up="bitter"]>a[data-berry="rawst"] {
-        display: inline-block;
-      }
-      .berrybuttons {
-        >a {
-          display: none;
-          width: 20px;
-          height: 20px;
-          line-height: 20px;
-          padding: 5px;
-          background-color: @berry-background;
-          border-radius: 20px;
-          >img { 
-            vertical-align: top;
-            max-height: 20px;
-            max-width: 20px;
-          }
-        }
-        >a[data-berry="pecha"] img {
-          /* this berry is short */
-          margin-top: 1px;
-        }
-      }
-      &.working {
-        opacity: 0.5;
-      }
-      table, a[data-evolve] {
-        /* "thank you" message and evolve button */
-        display: none;
-      }
-    }
-    .expbar, .taste, .extra {
-      display: none;
-    }
-  }
-  >div:hover>.action a[data-berry]:after {
-    border-color: @berry-border;
-  }
-}
+.platform-party .helditem { display: block; } /* held item */
+.platform-party .action { display: block; } /* berry buttons */
 .expbar {
   color: #d6c1db;
   border-color: #d6c1db;
@@ -257,3 +148,4 @@ a {
   }
 }
 [/style]
+[import-style=b7q/sharedcss-new]

@@ -57,6 +57,7 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
     box-shadow: none;
   }
   >div {
+    display: block;
     &::after {
       display: none;
     }
@@ -84,6 +85,7 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
       height: 16px;
       display: flex;
       flex-wrap: nowrap;
+      padding: 0;
       a {
         color: var(--pparty-name-color);
         font-weight: normal;
