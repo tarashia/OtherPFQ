@@ -106,15 +106,17 @@ body {
 textarea.bbcode_editor {
   font-family: monospace;
 }
-/* fishing */
-#fishing .shake {
-  padding: 2em 3em;
-}
 /* daycare */
 #dcegglist {
   text-align: center;
   margin-bottom: 2em;
   + p { text-align: right; }
+}
+/* indicate upvoted posts */
+.forumpost .metadata .commands:has(label[data-cmd="upvoted"])+.upvotes {
+  font-size: 0;
+  span { font-size: 12pt; }
+  span:before { content: "✅"; }
 }
 /* Mobile-specific changes */
 .mq2 { 
