@@ -115,8 +115,8 @@ textarea.bbcode_editor {
 /* indicate upvoted posts */
 .forumpost .metadata .commands:has(label[data-cmd="upvoted"])+.upvotes {
   font-size: 0;
-  span { font-size: 12pt; }
-  span:before { content: "✅"; }
+  span { font-size: 10pt; }
+  span:before { content: "❤️ "; }
 }
 /* Mobile-specific changes */
 .mq2 { 
