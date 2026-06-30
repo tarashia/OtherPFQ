@@ -118,6 +118,27 @@ textarea.bbcode_editor {
   span { font-size: 10pt; }
   span:before { content: "❤️ "; }
 }
+/* default fields menu to open */
+#field_field > .menu .menugroup:nth-of-type(1):has(~.collapsed) {
+  .menugroup-toggle { 
+    font-size: 0;
+    &:before { 
+      font-size: 12px;
+      content: "▸";
+    }
+  }
+  .menugroup-body {
+    display: none !important;
+  }
+  &.collapsed {
+    .menugroup-body {
+      display: block !important;
+    }
+    .menugroup-toggle:before { 
+      content: "▾";
+    }
+  }
+}
 /* Mobile-specific changes */
 .mq2 { 
   /* header collapse */
