@@ -1,11 +1,8 @@
 [styleclass=wrapper][accordion=1][a-section=Welcome][center][url=https://pokefarm.com/summary/3mSt][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/p1.png[/img][/url][url=https://pokefarm.com/summary/3mST][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/p2.png[/img][/url]
 Hello, and welcome to my page!
+I have [url=https://pokefarm.com/forum/thread/475527/Mirzam-s-Shared-Codes/]a guide[/url] with some of the codes and short guides I've written.[/center]
 
-I'll dex-trade anything in my "Mega & Forme" fields. [url=https://pokefarm.com/forum/post/5951249]Details, costs & rules[/url]
-
-I have [url=https://pokefarm.com/forum/thread/475527/Mirzam-s-Shared-Codes/]a guide[/url] with some of the codes and short guides I've written.
-
-[url=https://pokefarm.com/summary/3mSt][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/poryn.png[/img][/url][url=https://pokefarm.com/summary/3mST][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/porys.png[/img][/url][/center][/a-section]
+[sc="moon"][img]https://pokefarm.com/upload/:b7q/Profile_Etc/moonbg.png[/img][/sc][/a-section]
 [a-section=About][center][styleclass=flags][tip=Asexual][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/ace.png[/img][/tip] [tip=Aromantic][img]https://pokefarm.com/upload/Mirzam/Profile_Etc/aro.png[/img][/tip][/styleclass]Pronouns: Any[/center]
 I like bicycles, computers, and sci-fi/fantasy. I'm a programmer irl, working on an eclectic set of apps for a university.
 
@@ -19,7 +16,7 @@ I used to play in my school's marching band. I'm pretty much a huge band nerd. Y
 [li]Easy mode (task list)[/li][/ul][/sc]In easy mode, I'll choose an untrained Pokemon at random. If I win, I'll send a request back to you with a low-stat Pokemon.
 
 [pkmn=Milotic/Mega Forme Q (A)] You can also face [url=https://pokefarm.com/summary/XdTt1]Lavender[/url] for the ultimate challenge! :3[/a-section][/accordion]
-[sc=credits][pit=Credits]Pokemon sprite edits (including mini shiny Porygon2) made by me, from official sprite sources. Pride flag sprites made by me, from official references. Space background from [url=https://www.nasa.gov/sites/default/files/14-230_0.jpg]public domain NASA photograph[/url], with colors modified by me.[/pit][/sc][/styleclass][style]
+[sc=credits][pit=Credits]Moon wheel commissioned from [url=https://pfq.link/@kC6]Fated[/url]. Pokemon sprite edits (including mini shiny Porygon2) made by me, from official sprite sources. Pride flag sprites made by me, from official references. Space background from [url=https://www.nasa.gov/sites/default/files/14-230_0.jpg]public domain NASA photograph[/url], with colors modified by me. Code by me, for my own use.[/pit][/sc][/styleclass][style]
 .wrapper {
   height: 320px;
   background: #011328 url("https://pokefarm.com/upload/Mirzam/Profile_Etc/space_new.jpg");
@@ -145,6 +142,22 @@ a {
   }
   img { 
     vertical-align: middle; 
+  }
+}
+.moon {
+  position: relative;
+  overflow: hidden;
+  height: 65px;
+  width: 125px;
+  margin: 0 auto;
+  &:after {
+    content: url('https://pokefarm.com/upload/:b7q/Profile_Etc/moonclouds.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  img {
+    transform: rotate([math]180/2551443*(([datetime=U]now[/datetime]-[datetime=U]2026-05-16 20:01[/datetime])%2551443)[/math]deg);
   }
 }
 [/style]
