@@ -118,6 +118,22 @@ textarea.bbcode_editor {
   span { font-size: 10pt; }
   span:before { content: "❤️ "; }
 }
+/* Fix QoL party post grid update */
+.qolPartyCustomParty #partybox .party {
+  grid-template-columns: repeat(6, calc(100% / 6));
+}
+/* move red gig button to the left */
+#dcpage #dcpartybox+.center+.center {
+  display: flex;
+  justify-content: center;
+  button {
+    order: -1;
+    margin-right: 0.5em;
+  }
+  img {
+    margin: 0 0.3em;
+  }
+}
 /* Mobile-specific changes */
 .mq2 { 
   /* header collapse */
