@@ -76,9 +76,9 @@ document.body.append(testNice);
     // Attempt to build the URL-friendly name for link purposes
     let normalizedName = '';
     try {
-      normalizedName = userName.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-      normalizedName = normalizedName.replace(' ','_');
-      normalizedName = normalizedName.replace('.',':');
+      normalizedName = userName.normalize('NFD').replaceAll(/[\u0300-\u036f]/g, '');
+      normalizedName = normalizedName.replaceAll(' ','_');
+      normalizedName = normalizedName.replaceAll('.',':');
     } catch(err) {
       console.warn('Failed to normalize username: '+userName);
     }
