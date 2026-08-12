@@ -156,6 +156,20 @@ https://r2.pokefarm.com/img/events/valentine/sweet.dessert.png
 https://r2.pokefarm.com/img/events/valentine/bitter.dessert.png
 https://r2.pokefarm.com/img/events/valentine/neutral.dessert.png
 [/hide]
+[hide=Mochi image URLs][b]Big:[/b]
+https://r2.pokefarm.com/img/events/eclipse/sour.mochi.big.png?t=1786064123
+https://r2.pokefarm.com/img/events/eclipse/spicy.mochi.big.png?t=1786064124
+https://r2.pokefarm.com/img/events/eclipse/dry.mochi.big.png?t=1786064122
+https://r2.pokefarm.com/img/events/eclipse/sweet.mochi.big.png?t=1786064125
+https://r2.pokefarm.com/img/events/eclipse/bitter.mochi.big.png?t=1786064121
+[b]Small:[/b]
+https://r2.pokefarm.com/img/events/eclipse/sour.mochi.png?t=1786064123
+https://r2.pokefarm.com/img/events/eclipse/spicy.mochi.png?t=1786064124
+https://r2.pokefarm.com/img/events/eclipse/dry.mochi.png?t=1786064122
+https://r2.pokefarm.com/img/events/eclipse/sweet.mochi.png?t=1786064125
+https://r2.pokefarm.com/img/events/eclipse/bitter.mochi.png?t=1786064121
+https://r2.pokefarm.com/img/events/eclipse/neutral.mochi.png?t=1786064123
+[/hide]
 [url=https://pokefarm.wiki/Pi_Day]Pi day pie sprites on Wiki[/url]
 
 [url=https://pokefarm.wiki/Fabulous_Fiesta]Carnival/Fiesta food sprites on Wiki[/url]
