@@ -70,9 +70,12 @@
       border-color: var(--cparty-pkmn-platform-edge);
     }
 
-    >.name a {
-      margin-bottom: 5px;
+    >.name {
       max-width: 140px;
+      a {
+        margin-bottom: 5px;
+        width: unset !important;
+      }
     }
 
     >.expbar {
