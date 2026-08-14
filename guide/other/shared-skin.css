@@ -91,7 +91,9 @@
         height: 120px;
         position: absolute;
         top: 0;
-        line-height: 216px;
+        box-sizing: border-box;
+        padding-top: 101px;
+        padding-right: 34px;
         text-indent: 5px;
       }
       img {
@@ -149,6 +151,9 @@
     }
   }
   >div:hover>.action a[data-berry]:after {
+    border-color: transparent;
+  }
+  >div>.action a[data-berry]:hover:after {
     border-color: var(--pparty-berry-border);
   }
 }
