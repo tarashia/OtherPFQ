@@ -96,7 +96,7 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
         position: absolute;
         top: 0;
         box-sizing: border-box;
-        padding-top: 101px;
+        padding-top: 102px;
         padding-right: 34px;
         text-indent: 5px;
       }
