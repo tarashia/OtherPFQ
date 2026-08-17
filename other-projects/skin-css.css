@@ -232,15 +232,15 @@ textarea.bbcode_editor {
   }
 }
 /* Accessibility script improvement */
-#multiuser:not(.qolPartyModded) #autofeed-button[disabled] {
+#multiuser.qolPartyHideDislike #autofeed-button[disabled] {
     display: none;
 }
-#multiuser:not(.qolPartyModded) #profilepage {
+#multiuser.qolPartyHideDislike #profilepage {
     position: relative;
     max-width: 960px;
     margin: 0 auto;
 }
-#multiuser:not(.qolPartyModded) #autofeed-button {
+#multiuser.qolPartyHideDislike #autofeed-button {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -248,7 +248,7 @@ textarea.bbcode_editor {
     width: 320px;
     height: 60pt;
 }
-#multiuser:not(.qolPartyModded) #partybox .next:not([next-page="true"]) {
+#multiuser.qolPartyHideDislike #partybox .next:not([next-page="true"]) {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -260,19 +260,19 @@ textarea.bbcode_editor {
     padding: 0;
 }
 
-html:not(.mq3) #multiuser:not(.qolPartyModded) #profilebox {
+html:not(.mq3) #multiuser.qolPartyHideDislike #profilebox {
     margin-top: 65pt;
 }
 
-.mq3 #multiuser:not(.qolPartyModded) #autofeed-button,
-.mq3 #multiuser:not(.qolPartyModded) #partybox .next:not([next-page="true"]),
-.mq3 #multiuser:not(.qolPartyModded) #profilebox {
+.mq3 #multiuser.qolPartyHideDislike #autofeed-button,
+.mq3 #multiuser.qolPartyHideDislike #partybox .next:not([next-page="true"]),
+.mq3 #multiuser.qolPartyHideDislike #profilebox {
     width: 100%;
 }
-.mq3 #multiuser:not(.qolPartyModded) #partybox {
+.mq3 #multiuser.qolPartyHideDislike #partybox {
     margin-top: 65pt;
 }
-.mq3 #multiuser:not(.qolPartyModded) #trainercard {
+.mq3 #multiuser.qolPartyHideDislike #trainercard {
     margin: 0 auto;
 }
 #autoscour-button {
