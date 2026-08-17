@@ -85,14 +85,20 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
       height: 16px;
       display: flex;
       flex-wrap: nowrap;
+      justify-content: right;
       padding: 0;
       a {
         color: var(--pparty-name-color);
         font-weight: normal;
-        margin: 0 2px;
-        width: 80px !important;
-        flex-grow: 99;
         font-size: 12px;
+        width: 120px !important;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        padding-top: 102px;
+        padding-right: 34px;
+        text-indent: 5px;
       }
       img {
         display: none;
@@ -149,6 +155,9 @@ Future goals: Expand the name link to make the whole area clickable (padding? wo
     }
   }
   >div:hover>.action a[data-berry]:after {
+    border-color: transparent;
+  }
+  >div>.action a[data-berry]:hover:after {
     border-color: var(--pparty-berry-border);
   }
 }
