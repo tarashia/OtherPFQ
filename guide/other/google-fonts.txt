@@ -1,32 +1,37 @@
-[display=Warning]Google Fonts will likely be removed when LESS support is dropped, as the font face import will no longer be supported. Sorry! You will need to investigate web-safe fonts to use instead. Be extra sure to set fallback fonts for devices that do not have your selected font installed/supported.[/display]
+[display=Info]This guide has been updated with new screenshots since font importing did not get sunset with LESS like I expected.[/display]
 
 [h3]How to use Google Fonts[/h3][
 ][center][url]https://fonts.google.com/[/url][/center]
 [b]Please choose your fonts carefully[/b] - custom fonts, especially decorative/artistic fonts should be used sparingly, as decoration, headers, etc. Never use cursive, decorative, or artistic fonts for large blocks of text. Keep in mind that this site has legibility guidelines in its rules.
-
-In general I would recommend not changing your main content font at all, even to fonts similar to the default site font, since some people may be using custom fonts to make the site more readable for them. (ex, dyslexia friendly fonts)
 
 [hr]
 
 I will be using this font as an example:
 [url]https://fonts.google.com/specimen/Righteous[/url]
 
+You can click any screenshot to open it full-size in a new tab.
+
 [ol]
 
-[li]Click the "+ Select this style" button on the right side of the font preview area.
-[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide1.png[/img][/hide][/li]
+[li]Click the "Get Font" button at the top of the font page. This may be at the bottom on narrow/mobile devices.
+[hide=Screenshot][url=https://pokefarm.com/upload/:b7q/Guides/fontguide1.png][img]https://pokefarm.com/upload/:b7q/Guides/fontguide1.png[/img][/url][/hide][/li]
 
-[li]A sidebar should open on the right, but if it doesn't click the square/+ icon in the very upper right of the page. (shown in upper right of screenshot above)[/li]
+[li]This should open a page with the selected font, and any other fonts you've marked for use. Click the "<> Get embed code" button. Note: The next step will be easier if you remove any fonts you are not including in your current template from this list.
+[hide=Screenshot][url=https://pokefarm.com/upload/:b7q/Guides/fontguide2.png][img]https://pokefarm.com/upload/:b7q/Guides/fontguide2.png[/img][/url][/hide][/li]
 
-[li]Change from the "Review" to the "Embed" tab on the side bar. Under "Use on the web", change the radio button to "@import". Copy the URL only from the code - make sure to not grab either of the single quotes.
-[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide2.png[/img][/hide][/li]
+[li]The default tab should be "Web" - under the embed section locate the <link> tag containing your font's style sheet. It should be the last one. Copy the link URL.
+[hide=Screenshot][url=https://pokefarm.com/upload/:b7q/Guides/fontguide3.png][img]https://pokefarm.com/upload/:b7q/Guides/fontguide3.png[/img][/url][/hide][/li]
 
-[li]Paste that link into a new browser window/tab. You should see some codes. Most English speakers should only need the /* latin */ block, but for other characters you may need latin-ext or perhaps even other alphabets (if available). You may need to scroll down to find it. Copy it.
-[hide=Screenshot][img]/upload/Mirzam/Font_guide/guide3.png[/img][/hide][/li]
+[li]Paste that link into a new browser window/tab. You should see some codes. Most English speakers should only need the /* latin */ block, but for other characters you may need latin-ext or perhaps even other alphabets (if available). If you had multiple fonts selected, all of them will appear here - be sure to get the block(s) for the correct one(s). You may need to scroll down to find it. Copy it.
+[hide=Screenshot][url=https://pokefarm.com/upload/:b7q/Guides/fontguide4.png][img]https://pokefarm.com/upload/:b7q/Guides/fontguide4.png[/img][/url][/hide][/li]
 
 [li]Include that code in your [nobbcode][style][/nobbcode] tag, then use the [nobbcode][font=?][/nobbcode] tag or font-family CSS property to apply it to the area you want it. If the font name has a space in it, you must put single or double quotes around it.
 
+You should include fallback web-safe fonts in your font definitions when using the CSS method of setting fonts. This way, if the font fails to load, it will not revert to the device default serif font. The default PFQ font stack is "Meiryo, Verdana, sans-serif". All font stacks should end in one of the following generic font styles:
+
+[ul][li]sans-serif[/li][li]serif[/li][li]cursive (like Comic Sans)[/li][li]mono (like code editors)[/li][/ul]
 [font="Righteous"]This is some sample text with the font tag.[/font]
+
 [sc=customDisplay][display=Another example]This is a display box with the font as its header.[/display][/sc]
 [hide=Code][nobbcode][font="Righteous"]This is some sample text with the font tag.[/font]
 
@@ -34,7 +39,7 @@ I will be using this font as an example:
 
 [style]
 .panel h3 { 
-  font-family: "Righteous"; 
+  font-family: "Righteous", Meiryo, Verdana, sans-serif; 
 }
 
 /* latin */
@@ -53,9 +58,9 @@ I will be using this font as an example:
 
 
 [style]
-ol li { margin-bottom: 1em; }
-ol .panel { margin-top: 0.5em; }
-.customDisplay h3 { font-family: "Righteous"; }
+ol > li { margin-bottom: 1em; }
+ol > .panel { margin-top: 0.5em; }
+.customDisplay h3 { font-family: "Righteous", Meiryo, Verdana, sans-serif; }
 
 /* latin */
 @font-face {
