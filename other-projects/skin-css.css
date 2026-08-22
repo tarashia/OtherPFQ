@@ -1,8 +1,12 @@
+/* dark skin 
+@import "skins/user/b/7/q/gray/__extra";
 :root {
-  /* light skin */
-  --custom-nav-bg: #111;
-  /* dark skin */
   --custom-nav-bg: var(--col-bg3);
+}
+*/
+
+:root {
+  --custom-nav-bg: #111;
 }
 
 /* Misc */
