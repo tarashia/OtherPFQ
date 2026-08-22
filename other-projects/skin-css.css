@@ -1,10 +1,9 @@
-/*
 :root {
+  /* light skin */
   --custom-nav-bg: #111;
+  /* dark skin */
   --custom-nav-bg: var(--col-bg3);
 }
-@import "skins/user/b/7/q/sharedskincss/__extra";
-*/
 
 /* Misc */
 body { 
@@ -212,8 +211,8 @@ textarea.bbcode_editor {
 }
 #field_berries.selected {
   ~#field_field {
-    /* only max-stack when no QoL options are selected */
-    >div.field>.fieldmon:not(.qolSortBerry, .qolSortMiddle, .qolGridPokeSize) {
+    /* only max-stack when QoL middle sort is selected */
+    >div.field>.fieldmon.qolSortMiddle {
       left: 0 !important;
       top: 0 !important;
       margin: 0 !important;
@@ -223,7 +222,7 @@ textarea.bbcode_editor {
       cursor: pointer;
       
       .small { display: none !important; }
-      .big { display: block !important; }
+      .big { display: block !important; padding: 0 !important; }
     }
     /* always hide tooltips when berry selected/dragged */
     >div.field>.fieldmon+.tooltip_content {
