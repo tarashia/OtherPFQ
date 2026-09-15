@@ -25,3 +25,30 @@
 [sc=fairy][sc=pkmn][pkmn=<pkmn> (D=fairy) !big][/sc][sc=type][type=fairy][/sc][/sc]
 [sc=stellar][sc=pkmn][pkmn=<pkmn> (D=stellar) !big][/sc][sc=type][type=stellar][/sc][/sc]
 [/sc][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
+[display=Old version for costumes etc]If you have a costume or similar sprite that can't be represented with a pkmn tag, you can use the old version of the previewer instead. Stellar deltas cannot be previewed this way, sorry. If you do not know the URL for pkmn-img, you may be able to find it on the wiki, and then temporarily upload it to your image uploader so you can use it here.
+
+[hide=Code][sc=code][nobbcode][style]
+--pkmn-img: url("https://r2.pokefarm.com/img/pkmn/_customs/costumes/eevee/captain/m.png?t=1509309194");
+
+--delta-bg-color: transparent;
+[/style]
+[sc=delta-list]
+[sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
+[sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
+[sc=water][sc=pkmn][/sc][sc=type][type=water][/sc][/sc]
+[sc=electric][sc=pkmn][/sc][sc=type][type=electric][/sc][/sc]
+[sc=grass][sc=pkmn][/sc][sc=type][type=grass][/sc][/sc]
+[sc=ice][sc=pkmn][/sc][sc=type][type=ice][/sc][/sc]
+[sc=fighting][sc=pkmn][/sc][sc=type][type=fighting][/sc][/sc]
+[sc=poison][sc=pkmn][/sc][sc=type][type=poison][/sc][/sc]
+[sc=ground][sc=pkmn][/sc][sc=type][type=ground][/sc][/sc]
+[sc=flying][sc=pkmn][/sc][sc=type][type=flying][/sc][/sc]
+[sc=psychic][sc=pkmn][/sc][sc=type][type=psychic][/sc][/sc]
+[sc=bug][sc=pkmn][/sc][sc=type][type=bug][/sc][/sc]
+[sc=rock][sc=pkmn][/sc][sc=type][type=rock][/sc][/sc]
+[sc=ghost][sc=pkmn][/sc][sc=type][type=ghost][/sc][/sc]
+[sc=dragon][sc=pkmn][/sc][sc=type][type=dragon][/sc][/sc]
+[sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
+[sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
+[sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
+[/sc][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
