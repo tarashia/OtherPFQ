@@ -4,11 +4,13 @@
 ][li]Platform-Style PkmnPanels[/li][
 ][li]Compact PkmnPanels[/li][
 ][li]Delta Previews[/li][
+][li]Type race rotation[/li][
 ][/ul][
 
 ][sc=tab]<%platform-panels.txt%>[/sc][
 ][sc=tab]<%compact-panels.txt%>[/sc][
 ][sc=tab]<%delta-preview.txt%>[/sc][
+][sc=tab]<%typerace.txt%>[/sc][
 
 ][/sc][/sc]
 
