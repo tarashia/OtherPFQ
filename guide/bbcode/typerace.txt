@@ -1,0 +1,65 @@
+[display=Display your type race rotation]This is a fairly simple type race rotator - it's meant to be smaller than Marlowe's and let you customize how many types are shown at a time. Partially inspired by Hakano Riku's code (format and cursor design).
+
+At the start and end of the type race season, ??? types will be displayed until you update the date setting for that season (and your type listing). This is intentional as the team assignments don't truly rotate anymore.
+
+To use, replace the 18 type tags based on the order shown on the type race page. Do not change the dateset. Windowsize controls how many types are shown at once. Cursorpos sets which position the current type and arrow is shown in.
+
+[sc=mz-tr]Type race score: [inventory=TypeRace][sc=tr-cycle][
+][type=normal][
+][type=bug][
+][type=fire][
+][type=grass][
+][type=water][
+][type=psychic][
+][type=fairy][
+][type=dark][
+][type=flying][
+][type=dragon][
+][type=ice][
+][type=steel][
+][type=ground][
+][type=poison][
+][type=fighting][
+][type=rock][
+][type=electric][
+][type=ghost][
+][sc=arrow][/sc][/sc][/sc]
+
+[style]
+/* visit the guide to get the new dateset at the start of each season */
+/* https://pokefarm.com/forum/post/8103319 */
+--dateset: [math][datetime=(Y-2026)*12+n-6]now[/datetime][/math];
+--windowsize: 7;
+--cursorpos: 3;
+[/style]
+[import-style=b7q/sharedcss-new]
+
+[hide=Code][sc=code][nobbcode][sc=mz-tr]Type race score: [inventory=TypeRace][sc=tr-cycle][
+][type=normal][
+][type=bug][
+][type=fire][
+][type=grass][
+][type=water][
+][type=psychic][
+][type=fairy][
+][type=dark][
+][type=flying][
+][type=dragon][
+][type=ice][
+][type=steel][
+][type=ground][
+][type=poison][
+][type=fighting][
+][type=rock][
+][type=electric][
+][type=ghost][
+][sc=arrow][/sc][/sc][/sc]
+
+[style]
+/* visit the guide to get the new dateset at the start of each season */
+/* https://pokefarm.com/forum/post/8103319 */
+--dateset: [math][datetime=(Y-2026)*12+n-6]now[/datetime][/math];
+--windowsize: 7;
+--cursorpos: 3;
+[/style]
+[import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]

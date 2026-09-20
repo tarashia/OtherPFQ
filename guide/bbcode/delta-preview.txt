@@ -1,18 +1,37 @@
-[display=Preview a specific delta]This demo uses CSS only to preview a delta species - all you need is the base Pokemon tag. [url=https://pokefarm.wiki/PKMN_Code_Compendium][Wiki guide][/url] The CSS image may be slightly blurry depending on your browser, and the shape isn't quite the same, but I am fairly pleased with how close I was able to get :)
+[display=Preview delta sprites for a Pokemon]This demo has been redone now that all deltas can be previewed using the pkmn tags. This template is now intended for use with the [url=https://pokefarm.com/forum/templates]template editor[/url] - once added there, all you need to do is click preview, enter the Pokemon name (ex: "Vulpix" or "Vulpix/Alolan Forme (S)" or "Unfezant (F)") to preview all the deltas for that Pokemon.
 
-(This code is based on other users' delta preview codes, unfortunately the links I had to their posts are mostly broken now)
+[hide=Code][sc=code][nobbcode]Tip: parameter can include forme, (S/A/M) and (F) flags
 
-[sc=preview-table][table][tr][th]CSS Preview[/th][th]Actual Delta[/th][/tr]
-[tr][td][sc=poison-delta][pkmn=Rapidash/Galarian Forme !big][/sc][/td]
-[td][url=https://pfq.link/?nhyWk][img]https://pfq.link/?nhyWk=platform.png[/img][/url][/td][/tr]
-[tr][td][sc=fairy-delta][pkmn=Serperior !big][/sc][/td]
-[td][url=https://pfq.link/?nBf0B][img]https://pfq.link/?nBf0B=platform.png[/img][/url][/td][/tr][/table][/sc]
-[hide=Code][sc=code][nobbcode][sc=poison-delta][pkmn=Jolteon !big][/sc] [sc=fairy-delta][pkmn=Serperior !big][/sc]
-[import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
-[display=Preview all delta types for a single Pokemon]This demo uses the same base code as above, but previews all 18 types for a single Pokemon at once, while only needing to change a single line of code. Get the image code for the Pokemon you want to preview as above, then paste it into the --pkmn-img variable at the top of the code block. If you want to preview the deltas on a different color background, or a field image, set --background.
+[style]--delta-bg-color: transparent;[/style]
+[sc=delta-list]
+[sc=unknown][sc=pkmn][pkmn=<pkmn> !big][/sc][sc=type][type=unknown][/sc][/sc]
+[sc=normal][sc=pkmn][pkmn=<pkmn> (D=normal) !big][/sc][sc=type][type=normal][/sc][/sc]
+[sc=fire][sc=pkmn][pkmn=<pkmn> (D=fire) !big][/sc][sc=type][type=fire][/sc][/sc]
+[sc=water][sc=pkmn][pkmn=<pkmn> (D=water) !big][/sc][sc=type][type=water][/sc][/sc]
+[sc=electric][sc=pkmn][pkmn=<pkmn> (D=electric) !big][/sc][sc=type][type=electric][/sc][/sc]
+[sc=grass][sc=pkmn][pkmn=<pkmn> (D=grass) !big][/sc][sc=type][type=grass][/sc][/sc]
+[sc=ice][sc=pkmn][pkmn=<pkmn> (D=ice) !big][/sc][sc=type][type=ice][/sc][/sc]
+[sc=fighting][sc=pkmn][pkmn=<pkmn> (D=fighting) !big][/sc][sc=type][type=fighting][/sc][/sc]
+[sc=poison][sc=pkmn][pkmn=<pkmn> (D=poison) !big][/sc][sc=type][type=poison][/sc][/sc]
+[sc=ground][sc=pkmn][pkmn=<pkmn> (D=ground) !big][/sc][sc=type][type=ground][/sc][/sc]
+[sc=flying][sc=pkmn][pkmn=<pkmn> (D=flying) !big][/sc][sc=type][type=flying][/sc][/sc]
+[sc=psychic][sc=pkmn][pkmn=<pkmn> (D=psychic) !big][/sc][sc=type][type=psychic][/sc][/sc]
+[sc=bug][sc=pkmn][pkmn=<pkmn> (D=bug) !big][/sc][sc=type][type=bug][/sc][/sc]
+[sc=rock][sc=pkmn][pkmn=<pkmn> (D=rock) !big][/sc][sc=type][type=rock][/sc][/sc]
+[sc=ghost][sc=pkmn][pkmn=<pkmn> (D=ghost) !big][/sc][sc=type][type=ghost][/sc][/sc]
+[sc=dragon][sc=pkmn][pkmn=<pkmn> (D=dragon) !big][/sc][sc=type][type=dragon][/sc][/sc]
+[sc=dark][sc=pkmn][pkmn=<pkmn> (D=dark) !big][/sc][sc=type][type=dark][/sc][/sc]
+[sc=steel][sc=pkmn][pkmn=<pkmn> (D=steel) !big][/sc][sc=type][type=steel][/sc][/sc]
+[sc=fairy][sc=pkmn][pkmn=<pkmn> (D=fairy) !big][/sc][sc=type][type=fairy][/sc][/sc]
+[sc=stellar][sc=pkmn][pkmn=<pkmn> (D=stellar) !big][/sc][sc=type][type=stellar][/sc][/sc]
+[/sc][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]
+[display=Old version for costumes etc]If you have a costume or similar sprite that can't be represented with a pkmn tag, you can use the old version of the previewer instead. Stellar deltas cannot be previewed this way, sorry. If you do not know the URL for pkmn-img, you may be able to find it on the wiki, and then temporarily upload it to your image uploader so you can use it here.
 
-Note: You used to be able to use wiki images in this code. Sadly, this is no longer possible - you will need to use your dex, or a regular version of the Pokemon, or the !big pkmn code to get the image link to do the preview. In a pinch, for example for costumes, you could re-upload the image to your own image uploader.
+[hide=Code][sc=code][nobbcode][style]
+--pkmn-img: url("https://r2.pokefarm.com/img/pkmn/_customs/costumes/eevee/captain/m.png?t=1509309194");
 
+--delta-bg-color: transparent;
+[/style]
 [sc=delta-list]
 [sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
 [sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
@@ -32,41 +51,4 @@ Note: You used to be able to use wiki images in this code. Sadly, this is no lon
 [sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
 [sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
 [sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
-[/sc]
-[hide=Code][sc=code][nobbcode][sc=delta-list]
-[sc=normal][sc=pkmn][/sc][sc=type][type=normal][/sc][/sc]
-[sc=fire][sc=pkmn][/sc][sc=type][type=fire][/sc][/sc]
-[sc=water][sc=pkmn][/sc][sc=type][type=water][/sc][/sc]
-[sc=electric][sc=pkmn][/sc][sc=type][type=electric][/sc][/sc]
-[sc=grass][sc=pkmn][/sc][sc=type][type=grass][/sc][/sc]
-[sc=ice][sc=pkmn][/sc][sc=type][type=ice][/sc][/sc]
-[sc=fighting][sc=pkmn][/sc][sc=type][type=fighting][/sc][/sc]
-[sc=poison][sc=pkmn][/sc][sc=type][type=poison][/sc][/sc]
-[sc=ground][sc=pkmn][/sc][sc=type][type=ground][/sc][/sc]
-[sc=flying][sc=pkmn][/sc][sc=type][type=flying][/sc][/sc]
-[sc=psychic][sc=pkmn][/sc][sc=type][type=psychic][/sc][/sc]
-[sc=bug][sc=pkmn][/sc][sc=type][type=bug][/sc][/sc]
-[sc=rock][sc=pkmn][/sc][sc=type][type=rock][/sc][/sc]
-[sc=ghost][sc=pkmn][/sc][sc=type][type=ghost][/sc][/sc]
-[sc=dragon][sc=pkmn][/sc][sc=type][type=dragon][/sc][/sc]
-[sc=dark][sc=pkmn][/sc][sc=type][type=dark][/sc][/sc]
-[sc=steel][sc=pkmn][/sc][sc=type][type=steel][/sc][/sc]
-[sc=fairy][sc=pkmn][/sc][sc=type][type=fairy][/sc][/sc]
-[/sc]
-[style]
---delta-bg-color: transparent;
---pkmn-img: url("https://r2.pokefarm.com/img/pkmn/u/7/n/w.png?t=1481502727");
-[/style]
-[import-style=b7q/sharedcss-new]
-[/nobbcode][/sc][/hide][/display]
-
-[style]
-.preview-table tr td:nth-of-type(1) {
-  text-align: center;
-  vertical-align: bottom;
-  padding-bottom: 30px;
-}
-
---delta-bg-color: transparent;
---pkmn-img: url("https://r2.pokefarm.com/img/pkmn/u/7/n/w.png?t=1481502727");
-[/style]
+[/sc][import-style=b7q/sharedcss-new][/nobbcode][/sc][/hide][/display]

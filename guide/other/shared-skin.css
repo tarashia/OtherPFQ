@@ -453,3 +453,51 @@
     drop-shadow(0px 0px 1px rgb(255, 101, 213))
     drop-shadow(0px -2px 1px rgb(255, 101, 213));
 } 
+
+/* type race */
+/* TODO: remove LESS escapes ~"" around calc after sept 17 2026 */
+.mz-tr {
+  text-align: center;
+  .tr-cycle {
+    margin: 5px auto 0 auto;
+    position: relative;
+    background: url('https://r2.pokefarm.com/img/types/unknown.png?t=1427730376') repeat no-repeat;
+    width: ~"calc(var(--windowsize)*32px)";
+    height: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+  
+    :nth-child(1) { --trpos: 0; }
+    :nth-child(2) { --trpos: 1; }
+    :nth-child(3) { --trpos: 2; }
+    :nth-child(4) { --trpos: 3; }
+    :nth-child(5) { --trpos: 4; }
+    :nth-child(6) { --trpos: 5; }
+    :nth-child(7) { --trpos: 6; }
+    :nth-child(8) { --trpos: 7; }
+    :nth-child(9) { --trpos: 8; }
+    :nth-child(10) { --trpos: 9; }
+    :nth-child(11) { --trpos: 10; }
+    :nth-child(12) { --trpos: 11; }
+    :nth-child(13) { --trpos: 12; }
+    :nth-child(14) { --trpos: 13; }
+    :nth-child(15) { --trpos: 14; }
+    :nth-child(16) { --trpos: 15; }
+    :nth-child(17) { --trpos: 16; }
+    :nth-child(18) { --trpos: 17; }
+    img { 
+      position: absolute;
+      left: ~"calc(32px * (var(--trpos) - var(--dateset) + var(--cursorpos) - 1))";
+    }
+  }
+  
+  .arrow {
+    position: relative;
+    left: ~"calc(32px * (var(--cursorpos) - 1))";
+    top: 16px;
+    width: 0px;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 8px solid;
+  }
+}
