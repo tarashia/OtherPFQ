@@ -1,5 +1,5 @@
 /* dark skin 
-@import "skins/user/b/7/q/gray/__extra";
+@import "/skins/user/b/7/q/gray/__extra.css";
 :root {
   --custom-nav-bg: var(--col-bg3);
 }
@@ -58,13 +58,11 @@ body {
   display: none !important; 
 }
 /* Change notification icon */
-#header>#head-social>#notifs>a { 
-  background-image: url('https://pokefarm.com/upload/Mirzam/Gray_Skin/Vulpix_Alola.png'); 
-  background-size: cover; 
+#header > #head-social > #notifs > a > img {
+  content: url('https://pokefarm.com/upload/Mirzam/Gray_Skin/Vulpix_Alola.png');
+  max-height: 48px;
+  max-width: 48px;
 }
-#header>#head-social>#notifs>a > img { 
-  opacity: 0; 
-} 
 #header>#head-social>#notifs>a[data-count]::after { 
   padding: 1px; 
   height: 14px; 
