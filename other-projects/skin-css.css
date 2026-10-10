@@ -298,21 +298,25 @@ html:not(.mq3) #multiuser.qolPartyHideDislike #profilebox {
 }
 
 .mq3 #partypage {
-    padding-top: 50px;
+    padding-top: 60px;
     position: relative;
-}
-.mq3 #partypage #autofeed-button, 
-.mq3 #partypage #autohatch-button {
+
+  #autofeed-button, 
+  #autohatch-button {
     position: absolute;
     top: 0;
-}
-.mq3 #partypage #autofeed-button {
+  }
+  #autofeed-button {
     margin-left: -150px;
     left: 50%;
-}
-.mq3 #partypage #autohatch-button {
+  }
+   #autohatch-button {
     right: 50%;
     margin-right: -150px;
+  }
+  #profilelinks {
+    display: none;
+  }
 }
 
 .mu_navlink.next[next-page="true"] { 
