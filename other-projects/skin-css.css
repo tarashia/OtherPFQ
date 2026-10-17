@@ -27,7 +27,7 @@ body {
 .panel > h3 a {
   color: var(--col-fg2);
 }
-#berryblender_canvas,
+.dialog:has(#berryblender_canvas),
 #sheltercommands,
 #multiuser #partybox {
   user-select: none; 
