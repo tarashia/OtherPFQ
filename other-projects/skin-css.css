@@ -32,6 +32,10 @@ body {
 #multiuser #partybox {
   user-select: none; 
 }
+/* Temp? Hide gif trainer card avatars */
+#trainercard .avatar[src*=".gif"] {
+  content: url("");
+}
 /* Force platform to be only display code shown */
 #displaycodelist {
   > ul {
